@@ -1,0 +1,12 @@
+/* Target PaperMod's native list wrapper */
+.post-entry {
+  display: grid;
+}
+
+/* Override PaperMod's list container to be a grid */
+main > .post-entry,
+#searchResults > .post-entry {
+  /* PaperMod stacks these — we reflow them */
+}
+
+/* Wrap them at the parent level */

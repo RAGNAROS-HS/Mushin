@@ -1,23 +1,44 @@
 baseURL = 'https://hugokatzer.tech/'
 languageCode = 'en-us'
-title = 'Hugo Sokolowski-Katzer'
+#title = 'Hugo Sokolowski-Katzer'
 theme = "PaperMod"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 
 [params]
   author = 'Hugo Katzer'
-  description = 'Mushin site'
+  description = 'Personal Site'
+  ShowBreadCrumbs = true
+
 
 [params.profileMode]
     enabled = true
-    title = 'Hugo Katzer'
-    subtitle = 'MSc AI Student · Data Science · Machine Learning'
+    title = 'Hugo Sokolowski-Katzer'
+    subtitle = 'MSc AI Student'
     imageUrl = 'img/hampter.jpg'
     imageTitle = 'Hugo Katzer'
 
-    [[params.profileMode.buttons]]
-      name = 'Blog'
-      url = '/blog'
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
 
-    [[params.profileMode.buttons]]
-      name = 'Projects'
-      url = '/projects'
+[[menu.main]]
+  name = 'Blog'
+  url = '/blog'
+  weight = 2
+
+[[menu.main]]
+  name = 'Projects'
+  url = '/projects'
+  weight = 3
+
+[[menu.main]]
+  name = 'About me'
+  url = '/about'
+  weight = 4
