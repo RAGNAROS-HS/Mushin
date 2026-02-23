@@ -1,8 +1,23 @@
 baseURL = 'https://hugokatzer.tech/'
 languageCode = 'en-us'
-title = 'Its aliiiiive'
+title = 'Hugo Sokolowski-Katzer'
 theme = "PaperMod"
 
 [params]
   author = 'Hugo Katzer'
   description = 'Mushin site'
+
+[params.profileMode]
+    enabled = true
+    title = 'Hugo Katzer'
+    subtitle = 'MSc AI Student · Data Science · Machine Learning'
+    imageUrl = 'img/hampter.jpg'
+    imageTitle = 'Hugo Katzer'
+
+    [[params.profileMode.buttons]]
+      name = 'Blog'
+      url = '/blog'
+
+    [[params.profileMode.buttons]]
+      name = 'Projects'
+      url = '/projects'
