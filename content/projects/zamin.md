@@ -1,7 +1,7 @@
 
 ---
 title: "Zamin"
-date: 2026-02-23
+date: 2026-02-11
 draft: false
 tags: ["ML", "Python", "AI"]
 summary: "bibibibi"
