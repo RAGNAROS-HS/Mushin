@@ -1,0 +1,7 @@
+/* Make the home avatar a perfect circle */
+.home .home-profile .home-avatar img {
+    width: 8rem !important;
+    height: 8rem !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+}

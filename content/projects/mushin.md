@@ -2,9 +2,8 @@
 title: "Mushin"
 date: 2026-02-23
 draft: false
-tags: ["ML", "Python", "AI"]
-summary: "booboboaoba"
+tags: ["Go", "Hugo", "GitHub"]
+summary: "This very website"
 ---
 
-## Overview
-self self
+Will write about it once I'm done

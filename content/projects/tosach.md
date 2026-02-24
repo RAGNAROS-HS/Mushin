@@ -3,14 +3,14 @@ title: "Tosach"
 date: 2026-01-27
 draft: false
 tags: ["ML", "Python", "AI"]
-summary: "booboboaoba"
+summary: "Text recognition using CRNN"
+weight: 10
 ---
 
-# Tosach — CRNN for Scene Text Recognition
 
 Implementation of the CRNN (Convolutional Recurrent Neural Network) architecture from [Shi et al., 2015](https://arxiv.org/abs/1507.05717) for end-to-end scene text recognition using TensorFlow/Keras.
 
-> **Status: Work in Progress** — Architecture is implemented, dataset is prepared, training has not been run yet.
+> **Status: Limbo** — Architecture is implemented, dataset is prepared, training has not been run yet. I went to great lengths to read up on the background material and set it up, but the scope of the project became too large. The dataset is huge and the compute required is equally extensive. I deployed the legacy approach of per-letter recognition, but the proper fully fledged CRNN is yet to be trained. I'll probably complete it once I am up for the challenge of getting VertexAI to work. For now I'm pursuing smaller scale projects. 
 
 ## Overview
 

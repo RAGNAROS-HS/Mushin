@@ -2,11 +2,12 @@
 title: "Bachelor Thesis"
 date: 2025-06-01
 draft: false
-tags: ["ML", "Python", "AI"]
-summary: "booboboaoba"
+tags: ["CNN", "Pytorch", "VertexAI"]
+summary: "Detecting collapsed buildings using UNET++"
 ---
 
-> The best way to understand what went on in this one is to read through the thesis itself:
+
+My bachelor's degree concluded with this projec - detecting collapsed buildings using UNET++ and shadow-based heuristics from satellite imagery. It is quite expansive so I highly recommend reading through the thesis itself if you'd like to understand it in its entirety:
 
 {{< embed-pdf url="/pdfs/Thesis_Hugo_SK (2).pdf" >}}
 

@@ -1,54 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on </title>
+    <title>Python - Tag - Hugo Sokolowski-Katzer</title>
     <link>http://localhost:1313/tags/python/</link>
-    <description>Recent content in Python on </description>
-    <generator>Hugo -- 0.156.0</generator>
+    <description>Personal Site</description>
+    <generator>Hugo 0.156.0 &amp; FixIt v0.4.3-20260130042349-e23a50d7</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mushin</title>
-      <link>http://localhost:1313/projects/mushin/</link>
-      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/mushin/</guid>
-      <description>booboboaoba</description>
+      <title>Stumberg</title>
+      <link>http://localhost:1313/projects/stumberg/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/stumberg/</guid>
+      <description>Personal AI Agent</description>
     </item>
     <item>
       <title>Zamin</title>
       <link>http://localhost:1313/projects/zamin/</link>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/zamin/</guid>
-      <description>bibibibi</description>
+      <description>Back to basics ML algorithms from scratch</description>
     </item>
     <item>
       <title>Tosach</title>
       <link>http://localhost:1313/projects/tosach/</link>
       <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/tosach/</guid>
-      <description>booboboaoba</description>
-    </item>
-    <item>
-      <title>Himantes</title>
-      <link>http://localhost:1313/projects/himantes/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/himantes/</guid>
-      <description>booboboaoba</description>
-    </item>
-    <item>
-      <title>Stumberg</title>
-      <link>http://localhost:1313/projects/stumberg/</link>
-      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/stumberg/</guid>
-      <description>bibibibi</description>
-    </item>
-    <item>
-      <title>Bachelor Thesis</title>
-      <link>http://localhost:1313/projects/bachelor_thesis/</link>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/bachelor_thesis/</guid>
-      <description>booboboaoba</description>
+      <description>Text recognition using CRNN</description>
     </item>
   </channel>
 </rss>

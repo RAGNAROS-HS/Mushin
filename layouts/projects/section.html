@@ -1,0 +1,46 @@
+{{- define "title" -}}
+{{ .Title }} - {{ .Site.Title }}
+{{- end -}}
+
+{{- define "content" -}}
+<div class="page archive">
+    <div class="header">
+        {{- /* Title */ -}}
+        <h1 class="single-title animate__animated animate__pulse animate__faster">
+            {{- .Title -}}
+        </h1>
+    </div>
+
+    {{- if .Content }}
+    <div class="content" style="margin-bottom: 1.5rem;">
+        {{ .Content }}
+    </div>
+    {{- end }}
+
+    {{- /* Projects Grid */ -}}
+    {{- $pages := union .RegularPages .Sections -}}
+    {{- if $pages -}}
+    <div class="projects-grid">
+        {{- range $pages -}}
+        <article class="archive-item project-card">
+            <a href="{{ .RelPermalink }}" class="project-card-link">
+                <h3 class="project-card-title">{{ .Title }}</h3>
+                {{- if .Params.summary }}
+                <p class="project-card-summary">{{ .Params.summary }}</p>
+                {{- else if .Summary }}
+                <p class="project-card-summary">{{ .Summary | plainify | htmlUnescape | truncate 150 }}</p>
+                {{- end }}
+                {{- if .Params.tags }}
+                <div class="project-card-tags">
+                    {{- range .Params.tags }}
+                    <span class="project-tag">{{ . }}</span>
+                    {{- end }}
+                </div>
+                {{- end }}
+            </a>
+        </article>
+        {{- end -}}
+    </div>
+    {{- end -}}
+</div>
+{{- end -}}

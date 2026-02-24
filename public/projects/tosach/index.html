@@ -1,320 +1,204 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Tosach - Hugo Sokolowski-Katzer</title><meta name="author" content="Hugo Sokołowski-Katzer">
+<meta name="description" content="Text recognition using CRNN"><meta name="keywords" content='ML, Python, AI'>
+  <meta itemprop="name" content="Tosach">
+  <meta itemprop="description" content="Text recognition using CRNN">
+  <meta itemprop="datePublished" content="2026-01-27T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-01-27T00:00:00+00:00">
+  <meta itemprop="wordCount" content="340">
+  <meta itemprop="keywords" content="ML,Python,AI"><meta property="og:url" content="http://localhost:1313/projects/tosach/">
+  <meta property="og:site_name" content="Hugo Sokolowski-Katzer">
+  <meta property="og:title" content="Tosach">
+  <meta property="og:description" content="Text recognition using CRNN">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2026-01-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-27T00:00:00+00:00">
+    <meta property="article:tag" content="ML">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="AI">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Tosach | </title>
-<meta name="keywords" content="ML, Python, AI">
-<meta name="description" content="booboboaoba">
-<meta name="author" content="Hugo Katzer">
-<link rel="canonical" href="http://localhost:1313/projects/tosach/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.87c732527cf399916c3083f640d89eee4d925c5554e8ed7062439ebac7da1497.css" integrity="sha256-h8cyUnzzmZFsMIP2QNie7k2SXFVU6O1wYkOeusfaFJc=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/tosach/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-</head>
-<body id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/" title="Home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/blog" title="Blog">
-                    <span>Blog</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/projects" title="Projects">
-                    <span>Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/about" title="About me">
-                    <span>About me</span>
-                </a>
-            </li>
-        </ul>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tosach">
+  <meta name="twitter:description" content="Text recognition using CRNN">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/stumlogoLookingLeft.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/projects/tosach/" title="Tosach - Hugo Sokolowski-Katzer" /><link rel="prev" type="text/html" href="http://localhost:1313/projects/goswin/" title="Goswin" /><link rel="next" type="text/html" href="http://localhost:1313/projects/zamin/" title="Zamin" /><link rel="alternate" type="text/markdown" href="http://localhost:1313/projects/tosach/index.md" title="Tosach - Hugo Sokolowski-Katzer"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Tosach",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/projects\/tosach\/"
+    },"genre": "projects","keywords": "ML, Python, AI","wordcount":  340 ,
+    "url": "http:\/\/localhost:1313\/projects\/tosach\/","datePublished": "2026-01-27T00:00:00+00:00","dateModified": "2026-01-27T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Hugo Sokołowski-Katzer"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/">Home</a></li><li class="menu-item">
+              <a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item">
+              <a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/">About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></li></ul>
     </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/projects/">Projects</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Tosach
-    </h1>
-    <div class="post-meta"><span title='2026-01-27 00:00:00 +0000 UTC'>January 27, 2026</span>&nbsp;·&nbsp;<span>Hugo Katzer</span>
-
-</div>
-  </header> 
-  <div class="post-content"><h1 id="tosach--crnn-for-scene-text-recognition">Tosach — CRNN for Scene Text Recognition<a hidden class="anchor" aria-hidden="true" href="#tosach--crnn-for-scene-text-recognition">#</a></h1>
-<p>Implementation of the CRNN (Convolutional Recurrent Neural Network) architecture from <a href="https://arxiv.org/abs/1507.05717">Shi et al., 2015</a> for end-to-end scene text recognition using TensorFlow/Keras.</p>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+      <div class="theme-switch" role="button" aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></div>
+      <div class="menu-toggle" id="menu-toggle-mobile" role="button" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/">Home</a></li><li class="menu-item"><a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item"><a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item"><a class="menu-link" href="/about/">About me</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item" data-separator="/"><a href="/projects/" title="Projects">Projects</a></li><li class="breadcrumb-item active" data-separator="/" aria-current="page">Tosach</li>
+    </ol>
+  </nav><main class="fi-container"><article class="page single special">
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Tosach</h1></div><div class="content" id="content"><p>Implementation of the CRNN (Convolutional Recurrent Neural Network) architecture from <a href="https://arxiv.org/abs/1507.05717" target="_blank" rel="external nofollow noopener noreferrer">Shi et al., 2015</a> for end-to-end scene text recognition using TensorFlow/Keras.</p>
 <blockquote>
-<p><strong>Status: Work in Progress</strong> — Architecture is implemented, dataset is prepared, training has not been run yet.</p>
+<p><strong>Status: Limbo</strong> — Architecture is implemented, dataset is prepared, training has not been run yet. I went to great lengths to read up on the background material and set it up, but the scope of the project became too large. The dataset is huge and the compute required is equally extensive. I deployed the legacy approach of per-letter recognition, but the proper fully fledged CRNN is yet to be trained. I&rsquo;ll probably complete it once I am up for the challenge of getting VertexAI to work. For now I&rsquo;m pursuing smaller scale projects.</p>
 </blockquote>
-<h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
-<p>The model recognizes text in natural scene images by combining:</p>
+<h2 class="heading-element" id="overview"><span>Overview</span>
+  <a href="#overview" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The model recognizes text in natural scene images by combining:</p>
 <ul>
 <li><strong>CNN</strong> (VGG-style) for visual feature extraction</li>
 <li><strong>Bidirectional LSTM</strong> for sequence modeling</li>
 <li><strong>CTC loss</strong> for sequence-to-label transcription without character-level annotations</li>
 </ul>
-<h2 id="project-structure">Project Structure<a hidden class="anchor" aria-hidden="true" href="#project-structure">#</a></h2>
-<table>
-  <thead>
-      <tr>
-          <th>File</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>train_crnn.py</code></td>
-          <td>CRNN model architecture + training pipeline</td>
-      </tr>
-      <tr>
-          <td><code>synthtiger_loader.py</code></td>
-          <td>Data loader for SynthTiger dataset (tf.data)</td>
-      </tr>
-      <tr>
-          <td><code>extract_synthtiger.py</code></td>
-          <td>Memory-efficient extractor for the large SynthTiger zip</td>
-      </tr>
-      <tr>
-          <td><code>study_content.txt</code></td>
-          <td>Extracted text from the reference paper</td>
-      </tr>
-      <tr>
-          <td><code>study.pdf</code></td>
-          <td>Original paper (Shi et al., 2015)</td>
-      </tr>
-      <tr>
-          <td><code>legacy/</code></td>
-          <td>Earlier prototype (deprecated)</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="dataset">Dataset<a hidden class="anchor" aria-hidden="true" href="#dataset">#</a></h2>
-<p><strong>SynthTiger v1.0</strong> — synthetic text images with ground truth labels. The dataset is ~38GB and must be extracted before training.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install stream-unzip
-</span></span><span style="display:flex;"><span>python extract_synthtiger.py
-</span></span></code></pre></div><h2 id="architecture-from-paper">Architecture (from paper)<a hidden class="anchor" aria-hidden="true" href="#architecture-from-paper">#</a></h2>
-<pre tabindex="0"><code>Input (W × 32 grayscale)
+<h2 class="heading-element" id="project-structure"><span>Project Structure</span>
+  <a href="#project-structure" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>File</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>train_crnn.py</code></td>
+            <td>CRNN model architecture + training pipeline</td>
+        </tr>
+        <tr>
+            <td><code>synthtiger_loader.py</code></td>
+            <td>Data loader for SynthTiger dataset (tf.data)</td>
+        </tr>
+        <tr>
+            <td><code>extract_synthtiger.py</code></td>
+            <td>Memory-efficient extractor for the large SynthTiger zip</td>
+        </tr>
+        <tr>
+            <td><code>study_content.txt</code></td>
+            <td>Extracted text from the reference paper</td>
+        </tr>
+        <tr>
+            <td><code>study.pdf</code></td>
+            <td>Original paper (Shi et al., 2015)</td>
+        </tr>
+        <tr>
+            <td><code>legacy/</code></td>
+            <td>Earlier prototype (deprecated)</td>
+        </tr>
+    </tbody>
+  </table>
+</div><h2 class="heading-element" id="dataset"><span>Dataset</span>
+  <a href="#dataset" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><strong>SynthTiger v1.0</strong> — synthetic text images with ground truth labels. The dataset is ~38GB and must be extracted before training.</p>
+<div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-bash"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install stream-unzip
+</span></span><span class="line"><span class="cl">python extract_synthtiger.py</span></span></code></pre></td></tr></table></div>
+</div>
+</div><h2 class="heading-element" id="architecture-from-paper"><span>Architecture (from paper)</span>
+  <a href="#architecture-from-paper" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><pre tabindex="0"><code>Input (W × 32 grayscale)
   → 7 Conv layers (64 → 512 maps) + BatchNorm + MaxPool
   → Map-to-Sequence
   → 2× Bidirectional LSTM (256 hidden units)
   → CTC Transcription
-  → Predicted text
-</code></pre><h2 id="legacy">Legacy<a hidden class="anchor" aria-hidden="true" href="#legacy">#</a></h2>
-<p>The <code>legacy/</code> folder contains an earlier prototype that used a simpler per-character classification approach:</p>
+  → Predicted text</code></pre><h2 class="heading-element" id="legacy"><span>Legacy</span>
+  <a href="#legacy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The <code>legacy/</code> folder contains an earlier prototype that used a simpler per-character classification approach:</p>
 <ul>
 <li><strong>Simple CNN</strong> (Conv2D → MaxPool → Dense) trained on 28×28 grayscale character images from a Kaggle OCR dataset</li>
 <li><strong>Per-character pipeline</strong>: segment individual characters → classify each with the CNN → concatenate results</li>
 <li>Abandoned in favor of the CRNN approach, which handles full words end-to-end without character segmentation</li>
 </ul>
-<table>
-  <thead>
-      <tr>
-          <th>File</th>
-          <th>Purpose</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>model_training.py</code></td>
-          <td>CNN classifier training (62 classes: A-Z, a-z, 0-9)</td>
-      </tr>
-      <tr>
-          <td><code>data_process.py</code></td>
-          <td>Sorts character images into class folders</td>
-      </tr>
-      <tr>
-          <td><code>run_inference.py</code></td>
-          <td>Runs predictions on validation samples</td>
-      </tr>
-      <tr>
-          <td><code>idea.md</code></td>
-          <td>Original project plan</td>
-      </tr>
-  </tbody>
-</table>
-
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/ml/">ML</a></li>
-      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
-      <li><a href="http://localhost:1313/tags/ai/">AI</a></li>
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/"></a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
+<div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>File</th>
+            <th>Purpose</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>model_training.py</code></td>
+            <td>CNN classifier training (62 classes: A-Z, a-z, 0-9)</td>
+        </tr>
+        <tr>
+            <td><code>data_process.py</code></td>
+            <td>Sorts character images into class folders</td>
+        </tr>
+        <tr>
+            <td><code>run_inference.py</code></td>
+            <td>Runs predictions on validation samples</td>
+        </tr>
+        <tr>
+            <td><code>idea.md</code></td>
+            <td>Original project plan</td>
+        </tr>
+    </tbody>
+  </table>
+</div></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.156.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.3-20260130042349-e23a50d7"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025 - 2026</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Hugo Sokołowski-Katzer</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config/3a070f3c24c234495a34912419b549c6.js" defer></script><script src="/js/theme.min.js" defer></script></body>
 </html>

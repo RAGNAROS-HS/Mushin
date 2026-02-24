@@ -1,45 +1,108 @@
 baseURL = 'https://hugokatzer.tech/'
 languageCode = 'en-us'
-#title = 'Hugo Sokolowski-Katzer'
-theme = ["hugo-embed-pdf-shortcode","PaperMod"]
+title = 'Hugo Sokolowski-Katzer'
+theme = ["hugo-embed-pdf-shortcode", "FixIt"]
 enableInlineShortcodes = true
+enableRobotsTXT = true
+enableEmoji = true
 
+# Merge markup/outputs/taxonomies from theme
 [markup]
+  _merge = "shallow"
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
+[outputs]
+  _merge = "shallow"
 
+[taxonomies]
+  _merge = "shallow"
+
+# Menu
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'devlog'
+    name = 'Devlog'
+    url = '/devlog/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'projects'
+    name = 'Projects'
+    url = '/projects/'
+    weight = 3
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About me'
+    url = '/about/'
+    weight = 4
 
 [params]
-  author = 'Hugo Katzer'
+  version = "0.3.X"
+  defaultTheme = 'auto'
   description = 'Personal Site'
-  ShowBreadCrumbs = true
+  dateFormat = '2006-01-02'
 
+  [params.author]
+    name = 'Hugo Sokołowski-Katzer'
 
-[params.profileMode]
-    enabled = true
-    title = 'Hugo Sokolowski-Katzer'
-    subtitle = 'MSc AI Student'
-    imageUrl = 'img/hampter.jpg'
-    imageTitle = 'Hugo Katzer'
+  [params.header]
+    desktopMode = 'fixed'
+    mobileMode = 'auto'
+    [params.header.title]
+      name = 'Hugo Sokołowski-Katzer'
 
-[[menu.main]]
-  name = 'Home'
-  url = '/'
-  weight = 1
+  [params.breadcrumb]
+    enable = true
 
-[[menu.main]]
-  name = 'Blog'
-  url = '/blog'
-  weight = 2
+  [params.footer]
+    enable = true
+    hugo = true
+    copyright = true
+    author = true
+    since = 2025
 
-[[menu.main]]
-  name = 'Projects'
-  url = '/projects'
-  weight = 3
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = '/img/stumlogoLookingLeft.png'
+      title = 'Hugo Sokołowski-Katzer'
+      subtitle = 'MSc AI Student'
+      typeit = false
+      social = true
+    [params.home.posts]
+      enable = false
 
-[[menu.main]]
-  name = 'About me'
-  url = '/about'
-  weight = 4
+  [params.section]
+    paginate = 20
+    dateFormat = '01-02'
+
+  [params.page]
+    [params.page.toc]
+      enable = true
+      auto = true
+    [params.page.code]
+      copy = true
+      maxShownLines = 50
+
+  [params.customPartials]
+    profile = ['custom/github-calendar.html']
+
+  [params.social]
+    GitHub = 'https://github.com/RAGNAROS-HS'
+    Linkedin = 'https://www.linkedin.com/in/hugo-sokolowski-katzer-715577248/'
+    Email = 'hugo.s.katzer@gmail.com'
+    RSS = false
+
+  [params.app]
+  svgFavicon = "/img/stumlogoLookingLeft.png"
