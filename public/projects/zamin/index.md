@@ -167,6 +167,6 @@ Lots of things could be improved, first and foremost add ridge regression to the
 
 ---
 
-> Author: Hugo Katzer  
+> Author: Hugo Sokołowski-Katzer  
 > URL: http://localhost:1313/projects/zamin/  
 

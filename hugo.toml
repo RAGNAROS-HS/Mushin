@@ -54,13 +54,13 @@ enableEmoji = true
   dateFormat = '2006-01-02'
 
   [params.author]
-    name = 'Hugo Katzer'
+    name = 'Hugo Sokołowski-Katzer'
 
   [params.header]
     desktopMode = 'fixed'
     mobileMode = 'auto'
     [params.header.title]
-      name = 'Hugo Sokolowski-Katzer'
+      name = 'Hugo Sokołowski-Katzer'
 
   [params.breadcrumb]
     enable = true
@@ -76,7 +76,7 @@ enableEmoji = true
     [params.home.profile]
       enable = true
       avatarURL = '/img/stumlogoLookingLeft.png'
-      title = 'Hugo Sokolowski-Katzer'
+      title = 'Hugo Sokołowski-Katzer'
       subtitle = 'MSc AI Student'
       typeit = false
       social = true
@@ -103,3 +103,6 @@ enableEmoji = true
     Linkedin = 'https://www.linkedin.com/in/hugo-sokolowski-katzer-715577248/'
     Email = 'hugo.s.katzer@gmail.com'
     RSS = false
+
+  [params.app]
+  svgFavicon = "/img/stumlogoLookingLeft.png"

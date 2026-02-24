@@ -4,13 +4,17 @@ date: 2025-12-03
 draft: false
 tags: ["ML", "Python", "AI"]
 summary: "Personal AI Agent"
+weight: 1
 ---
 
 
-> A modular, multi-mode AI assistant built with **LangGraph** and **LangChain**.  
-> Intelligent, context-aware responses through a Streamlit web interface — with specialized modes for shopping, research, coding, and fast retrieval.
+Stumberg is my crown jewel. It is my largest personal project so far, and the first in this series. The original idea was to replicate the functionality of chatgpt but tailored to my needs. I hated repeating myself all the time and trying to curb its agreeable responses, so I set out on this journey.
 
----
+The final product was a working agent with multiple modes, persistent conversations, file context, and a search subagent, all tailored to me. Although I will admit that I have discontinued use and maintenence of the project, as the scope of the project just grew larger and larger, upkeep of API's bugfixing etc, all take lots of time, time which I wanted to spend learning other new things.
+
+Also the usage was not that practical, booting up a docker container and running in localhost is not ideal, if I were to revisit this project I would definitely prioritize having CI/CD and a proper deployment pipeline.
+
+Although the idea of stumberg was somewhat revived in my project "Goswin", you can learn more about it [here](/projects/goswin/).
 
 ## ✨ Features
 

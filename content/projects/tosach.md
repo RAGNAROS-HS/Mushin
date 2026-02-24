@@ -4,6 +4,7 @@ date: 2026-01-27
 draft: false
 tags: ["ML", "Python", "AI"]
 summary: "Text recognition using CRNN"
+weight: 10
 ---
 
 

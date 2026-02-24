@@ -5,6 +5,7 @@ date: 2026-02-11
 draft: false
 tags: ["NN", "Python", "Linear Regression"]
 summary: "Back to basics ML algorithms from scratch"
+weight: 10
 ---
 
 ## Overview

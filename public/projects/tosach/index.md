@@ -63,6 +63,6 @@ The `legacy/` folder contains an earlier prototype that used a simpler per-chara
 
 ---
 
-> Author: Hugo Katzer  
+> Author: Hugo Sokołowski-Katzer  
 > URL: http://localhost:1313/projects/tosach/  
 

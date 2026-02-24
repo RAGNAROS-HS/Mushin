@@ -2,10 +2,10 @@
 
 
 
-should work
+Nothing yet, stay tuned 
 
 ---
 
-> Author: Hugo Katzer  
+> Author: Hugo Sokołowski-Katzer  
 > URL: http://localhost:1313/devlog/  
 

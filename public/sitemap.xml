@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/projects/stumberg/</loc>
+    <lastmod>2025-12-03T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/zamin/</loc>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/tosach/</loc>
+    <lastmod>2026-01-27T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/goswin/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/github/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url>
@@ -41,19 +57,11 @@
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/zamin/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2026-01-27T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/tags/ml/</loc>
-    <lastmod>2026-01-27T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/projects/tosach/</loc>
     <lastmod>2026-01-27T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -73,10 +81,6 @@
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/stumberg/</loc>
-    <lastmod>2025-12-03T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:1313/projects/bachelor_thesis/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
   </url>
@@ -86,6 +90,7 @@
   </url>
   <url>
     <loc>http://localhost:1313/about/</loc>
+    <lastmod>2025-02-24T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/categories/</loc>
