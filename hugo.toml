@@ -1,7 +1,8 @@
 baseURL = 'https://hugokatzer.tech/'
 languageCode = 'en-us'
 #title = 'Hugo Sokolowski-Katzer'
-theme = "PaperMod"
+theme = ["hugo-embed-pdf-shortcode","PaperMod"]
+enableInlineShortcodes = true
 
 [markup]
   [markup.goldmark]

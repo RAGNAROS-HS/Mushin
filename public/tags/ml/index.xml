@@ -9,31 +9,45 @@
     <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Stumberg</title>
-      <link>http://localhost:1313/projects/stumberg/</link>
+      <title>Mushin</title>
+      <link>http://localhost:1313/projects/mushin/</link>
       <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/stumberg/</guid>
-      <description>bibibibi</description>
+      <guid>http://localhost:1313/projects/mushin/</guid>
+      <description>booboboaoba</description>
     </item>
     <item>
       <title>Zamin</title>
       <link>http://localhost:1313/projects/zamin/</link>
-      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/zamin/</guid>
       <description>bibibibi</description>
     </item>
     <item>
-      <title>Himantes</title>
-      <link>http://localhost:1313/projects/bachelor_thesis/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/bachelor_thesis/</guid>
+      <title>Tosach</title>
+      <link>http://localhost:1313/projects/tosach/</link>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/tosach/</guid>
       <description>booboboaoba</description>
     </item>
     <item>
       <title>Himantes</title>
       <link>http://localhost:1313/projects/himantes/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/himantes/</guid>
+      <description>booboboaoba</description>
+    </item>
+    <item>
+      <title>Stumberg</title>
+      <link>http://localhost:1313/projects/stumberg/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/stumberg/</guid>
+      <description>bibibibi</description>
+    </item>
+    <item>
+      <title>Bachelor Thesis</title>
+      <link>http://localhost:1313/projects/bachelor_thesis/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/bachelor_thesis/</guid>
       <description>booboboaoba</description>
     </item>
   </channel>

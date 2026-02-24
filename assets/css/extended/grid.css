@@ -1,12 +1,15 @@
-/* Target PaperMod's native list wrapper */
-.post-entry {
+/* Widen the content area on the projects page */
+.projects-grid~*,
+.main:has(.projects-grid) {
+  max-width: 1200px;
+}
+
+.projects-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
 }
 
-/* Override PaperMod's list container to be a grid */
-main > .post-entry,
-#searchResults > .post-entry {
-  /* PaperMod stacks these — we reflow them */
+.projects-grid .post-entry {
+  margin: 0;
 }
-
-/* Wrap them at the parent level */
