@@ -9,4 +9,4 @@ So I decided to make a change. I quit my job, and decided to take some time off 
 
 Below is a display of some of these projects, big or small they each taught me something valuable, and I hope you enjoy reading about them.
 
-What might stand out to you is their naming. I've taken a bit of inspiration from military codenames, and given each project a codename related in some way to things I'm interested in. I've always found it cool, it sounds bit more mysterious and captivating than just "CNN" or "AI Agent", although I will admit it does tank the clarity a bit hahah.
+What might stand out to you is their naming. I've taken a bit of inspiration from military codenames, and given each project a codename related in some way to things I'm interested in. I've always found it cool, it sounds bit more mysterious and captivating than just "CNN" or "AI Agent", although I will admit it does tank the clarity a bit.
