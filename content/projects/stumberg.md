@@ -3,7 +3,7 @@ title: "Stumberg"
 date: 2025-12-03
 draft: false
 tags: ["ML", "Python", "AI"]
-summary: "bibibibi"
+summary: "Personal AI Agent"
 ---
 
 

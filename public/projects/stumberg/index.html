@@ -1,329 +1,331 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Stumberg - Hugo Sokolowski-Katzer</title><meta name="author" content="Hugo Katzer">
+<meta name="description" content="Personal AI Agent"><meta name="keywords" content='ML, Python, AI'>
+  <meta itemprop="name" content="Stumberg">
+  <meta itemprop="description" content="Personal AI Agent">
+  <meta itemprop="datePublished" content="2025-12-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-03T00:00:00+00:00">
+  <meta itemprop="wordCount" content="576">
+  <meta itemprop="keywords" content="ML,Python,AI"><meta property="og:url" content="http://localhost:1313/projects/stumberg/">
+  <meta property="og:site_name" content="Hugo Sokolowski-Katzer">
+  <meta property="og:title" content="Stumberg">
+  <meta property="og:description" content="Personal AI Agent">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2025-12-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-03T00:00:00+00:00">
+    <meta property="article:tag" content="ML">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="AI">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Stumberg | </title>
-<meta name="keywords" content="ML, Python, AI">
-<meta name="description" content="bibibibi">
-<meta name="author" content="Hugo Katzer">
-<link rel="canonical" href="http://localhost:1313/projects/stumberg/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.87c732527cf399916c3083f640d89eee4d925c5554e8ed7062439ebac7da1497.css" integrity="sha256-h8cyUnzzmZFsMIP2QNie7k2SXFVU6O1wYkOeusfaFJc=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/stumberg/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-</head>
-<body id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/" title="Home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/blog" title="Blog">
-                    <span>Blog</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/projects" title="Projects">
-                    <span>Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/about" title="About me">
-                    <span>About me</span>
-                </a>
-            </li>
-        </ul>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Stumberg">
+  <meta name="twitter:description" content="Personal AI Agent">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/projects/stumberg/" title="Stumberg - Hugo Sokolowski-Katzer" /><link rel="prev" type="text/html" href="http://localhost:1313/projects/bachelor_thesis/" title="Bachelor Thesis" /><link rel="next" type="text/html" href="http://localhost:1313/projects/himantes/" title="Himantes" /><link rel="alternate" type="text/markdown" href="http://localhost:1313/projects/stumberg/index.md" title="Stumberg - Hugo Sokolowski-Katzer"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Stumberg",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/projects\/stumberg\/"
+    },"genre": "projects","keywords": "ML, Python, AI","wordcount":  576 ,
+    "url": "http:\/\/localhost:1313\/projects\/stumberg\/","datePublished": "2025-12-03T00:00:00+00:00","dateModified": "2025-12-03T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Hugo Katzer"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokolowski-Katzer</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/">Home</a></li><li class="menu-item">
+              <a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item">
+              <a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/">About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></li></ul>
     </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/projects/">Projects</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Stumberg
-    </h1>
-    <div class="post-meta"><span title='2025-12-03 00:00:00 +0000 UTC'>December 3, 2025</span>&nbsp;·&nbsp;<span>Hugo Katzer</span>
-
-</div>
-  </header> 
-  <div class="post-content"><blockquote>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokolowski-Katzer</span></a><span class="header-subtitle"></span></div>
+      <div class="theme-switch" role="button" aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></div>
+      <div class="menu-toggle" id="menu-toggle-mobile" role="button" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/">Home</a></li><li class="menu-item"><a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item"><a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item"><a class="menu-link" href="/about/">About me</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item" data-separator="/"><a href="/projects/" title="Projects">Projects</a></li><li class="breadcrumb-item active" data-separator="/" aria-current="page">Stumberg</li>
+    </ol>
+  </nav><main class="fi-container"><article class="page single special">
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Stumberg</h1></div><div class="content" id="content"><blockquote>
 <p>A modular, multi-mode AI assistant built with <strong>LangGraph</strong> and <strong>LangChain</strong>.<br>
 Intelligent, context-aware responses through a Streamlit web interface — with specialized modes for shopping, research, coding, and fast retrieval.</p>
 </blockquote>
 <hr>
-<h2 id="-features">✨ Features<a hidden class="anchor" aria-hidden="true" href="#-features">#</a></h2>
-<table>
-  <thead>
-      <tr>
-          <th>Feature</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Multi-Mode Operation</strong></td>
-          <td>Four distinct modes with tailored system prompts, model selection, and tool access</td>
-      </tr>
-      <tr>
-          <td><strong>Persistent Conversations</strong></td>
-          <td>PostgreSQL-backed state with thread-based history and automatic checkpointing</td>
-      </tr>
-      <tr>
-          <td><strong>File Context</strong></td>
-          <td>Per-conversation uploads (txt, md, py, json, pdf) injected into system prompts</td>
-      </tr>
-      <tr>
-          <td><strong>Search Subagent</strong></td>
-          <td>Dedicated subagent with web, Reddit, subreddit, and r/BuyItForLife search</td>
-      </tr>
-      <tr>
-          <td><strong>Vector Search (RAG)</strong></td>
-          <td>Pinecone-powered semantic retrieval for knowledge base querying</td>
-      </tr>
-      <tr>
-          <td><strong>Weather</strong></td>
-          <td>Real-time, location-based weather via Open-Meteo</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="-modes">🎛️ Modes<a hidden class="anchor" aria-hidden="true" href="#-modes">#</a></h2>
-<table>
-  <thead>
-      <tr>
-          <th>Mode</th>
-          <th>Model</th>
-          <th>Purpose</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Personal</strong></td>
-          <td>GPT-4o</td>
-          <td>Shopping &amp; lifestyle — Reddit + r/BuyItForLife integration</td>
-      </tr>
-      <tr>
-          <td><strong>Work</strong></td>
-          <td>GPT-4o</td>
-          <td>Factual research &amp; study — no assumptions</td>
-      </tr>
-      <tr>
-          <td><strong>Code</strong></td>
-          <td>GPT-4o</td>
-          <td>Code creation, debugging &amp; optimization — full output, no fluff</td>
-      </tr>
-      <tr>
-          <td><strong>Fast</strong></td>
-          <td>GPT-4.1-nano</td>
-          <td>Ultra-fast, minimal responses</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="-architecture">🏗️ Architecture<a hidden class="anchor" aria-hidden="true" href="#-architecture">#</a></h2>
-<p>LangGraph state machine with the following flow:</p>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph LR
-    A[Streamlit UI] --&gt; B[Agent Graph]
-    B --&gt; C{Tool Routing}
-    C --&gt; D[Weather Tool]
-    C --&gt; E[Vector Search]
-    C --&gt; F[Search Subagent]
-    F --&gt; G[Web Search]
-    F --&gt; H[Reddit Search]
-    F --&gt; I[Subreddit Search]
-    F --&gt; J[BuyForLife Search]
-    B --&gt; K[(PostgreSQL)]
-</code></pre><h3 id="tools">Tools<a hidden class="anchor" aria-hidden="true" href="#tools">#</a></h3>
-<table>
-  <thead>
-      <tr>
-          <th>Tool</th>
-          <th>Source</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>get_weather</code></td>
-          <td>Open-Meteo API</td>
-          <td>Real-time weather data</td>
-      </tr>
-      <tr>
-          <td><code>retrieve_context</code></td>
-          <td>Pinecone</td>
-          <td>Vector search for RAG</td>
-      </tr>
-      <tr>
-          <td><code>ask_search_agent</code></td>
-          <td>Search Subagent</td>
-          <td>Delegates to specialized search tools ↓</td>
-      </tr>
-      <tr>
-          <td>↳ <code>general_search</code></td>
-          <td>LinkupClient</td>
-          <td>Web search</td>
-      </tr>
-      <tr>
-          <td>↳ <code>reddit_search</code></td>
-          <td>PRAW</td>
-          <td>Reddit-wide search</td>
-      </tr>
-      <tr>
-          <td>↳ <code>subreddit_search</code></td>
-          <td>PRAW</td>
-          <td>Targeted subreddit search</td>
-      </tr>
-      <tr>
-          <td>↳ <code>buyforlife_search</code></td>
-          <td>PRAW</td>
-          <td>r/BuyItForLife scraping</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="-tech-stack">🛠️ Tech Stack<a hidden class="anchor" aria-hidden="true" href="#-tech-stack">#</a></h2>
-<table>
-  <thead>
-      <tr>
-          <th>Layer</th>
-          <th>Technology</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Orchestration</strong></td>
-          <td>LangGraph</td>
-      </tr>
-      <tr>
-          <td><strong>LLM Framework</strong></td>
-          <td>LangChain</td>
-      </tr>
-      <tr>
-          <td><strong>UI</strong></td>
-          <td>Streamlit</td>
-      </tr>
-      <tr>
-          <td><strong>Database</strong></td>
-          <td>PostgreSQL (<code>langgraph.checkpoint.postgres</code>)</td>
-      </tr>
-      <tr>
-          <td><strong>Models</strong></td>
-          <td>GPT-4o, GPT-4.1-nano (OpenAI)</td>
-      </tr>
-      <tr>
-          <td><strong>Vector DB</strong></td>
-          <td>Pinecone</td>
-      </tr>
-      <tr>
-          <td><strong>Web Search</strong></td>
-          <td>LinkupClient</td>
-      </tr>
-      <tr>
-          <td><strong>Reddit</strong></td>
-          <td>PRAW</td>
-      </tr>
-      <tr>
-          <td><strong>Weather</strong></td>
-          <td>Open-Meteo API</td>
-      </tr>
-      <tr>
-          <td><strong>Tracing</strong></td>
-          <td>LangSmith <em>(optional)</em></td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="-project-structure">📁 Project Structure<a hidden class="anchor" aria-hidden="true" href="#-project-structure">#</a></h2>
-<pre tabindex="0"><code>Stumberg/
+<h2 class="heading-element" id="-features"><span>✨ Features</span>
+  <a href="#-features" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Multi-Mode Operation</strong></td>
+            <td>Four distinct modes with tailored system prompts, model selection, and tool access</td>
+        </tr>
+        <tr>
+            <td><strong>Persistent Conversations</strong></td>
+            <td>PostgreSQL-backed state with thread-based history and automatic checkpointing</td>
+        </tr>
+        <tr>
+            <td><strong>File Context</strong></td>
+            <td>Per-conversation uploads (txt, md, py, json, pdf) injected into system prompts</td>
+        </tr>
+        <tr>
+            <td><strong>Search Subagent</strong></td>
+            <td>Dedicated subagent with web, Reddit, subreddit, and r/BuyItForLife search</td>
+        </tr>
+        <tr>
+            <td><strong>Vector Search (RAG)</strong></td>
+            <td>Pinecone-powered semantic retrieval for knowledge base querying</td>
+        </tr>
+        <tr>
+            <td><strong>Weather</strong></td>
+            <td>Real-time, location-based weather via Open-Meteo</td>
+        </tr>
+    </tbody>
+  </table>
+</div><hr>
+<h2 class="heading-element" id="-modes"><span>🎛️ Modes</span>
+  <a href="#-modes" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Mode</th>
+            <th>Model</th>
+            <th>Purpose</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Personal</strong></td>
+            <td>GPT-4o</td>
+            <td>Shopping &amp; lifestyle — Reddit + r/BuyItForLife integration</td>
+        </tr>
+        <tr>
+            <td><strong>Work</strong></td>
+            <td>GPT-4o</td>
+            <td>Factual research &amp; study — no assumptions</td>
+        </tr>
+        <tr>
+            <td><strong>Code</strong></td>
+            <td>GPT-4o</td>
+            <td>Code creation, debugging &amp; optimization — full output, no fluff</td>
+        </tr>
+        <tr>
+            <td><strong>Fast</strong></td>
+            <td>GPT-4.1-nano</td>
+            <td>Ultra-fast, minimal responses</td>
+        </tr>
+    </tbody>
+  </table>
+</div><hr>
+<h2 class="heading-element" id="-architecture"><span>🏗️ Architecture</span>
+  <a href="#-architecture" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>LangGraph state machine with the following flow:</p>
+<div class="diagram-container">
+  <pre class="mermaid">graph LR
+    A[Streamlit UI] --> B[Agent Graph]
+    B --> C{Tool Routing}
+    C --> D[Weather Tool]
+    C --> E[Vector Search]
+    C --> F[Search Subagent]
+    F --> G[Web Search]
+    F --> H[Reddit Search]
+    F --> I[Subreddit Search]
+    F --> J[BuyForLife Search]
+    B --> K[(PostgreSQL)]</pre>
+  <pre class="mermaid-dark">graph LR
+    A[Streamlit UI] --> B[Agent Graph]
+    B --> C{Tool Routing}
+    C --> D[Weather Tool]
+    C --> E[Vector Search]
+    C --> F[Search Subagent]
+    F --> G[Web Search]
+    F --> H[Reddit Search]
+    F --> I[Subreddit Search]
+    F --> J[BuyForLife Search]
+    B --> K[(PostgreSQL)]</pre>
+  <pre class="mermaid-neutral">graph LR
+    A[Streamlit UI] --> B[Agent Graph]
+    B --> C{Tool Routing}
+    C --> D[Weather Tool]
+    C --> E[Vector Search]
+    C --> F[Search Subagent]
+    F --> G[Web Search]
+    F --> H[Reddit Search]
+    F --> I[Subreddit Search]
+    F --> J[BuyForLife Search]
+    B --> K[(PostgreSQL)]</pre><div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"><i class="fa-regular fa-clone fa-width-auto" aria-hidden="true"></i></div>
+<template><pre>graph LR
+    A[Streamlit UI] --> B[Agent Graph]
+    B --> C{Tool Routing}
+    C --> D[Weather Tool]
+    C --> E[Vector Search]
+    C --> F[Search Subagent]
+    F --> G[Web Search]
+    F --> H[Reddit Search]
+    F --> I[Subreddit Search]
+    F --> J[BuyForLife Search]
+    B --> K[(PostgreSQL)]</pre></template>
+</div><h3 class="heading-element" id="tools"><span>Tools</span>
+  <a href="#tools" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Tool</th>
+            <th>Source</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>get_weather</code></td>
+            <td>Open-Meteo API</td>
+            <td>Real-time weather data</td>
+        </tr>
+        <tr>
+            <td><code>retrieve_context</code></td>
+            <td>Pinecone</td>
+            <td>Vector search for RAG</td>
+        </tr>
+        <tr>
+            <td><code>ask_search_agent</code></td>
+            <td>Search Subagent</td>
+            <td>Delegates to specialized search tools ↓</td>
+        </tr>
+        <tr>
+            <td>↳ <code>general_search</code></td>
+            <td>LinkupClient</td>
+            <td>Web search</td>
+        </tr>
+        <tr>
+            <td>↳ <code>reddit_search</code></td>
+            <td>PRAW</td>
+            <td>Reddit-wide search</td>
+        </tr>
+        <tr>
+            <td>↳ <code>subreddit_search</code></td>
+            <td>PRAW</td>
+            <td>Targeted subreddit search</td>
+        </tr>
+        <tr>
+            <td>↳ <code>buyforlife_search</code></td>
+            <td>PRAW</td>
+            <td>r/BuyItForLife scraping</td>
+        </tr>
+    </tbody>
+  </table>
+</div><hr>
+<h2 class="heading-element" id="-tech-stack"><span>🛠️ Tech Stack</span>
+  <a href="#-tech-stack" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Layer</th>
+            <th>Technology</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Orchestration</strong></td>
+            <td>LangGraph</td>
+        </tr>
+        <tr>
+            <td><strong>LLM Framework</strong></td>
+            <td>LangChain</td>
+        </tr>
+        <tr>
+            <td><strong>UI</strong></td>
+            <td>Streamlit</td>
+        </tr>
+        <tr>
+            <td><strong>Database</strong></td>
+            <td>PostgreSQL (<code>langgraph.checkpoint.postgres</code>)</td>
+        </tr>
+        <tr>
+            <td><strong>Models</strong></td>
+            <td>GPT-4o, GPT-4.1-nano (OpenAI)</td>
+        </tr>
+        <tr>
+            <td><strong>Vector DB</strong></td>
+            <td>Pinecone</td>
+        </tr>
+        <tr>
+            <td><strong>Web Search</strong></td>
+            <td>LinkupClient</td>
+        </tr>
+        <tr>
+            <td><strong>Reddit</strong></td>
+            <td>PRAW</td>
+        </tr>
+        <tr>
+            <td><strong>Weather</strong></td>
+            <td>Open-Meteo API</td>
+        </tr>
+        <tr>
+            <td><strong>Tracing</strong></td>
+            <td>LangSmith <em>(optional)</em></td>
+        </tr>
+    </tbody>
+  </table>
+</div><hr>
+<h2 class="heading-element" id="-project-structure"><span>📁 Project Structure</span>
+  <a href="#-project-structure" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><pre tabindex="0"><code>Stumberg/
 ├── app.py                  # Streamlit interface
 ├── main.py                 # CLI entry point
 ├── graph.py                # LangGraph agent graph
@@ -342,133 +344,112 @@ Intelligent, context-aware responses through a Streamlit web interface — with 
 ├── Dockerfile
 ├── requirements.txt
 ├── langgraph.json          # LangGraph deployment config
-└── ROADMAP.md
-</code></pre><hr>
-<h2 id="-getting-started">🚀 Getting Started<a hidden class="anchor" aria-hidden="true" href="#-getting-started">#</a></h2>
-<h3 id="prerequisites">Prerequisites<a hidden class="anchor" aria-hidden="true" href="#prerequisites">#</a></h3>
-<ul>
+└── ROADMAP.md</code></pre><hr>
+<h2 class="heading-element" id="-getting-started"><span>🚀 Getting Started</span>
+  <a href="#-getting-started" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="prerequisites"><span>Prerequisites</span>
+  <a href="#prerequisites" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
 <li>Python 3.10+</li>
 <li>PostgreSQL</li>
 <li>OpenAI API key</li>
 </ul>
-<h3 id="install">Install<a hidden class="anchor" aria-hidden="true" href="#install">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -r requirements.txt
-</span></span></code></pre></div><h3 id="configure">Configure<a hidden class="anchor" aria-hidden="true" href="#configure">#</a></h3>
-<p>Create a <code>.env</code> file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-env" data-lang="env"><span style="display:flex;"><span><span style="color:#75715e"># Required</span>
-</span></span><span style="display:flex;"><span>OPENAI_API_KEY<span style="color:#f92672">=</span>your_key
-</span></span><span style="display:flex;"><span>DB_URI<span style="color:#f92672">=</span>postgresql://user:password@host:port/database
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Optional</span>
-</span></span><span style="display:flex;"><span>PINECONE_API_KEY<span style="color:#f92672">=</span>your_key
-</span></span><span style="display:flex;"><span>LINKUP_API_KEY<span style="color:#f92672">=</span>your_key
-</span></span><span style="display:flex;"><span>LANGCHAIN_API_KEY<span style="color:#f92672">=</span>your_key
-</span></span><span style="display:flex;"><span>LANGCHAIN_PROJECT<span style="color:#f92672">=</span>your_project
-</span></span><span style="display:flex;"><span>CONVERSATION_DATA_PATH<span style="color:#f92672">=</span>/path/to/conversation/data
-</span></span></code></pre></div><h3 id="run">Run<a hidden class="anchor" aria-hidden="true" href="#run">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Streamlit UI</span>
-</span></span><span style="display:flex;"><span>streamlit run app.py
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># CLI</span>
-</span></span><span style="display:flex;"><span>python main.py
-</span></span></code></pre></div><h3 id="docker">Docker<a hidden class="anchor" aria-hidden="true" href="#docker">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -t stumberg-agent .
-</span></span><span style="display:flex;"><span>docker run -p 8501:8501 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>  -v /path/to/data:/host_e/conversation_data <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>  --env-file .env <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>  stumberg-agent
-</span></span></code></pre></div><hr>
-<h2 id="-license">📄 License<a hidden class="anchor" aria-hidden="true" href="#-license">#</a></h2>
-<p>Personal use and experimentation.</p>
-
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/ml/">ML</a></li>
-      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
-      <li><a href="http://localhost:1313/tags/ai/">AI</a></li>
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/"></a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
+<h3 class="heading-element" id="install"><span>Install</span>
+  <a href="#install" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-bash"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install -r requirements.txt</span></span></code></pre></td></tr></table></div>
+</div>
+</div><h3 class="heading-element" id="configure"><span>Configure</span>
+  <a href="#configure" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Create a <code>.env</code> file:</p>
+<div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-env"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="2" style="--fi-max-shown-lines:10;--fi-line-digit:2;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-env" data-lang="env"><span class="line"><span class="cl"><span class="c1"># Required</span>
+</span></span><span class="line"><span class="cl"><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>your_key
+</span></span><span class="line"><span class="cl"><span class="nv">DB_URI</span><span class="o">=</span>postgresql://user:password@host:port/database
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Optional</span>
+</span></span><span class="line"><span class="cl"><span class="nv">PINECONE_API_KEY</span><span class="o">=</span>your_key
+</span></span><span class="line"><span class="cl"><span class="nv">LINKUP_API_KEY</span><span class="o">=</span>your_key
+</span></span><span class="line"><span class="cl"><span class="nv">LANGCHAIN_API_KEY</span><span class="o">=</span>your_key
+</span></span><span class="line"><span class="cl"><span class="nv">LANGCHAIN_PROJECT</span><span class="o">=</span>your_project
+</span></span><span class="line"><span class="cl"><span class="nv">CONVERSATION_DATA_PATH</span><span class="o">=</span>/path/to/conversation/data</span></span></code></pre></td></tr></table></div>
+</div>
+</div><h3 class="heading-element" id="run"><span>Run</span>
+  <a href="#run" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-bash"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Streamlit UI</span>
+</span></span><span class="line"><span class="cl">streamlit run app.py
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># CLI</span>
+</span></span><span class="line"><span class="cl">python main.py</span></span></code></pre></td></tr></table></div>
+</div>
+</div><h3 class="heading-element" id="docker"><span>Docker</span>
+  <a href="#docker" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-bash"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker build -t stumberg-agent .
+</span></span><span class="line"><span class="cl">docker run -p 8501:8501 <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -v /path/to/data:/host_e/conversation_data <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --env-file .env <span class="se">\
+</span></span></span><span class="line"><span class="cl">  stumberg-agent</span></span></code></pre></td></tr></table></div>
+</div>
+</div><hr>
+<h2 class="heading-element" id="-license"><span>📄 License</span>
+  <a href="#-license" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Personal use and experimentation.</p>
+</div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.156.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.3-20260130042349-e23a50d7"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025 - 2026</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Hugo Katzer</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config/ab21298dab80e2b7f67b642f45b30b8f.js" defer></script><script src="/js/lib/mermaid.js" type="module"></script><script src="/js/theme.min.js" defer></script></body>
 </html>

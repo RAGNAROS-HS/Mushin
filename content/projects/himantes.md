@@ -2,8 +2,8 @@
 title: "Himantes"
 date: 2026-01-22
 draft: false
-tags: ["ML", "Python", "AI"]
-summary: "booboboaoba"
+tags: ["CNN", "GAN", "PyTorch"]
+summary: "Pokemon Classifier and Generator"
 ---
 
 

@@ -2,8 +2,8 @@
 title: "Bachelor Thesis"
 date: 2025-06-01
 draft: false
-tags: ["ML", "Python", "AI"]
-summary: "booboboaoba"
+tags: ["CNN", "Pytorch", "VertexAI"]
+summary: "Detecting collapsed buildings using UNET++"
 ---
 
 > The best way to understand what went on in this one is to read through the thesis itself:

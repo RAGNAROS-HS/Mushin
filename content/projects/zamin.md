@@ -3,13 +3,9 @@
 title: "Zamin"
 date: 2026-02-11
 draft: false
-tags: ["ML", "Python", "AI"]
-summary: "bibibibi"
+tags: ["NN", "Python", "Linear Regression"]
+summary: "Back to basics ML algorithms from scratch"
 ---
-
-
-
-> *"Back to basics"* — Implementing various ML algorithms from scratch with a pure, low-level approach, and coparing them against each other.
 
 ## Overview
 
@@ -50,19 +46,19 @@ This project explores **housing price prediction** on the Boston Housing dataset
 
 Histograms for all 14 variables in the dataset:
 
-| | | | |
-|:---:|:---:|:---:|:---:|
-| ![CRIM](/img/CRIM.png) | ![ZN](/img/ZN.png) | ![INDUS](/img/INDUS.png) | ![CHAS](/img/CHAS.png) |
-| ![NOX](/img/NOX.png) | ![RM](/img/RM.png) | ![AGE](/img/AGE.png) | ![DIS](/img/DIS.png) |
-| ![RAD](/img/RAD.png) | ![TAX](/img/TAX.png) | ![PTRATIO](/img/PTRATIO.png) | ![B](/img/B.png) |
-| ![LSTAT](/img/LSTAT.png) | ![MEDV](/img/MEDV.png) | | |
+|                          |                        |                              |                        |
+| :----------------------: | :--------------------: | :--------------------------: | :--------------------: |
+|  ![CRIM](/img/CRIM.png)  |   ![ZN](/img/ZN.png)   |   ![INDUS](/img/INDUS.png)   | ![CHAS](/img/CHAS.png) |
+|   ![NOX](/img/NOX.png)   |   ![RM](/img/RM.png)   |     ![AGE](/img/AGE.png)     |  ![DIS](/img/DIS.png)  |
+|   ![RAD](/img/RAD.png)   |  ![TAX](/img/TAX.png)  | ![PTRATIO](/img/PTRATIO.png) |    ![B](/img/B.png)    |
+| ![LSTAT](/img/LSTAT.png) | ![MEDV](/img/MEDV.png) |                              |                        |
 
 ### Correlation Analysis
 
-| | |
-| :----------------------------------------------------------: | :----------------------------------------------------------------: |
+|                                               |                                                     |
+| :-------------------------------------------: | :-------------------------------------------------: |
 | ![Correlation Heatmap](/img/corr_heatmap.png) | ![Correlation Clustermap](/img/corr_clustermap.png) |
-| *Standard correlation heatmap* | *Hierarchical clustered correlation map* |
+|        *Standard correlation heatmap*         |      *Hierarchical clustered correlation map*       |
 
 **Key correlations with MEDV (target):**
 - **Strong positive:** `RM` (rooms) — more rooms → higher price
@@ -131,17 +127,17 @@ Scaffolded in `EvolutionaryAlgorithm.py` — evolves neural network weights usin
 
 ### Training Loss Curves
 
-| | | |
+|                                                      |                                                                  |                                              |
 | :--------------------------------------------------: | :--------------------------------------------------------------: | :------------------------------------------: |
-| ![GD Loss](/img/gd_loss.png) | ![NN Loss](/img/nn_loss.png) | ![EA Loss](/img/ea_loss.png) |
+|             ![GD Loss](/img/gd_loss.png)             |                   ![NN Loss](/img/nn_loss.png)                   |         ![EA Loss](/img/ea_loss.png)         |
 | *Gradient descent MSE convergence over ~1200 epochs* | *NN train/validation loss over ~50 epochs (with early stopping)* | *EA fitness convergence over 50 generations* |
 
 ### Test Set Predictions — Actual vs Predicted
 
-| | | |
-| :----------------------------------------------: | :------------------------------------------: | :------------------------------------------: |
+|                                      |                                         |                                         |
+| :----------------------------------: | :-------------------------------------: | :-------------------------------------: |
 | ![GD Scatter](/img/test_scatter.png) | ![NN Scatter](/img/nn_test_scatter.png) | ![EA Scatter](/img/ea_test_scatter.png) |
-| *Gradient descent predictions* | *Neural network predictions* | *Evolutionary algorithm predictions* |
+|    *Gradient descent predictions*    |      *Neural network predictions*       |  *Evolutionary algorithm predictions*   |
 
 Points closer to the red dashed line (y = x) indicate better predictions. The neural network shows tighter clustering around the ideal line, especially in the mid-range values.
 
