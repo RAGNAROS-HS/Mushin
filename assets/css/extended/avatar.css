@@ -6,6 +6,7 @@
     border-radius: 50% !important;
 }
 
-[data-theme='light'] .home .home-profile .home-avatar img {
+/* Invert colors in light mode (default or explicit) */
+:root:not([data-theme='dark']) .home .home-profile .home-avatar img {
     filter: invert(100%);
 }
