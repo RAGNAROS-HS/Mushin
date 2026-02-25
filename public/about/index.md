@@ -90,5 +90,5 @@ Beyond academics and work I pursue a couple of things, but most notably Brazilia
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/about/  
+> URL: http://localhost:1313/about/  
 

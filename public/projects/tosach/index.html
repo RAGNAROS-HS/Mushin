@@ -1,16 +1,204 @@
-<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=2"><meta name=robots content="noodp"><title>Tosach - Hugo Sokolowski-Katzer</title><meta name=author content="Hugo Sokołowski-Katzer"><meta name=description content="Text recognition using CRNN"><meta name=keywords content='ML,Python,AI'><meta itemprop=name content="Tosach"><meta itemprop=description content="Text recognition using CRNN"><meta itemprop=datePublished content="2026-01-27T00:00:00+00:00"><meta itemprop=dateModified content="2026-01-27T00:00:00+00:00"><meta itemprop=wordCount content="340"><meta itemprop=keywords content="ML,Python,AI"><meta property="og:url" content="https://hugokatzer.tech/projects/tosach/"><meta property="og:site_name" content="Hugo Sokolowski-Katzer"><meta property="og:title" content="Tosach"><meta property="og:description" content="Text recognition using CRNN"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="projects"><meta property="article:published_time" content="2026-01-27T00:00:00+00:00"><meta property="article:modified_time" content="2026-01-27T00:00:00+00:00"><meta property="article:tag" content="ML"><meta property="article:tag" content="Python"><meta property="article:tag" content="AI"><meta name=twitter:card content="summary"><meta name=twitter:title content="Tosach"><meta name=twitter:description content="Text recognition using CRNN"><meta name=application-name content="FixIt"><meta name=apple-mobile-web-app-title content="FixIt"><meta name=theme-color data-light=#f8f8f8 data-dark=#252627 content="#f8f8f8"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/img/stumlogoLookingLeft.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical type=text/html href=https://hugokatzer.tech/projects/tosach/ title="Tosach - Hugo Sokolowski-Katzer"><link rel=prev type=text/html href=https://hugokatzer.tech/projects/goswin/ title=Goswin><link rel=next type=text/html href=https://hugokatzer.tech/projects/zamin/ title=Zamin><link rel=alternate type=text/markdown href=https://hugokatzer.tech/projects/tosach/index.md title="Tosach - Hugo Sokolowski-Katzer"><link rel=stylesheet href=/css/config.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload href=/lib/fontawesome-free/all.min.css as=style onload='this.removeAttribute("onload"),this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload href=/lib/animate/animate.min.css as=style onload='this.removeAttribute("onload"),this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Tosach","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugokatzer.tech\/projects\/tosach\/"},"genre":"projects","keywords":"ML, Python, AI","wordcount":340,"url":"https:\/\/hugokatzer.tech\/projects\/tosach\/","datePublished":"2026-01-27T00:00:00+00:00","dateModified":"2026-01-27T00:00:00+00:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Hugo Sokołowski-Katzer"},"description":""}</script><script src=/js/head/color-scheme.min.js></script></head><body data-instant-intensity=viewport data-header-desktop=fixed data-header-mobile=auto><div class=wrapper data-page-style=normal><header class="desktop animate__faster" id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Hugo Sokolowski-Katzer"><span class=header-title-text>Hugo Sokołowski-Katzer</span></a><span class=header-subtitle></span></div><nav><ul class=menu><li class=menu-item><a class=menu-link href=/>Home</a></li><li class=menu-item><a class=menu-link href=/devlog/>Devlog</a></li><li class=menu-item><a class=menu-link href=/projects/>Projects</a></li><li class=menu-item><a class=menu-link href=/about/>About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role=button aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden=true></i></li></ul></nav></div></header><header class="mobile animate__faster" id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Hugo Sokolowski-Katzer"><span class=header-title-text>Hugo Sokołowski-Katzer</span></a><span class=header-subtitle></span></div><div class=theme-switch role=button aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden=true></i></div><div class=menu-toggle id=menu-toggle-mobile role=button aria-labelledby=menu-mobile><span></span><span></span><span></span></div></div><nav><ul class=menu id=menu-mobile><li class=menu-item><a class=menu-link href=/>Home</a></li><li class=menu-item><a class=menu-link href=/devlog/>Devlog</a></li><li class=menu-item><a class=menu-link href=/projects/>Projects</a></li><li class=menu-item><a class=menu-link href=/about/>About me</a></li><li class="menu-item menu-system"></li></ul></nav></div></header><nav aria-label=breadcrumb class=breadcrumb-container><ol class=breadcrumb><li class=breadcrumb-item data-separator=/><a href=/projects/ title=Projects>Projects</a></li><li class="breadcrumb-item active" data-separator=/ aria-current=page>Tosach</li></ol></nav><main class=fi-container><article class="page single special"><div class=header><h1 class="single-title animate__animated animate__pulse animate__faster">Tosach</h1></div><div class=content id=content><p>Implementation of the CRNN (Convolutional Recurrent Neural Network) architecture from <a href=https://arxiv.org/abs/1507.05717 target=_blank rel="external nofollow noopener noreferrer">Shi et al., 2015</a> for end-to-end scene text recognition using TensorFlow/Keras.</p><blockquote><p><strong>Status: Limbo</strong> — Architecture is implemented, dataset is prepared, training has not been run yet. I went to great lengths to read up on the background material and set it up, but the scope of the project became too large. The dataset is huge and the compute required is equally extensive. I deployed the legacy approach of per-letter recognition, but the proper fully fledged CRNN is yet to be trained. I&rsquo;ll probably complete it once I am up for the challenge of getting VertexAI to work. For now I&rsquo;m pursuing smaller scale projects.</p></blockquote><h2 class=heading-element id=overview><span>Overview</span>
-<a href=#overview class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><p>The model recognizes text in natural scene images by combining:</p><ul><li><strong>CNN</strong> (VGG-style) for visual feature extraction</li><li><strong>Bidirectional LSTM</strong> for sequence modeling</li><li><strong>CTC loss</strong> for sequence-to-label transcription without character-level annotations</li></ul><h2 class=heading-element id=project-structure><span>Project Structure</span>
-<a href=#project-structure class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><div class=table-wrapper><table><thead><tr><th>File</th><th>Description</th></tr></thead><tbody><tr><td><code>train_crnn.py</code></td><td>CRNN model architecture + training pipeline</td></tr><tr><td><code>synthtiger_loader.py</code></td><td>Data loader for SynthTiger dataset (tf.data)</td></tr><tr><td><code>extract_synthtiger.py</code></td><td>Memory-efficient extractor for the large SynthTiger zip</td></tr><tr><td><code>study_content.txt</code></td><td>Extracted text from the reference paper</td></tr><tr><td><code>study.pdf</code></td><td>Original paper (Shi et al., 2015)</td></tr><tr><td><code>legacy/</code></td><td>Earlier prototype (deprecated)</td></tr></tbody></table></div><h2 class=heading-element id=dataset><span>Dataset</span>
-<a href=#dataset class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><p><strong>SynthTiger v1.0</strong> — synthetic text images with ground truth labels. The dataset is ~38GB and must be extracted before training.</p><div class="code-block highlight" data-mode=classic data-copyable=true><div class=chroma><div class="code-header language-bash"><span class=code-title><i class="arrow fa-solid fa-chevron-down" aria-hidden=true></i></span><span class=ellipses-btn aria-label="Show more options" role=button><i class="fa-solid fa-ellipsis-h" aria-hidden=true></i></span><span class=line-nos-btn aria-label="Toggle line numbers" role=button title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden=true></i></span><span class=line-wrap-btn aria-label="Toggle code wrap" role=button title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden=true></i></span><span class=copy-btn aria-label="Copy to clipboard" role=button title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden=true></i></span></div><div class=code-wrapper data-max=10 data-line-digit=1 style=--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>pip install stream-unzip
-</span></span><span class=line><span class=cl>python extract_synthtiger.py</span></span></code></pre></td></tr></table></div></div></div><h2 class=heading-element id=architecture-from-paper><span>Architecture (from paper)</span>
-<a href=#architecture-from-paper class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><pre tabindex=0><code>Input (W × 32 grayscale)
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Tosach - Hugo Sokolowski-Katzer</title><meta name="author" content="Hugo Sokołowski-Katzer">
+<meta name="description" content="Text recognition using CRNN"><meta name="keywords" content='ML, Python, AI'>
+  <meta itemprop="name" content="Tosach">
+  <meta itemprop="description" content="Text recognition using CRNN">
+  <meta itemprop="datePublished" content="2026-01-27T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-01-27T00:00:00+00:00">
+  <meta itemprop="wordCount" content="340">
+  <meta itemprop="keywords" content="ML,Python,AI"><meta property="og:url" content="http://localhost:1313/projects/tosach/">
+  <meta property="og:site_name" content="Hugo Sokolowski-Katzer">
+  <meta property="og:title" content="Tosach">
+  <meta property="og:description" content="Text recognition using CRNN">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2026-01-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-27T00:00:00+00:00">
+    <meta property="article:tag" content="ML">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="AI">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tosach">
+  <meta name="twitter:description" content="Text recognition using CRNN">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/stumlogoLookingLeft.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/projects/tosach/" title="Tosach - Hugo Sokolowski-Katzer" /><link rel="prev" type="text/html" href="http://localhost:1313/projects/goswin/" title="Goswin" /><link rel="next" type="text/html" href="http://localhost:1313/projects/zamin/" title="Zamin" /><link rel="alternate" type="text/markdown" href="http://localhost:1313/projects/tosach/index.md" title="Tosach - Hugo Sokolowski-Katzer"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Tosach",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/projects\/tosach\/"
+    },"genre": "projects","keywords": "ML, Python, AI","wordcount":  340 ,
+    "url": "http:\/\/localhost:1313\/projects\/tosach\/","datePublished": "2026-01-27T00:00:00+00:00","dateModified": "2026-01-27T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Hugo Sokołowski-Katzer"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/">Home</a></li><li class="menu-item">
+              <a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item">
+              <a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/">About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+      <div class="theme-switch" role="button" aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></div>
+      <div class="menu-toggle" id="menu-toggle-mobile" role="button" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/">Home</a></li><li class="menu-item"><a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item"><a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item"><a class="menu-link" href="/about/">About me</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item" data-separator="/"><a href="/projects/" title="Projects">Projects</a></li><li class="breadcrumb-item active" data-separator="/" aria-current="page">Tosach</li>
+    </ol>
+  </nav><main class="fi-container"><article class="page single special">
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Tosach</h1></div><div class="content" id="content"><p>Implementation of the CRNN (Convolutional Recurrent Neural Network) architecture from <a href="https://arxiv.org/abs/1507.05717" target="_blank" rel="external nofollow noopener noreferrer">Shi et al., 2015</a> for end-to-end scene text recognition using TensorFlow/Keras.</p>
+<blockquote>
+<p><strong>Status: Limbo</strong> — Architecture is implemented, dataset is prepared, training has not been run yet. I went to great lengths to read up on the background material and set it up, but the scope of the project became too large. The dataset is huge and the compute required is equally extensive. I deployed the legacy approach of per-letter recognition, but the proper fully fledged CRNN is yet to be trained. I&rsquo;ll probably complete it once I am up for the challenge of getting VertexAI to work. For now I&rsquo;m pursuing smaller scale projects.</p>
+</blockquote>
+<h2 class="heading-element" id="overview"><span>Overview</span>
+  <a href="#overview" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The model recognizes text in natural scene images by combining:</p>
+<ul>
+<li><strong>CNN</strong> (VGG-style) for visual feature extraction</li>
+<li><strong>Bidirectional LSTM</strong> for sequence modeling</li>
+<li><strong>CTC loss</strong> for sequence-to-label transcription without character-level annotations</li>
+</ul>
+<h2 class="heading-element" id="project-structure"><span>Project Structure</span>
+  <a href="#project-structure" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>File</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>train_crnn.py</code></td>
+            <td>CRNN model architecture + training pipeline</td>
+        </tr>
+        <tr>
+            <td><code>synthtiger_loader.py</code></td>
+            <td>Data loader for SynthTiger dataset (tf.data)</td>
+        </tr>
+        <tr>
+            <td><code>extract_synthtiger.py</code></td>
+            <td>Memory-efficient extractor for the large SynthTiger zip</td>
+        </tr>
+        <tr>
+            <td><code>study_content.txt</code></td>
+            <td>Extracted text from the reference paper</td>
+        </tr>
+        <tr>
+            <td><code>study.pdf</code></td>
+            <td>Original paper (Shi et al., 2015)</td>
+        </tr>
+        <tr>
+            <td><code>legacy/</code></td>
+            <td>Earlier prototype (deprecated)</td>
+        </tr>
+    </tbody>
+  </table>
+</div><h2 class="heading-element" id="dataset"><span>Dataset</span>
+  <a href="#dataset" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><strong>SynthTiger v1.0</strong> — synthetic text images with ground truth labels. The dataset is ~38GB and must be extracted before training.</p>
+<div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-bash"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install stream-unzip
+</span></span><span class="line"><span class="cl">python extract_synthtiger.py</span></span></code></pre></td></tr></table></div>
+</div>
+</div><h2 class="heading-element" id="architecture-from-paper"><span>Architecture (from paper)</span>
+  <a href="#architecture-from-paper" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><pre tabindex="0"><code>Input (W × 32 grayscale)
   → 7 Conv layers (64 → 512 maps) + BatchNorm + MaxPool
   → Map-to-Sequence
   → 2× Bidirectional LSTM (256 hidden units)
   → CTC Transcription
-  → Predicted text</code></pre><h2 class=heading-element id=legacy><span>Legacy</span>
-<a href=#legacy class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><p>The <code>legacy/</code> folder contains an earlier prototype that used a simpler per-character classification approach:</p><ul><li><strong>Simple CNN</strong> (Conv2D → MaxPool → Dense) trained on 28×28 grayscale character images from a Kaggle OCR dataset</li><li><strong>Per-character pipeline</strong>: segment individual characters → classify each with the CNN → concatenate results</li><li>Abandoned in favor of the CRNN approach, which handles full words end-to-end without character segmentation</li></ul><div class=table-wrapper><table><thead><tr><th>File</th><th>Purpose</th></tr></thead><tbody><tr><td><code>model_training.py</code></td><td>CNN classifier training (62 classes: A-Z, a-z, 0-9)</td></tr><tr><td><code>data_process.py</code></td><td>Sorts character images into class folders</td></tr><tr><td><code>run_inference.py</code></td><td>Runs predictions on validation samples</td></tr><tr><td><code>idea.md</code></td><td>Original project plan</td></tr></tbody></table></div></div></article></main><footer class=footer><div class=footer-container><div class="footer-line powered">Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreferrer" title="Hugo 0.156.0"><img class=hugo-icon src=/images/hugo.min.svg alt="Hugo logo"> Hugo</a> | Theme - <a href=https://github.com/hugo-fixit/FixIt target=_blank rel=external title="FixIt v0.4.3-20260130042349-e23a50d7"><img class=fixit-icon src=/images/fixit.min.svg alt="FixIt logo"> FixIt</a></div><div class="footer-line copyright" itemscope itemtype=http://schema.org/CreativeWork><i class="fa-regular fa-copyright" aria-hidden=true></i>
-<span itemprop=copyrightYear>2025 - 2026</span><span class=author itemprop=copyrightHolder>
-<a href=/>Hugo Sokołowski-Katzer</a></span></div></div></footer></div><div class=widgets><div class=fixed-buttons><div class="fixed-button back-to-top animate__faster d-none" role=button aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden=true></i></div></div><div id=mask></div><noscript><div class=noscript-warning>This website works best with JavaScript enabled.</div></noscript></div><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script src=/lib/cookieconsent/cookieconsent.min.js defer></script><script src=/js/config/3a070f3c24c234495a34912419b549c6.js defer></script><script src=/js/theme.min.js defer></script></body></html>
+  → Predicted text</code></pre><h2 class="heading-element" id="legacy"><span>Legacy</span>
+  <a href="#legacy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The <code>legacy/</code> folder contains an earlier prototype that used a simpler per-character classification approach:</p>
+<ul>
+<li><strong>Simple CNN</strong> (Conv2D → MaxPool → Dense) trained on 28×28 grayscale character images from a Kaggle OCR dataset</li>
+<li><strong>Per-character pipeline</strong>: segment individual characters → classify each with the CNN → concatenate results</li>
+<li>Abandoned in favor of the CRNN approach, which handles full words end-to-end without character segmentation</li>
+</ul>
+<div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>File</th>
+            <th>Purpose</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>model_training.py</code></td>
+            <td>CNN classifier training (62 classes: A-Z, a-z, 0-9)</td>
+        </tr>
+        <tr>
+            <td><code>data_process.py</code></td>
+            <td>Sorts character images into class folders</td>
+        </tr>
+        <tr>
+            <td><code>run_inference.py</code></td>
+            <td>Runs predictions on validation samples</td>
+        </tr>
+        <tr>
+            <td><code>idea.md</code></td>
+            <td>Original project plan</td>
+        </tr>
+    </tbody>
+  </table>
+</div></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.156.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.3-20260130042349-e23a50d7"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025 - 2026</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Hugo Sokołowski-Katzer</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config/3a070f3c24c234495a34912419b549c6.js" defer></script><script src="/js/theme.min.js" defer></script></body>
+</html>

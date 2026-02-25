@@ -1,7 +1,170 @@
-<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=2"><meta name=robots content="noodp"><title>Stumberg - Hugo Sokolowski-Katzer</title><meta name=author content="Hugo Sokołowski-Katzer"><meta name=description content="Personal AI Agent"><meta name=keywords content='ML,Python,AI'><meta itemprop=name content="Stumberg"><meta itemprop=description content="Personal AI Agent"><meta itemprop=datePublished content="2025-12-03T00:00:00+00:00"><meta itemprop=dateModified content="2025-12-03T00:00:00+00:00"><meta itemprop=wordCount content="725"><meta itemprop=keywords content="ML,Python,AI"><meta property="og:url" content="https://hugokatzer.tech/projects/stumberg/"><meta property="og:site_name" content="Hugo Sokolowski-Katzer"><meta property="og:title" content="Stumberg"><meta property="og:description" content="Personal AI Agent"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="projects"><meta property="article:published_time" content="2025-12-03T00:00:00+00:00"><meta property="article:modified_time" content="2025-12-03T00:00:00+00:00"><meta property="article:tag" content="ML"><meta property="article:tag" content="Python"><meta property="article:tag" content="AI"><meta name=twitter:card content="summary"><meta name=twitter:title content="Stumberg"><meta name=twitter:description content="Personal AI Agent"><meta name=application-name content="FixIt"><meta name=apple-mobile-web-app-title content="FixIt"><meta name=theme-color data-light=#f8f8f8 data-dark=#252627 content="#f8f8f8"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/img/stumlogoLookingLeft.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical type=text/html href=https://hugokatzer.tech/projects/stumberg/ title="Stumberg - Hugo Sokolowski-Katzer"><link rel=prev type=text/html href=https://hugokatzer.tech/projects/zamin/ title=Zamin><link rel=alternate type=text/markdown href=https://hugokatzer.tech/projects/stumberg/index.md title="Stumberg - Hugo Sokolowski-Katzer"><link rel=stylesheet href=/css/config.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload href=/lib/fontawesome-free/all.min.css as=style onload='this.removeAttribute("onload"),this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload href=/lib/animate/animate.min.css as=style onload='this.removeAttribute("onload"),this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Stumberg","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugokatzer.tech\/projects\/stumberg\/"},"genre":"projects","keywords":"ML, Python, AI","wordcount":725,"url":"https:\/\/hugokatzer.tech\/projects\/stumberg\/","datePublished":"2025-12-03T00:00:00+00:00","dateModified":"2025-12-03T00:00:00+00:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Hugo Sokołowski-Katzer"},"description":""}</script><script src=/js/head/color-scheme.min.js></script></head><body data-instant-intensity=viewport data-header-desktop=fixed data-header-mobile=auto><div class=wrapper data-page-style=normal><header class="desktop animate__faster" id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Hugo Sokolowski-Katzer"><span class=header-title-text>Hugo Sokołowski-Katzer</span></a><span class=header-subtitle></span></div><nav><ul class=menu><li class=menu-item><a class=menu-link href=/>Home</a></li><li class=menu-item><a class=menu-link href=/devlog/>Devlog</a></li><li class=menu-item><a class=menu-link href=/projects/>Projects</a></li><li class=menu-item><a class=menu-link href=/about/>About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role=button aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden=true></i></li></ul></nav></div></header><header class="mobile animate__faster" id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Hugo Sokolowski-Katzer"><span class=header-title-text>Hugo Sokołowski-Katzer</span></a><span class=header-subtitle></span></div><div class=theme-switch role=button aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden=true></i></div><div class=menu-toggle id=menu-toggle-mobile role=button aria-labelledby=menu-mobile><span></span><span></span><span></span></div></div><nav><ul class=menu id=menu-mobile><li class=menu-item><a class=menu-link href=/>Home</a></li><li class=menu-item><a class=menu-link href=/devlog/>Devlog</a></li><li class=menu-item><a class=menu-link href=/projects/>Projects</a></li><li class=menu-item><a class=menu-link href=/about/>About me</a></li><li class="menu-item menu-system"></li></ul></nav></div></header><nav aria-label=breadcrumb class=breadcrumb-container><ol class=breadcrumb><li class=breadcrumb-item data-separator=/><a href=/projects/ title=Projects>Projects</a></li><li class="breadcrumb-item active" data-separator=/ aria-current=page>Stumberg</li></ol></nav><main class=fi-container><article class="page single special"><div class=header><h1 class="single-title animate__animated animate__pulse animate__faster">Stumberg</h1></div><div class=content id=content><p>Stumberg is my crown jewel. It is my largest personal project so far, and the first in this series. The original idea was to replicate the functionality of chatgpt but tailored to my needs. I hated repeating myself all the time and trying to curb its agreeable responses, so I set out on this journey.</p><p>The final product was a working agent with multiple modes, persistent conversations, file context, and a search subagent, all tailored to me. Although I will admit that I have discontinued use and maintenence of the project, as the scope of the project just grew larger and larger, upkeep of API&rsquo;s bugfixing etc, all take lots of time, time which I wanted to spend learning other new things.</p><p>Also the usage was not that practical, booting up a docker container and running in localhost is not ideal, if I were to revisit this project I would definitely prioritize having CI/CD and a proper deployment pipeline.</p><p>Although the idea of stumberg was somewhat revived in my project &ldquo;Goswin&rdquo;, you can learn more about it <a href=/projects/goswin/>here</a>.</p><h2 class=heading-element id=-features><span>✨ Features</span>
-<a href=#-features class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><div class=table-wrapper><table><thead><tr><th>Feature</th><th>Description</th></tr></thead><tbody><tr><td><strong>Multi-Mode Operation</strong></td><td>Four distinct modes with tailored system prompts, model selection, and tool access</td></tr><tr><td><strong>Persistent Conversations</strong></td><td>PostgreSQL-backed state with thread-based history and automatic checkpointing</td></tr><tr><td><strong>File Context</strong></td><td>Per-conversation uploads (txt, md, py, json, pdf) injected into system prompts</td></tr><tr><td><strong>Search Subagent</strong></td><td>Dedicated subagent with web, Reddit, subreddit, and r/BuyItForLife search</td></tr><tr><td><strong>Vector Search (RAG)</strong></td><td>Pinecone-powered semantic retrieval for knowledge base querying</td></tr><tr><td><strong>Weather</strong></td><td>Real-time, location-based weather via Open-Meteo</td></tr></tbody></table></div><hr><h2 class=heading-element id=-modes><span>🎛️ Modes</span>
-<a href=#-modes class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><div class=table-wrapper><table><thead><tr><th>Mode</th><th>Model</th><th>Purpose</th></tr></thead><tbody><tr><td><strong>Personal</strong></td><td>GPT-4o</td><td>Shopping & lifestyle — Reddit + r/BuyItForLife integration</td></tr><tr><td><strong>Work</strong></td><td>GPT-4o</td><td>Factual research & study — no assumptions</td></tr><tr><td><strong>Code</strong></td><td>GPT-4o</td><td>Code creation, debugging & optimization — full output, no fluff</td></tr><tr><td><strong>Fast</strong></td><td>GPT-4.1-nano</td><td>Ultra-fast, minimal responses</td></tr></tbody></table></div><hr><h2 class=heading-element id=-architecture><span>🏗️ Architecture</span>
-<a href=#-architecture class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><p>LangGraph state machine with the following flow:</p><div class=diagram-container><pre class=mermaid>graph LR
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Stumberg - Hugo Sokolowski-Katzer</title><meta name="author" content="Hugo Sokołowski-Katzer">
+<meta name="description" content="Personal AI Agent"><meta name="keywords" content='ML, Python, AI'>
+  <meta itemprop="name" content="Stumberg">
+  <meta itemprop="description" content="Personal AI Agent">
+  <meta itemprop="datePublished" content="2025-12-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-03T00:00:00+00:00">
+  <meta itemprop="wordCount" content="718">
+  <meta itemprop="keywords" content="ML,Python,AI"><meta property="og:url" content="http://localhost:1313/projects/stumberg/">
+  <meta property="og:site_name" content="Hugo Sokolowski-Katzer">
+  <meta property="og:title" content="Stumberg">
+  <meta property="og:description" content="Personal AI Agent">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2025-12-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-03T00:00:00+00:00">
+    <meta property="article:tag" content="ML">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="AI">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Stumberg">
+  <meta name="twitter:description" content="Personal AI Agent">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/stumlogoLookingLeft.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/projects/stumberg/" title="Stumberg - Hugo Sokolowski-Katzer" /><link rel="prev" type="text/html" href="http://localhost:1313/projects/zamin/" title="Zamin" /><link rel="alternate" type="text/markdown" href="http://localhost:1313/projects/stumberg/index.md" title="Stumberg - Hugo Sokolowski-Katzer"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Stumberg",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/projects\/stumberg\/"
+    },"genre": "projects","keywords": "ML, Python, AI","wordcount":  718 ,
+    "url": "http:\/\/localhost:1313\/projects\/stumberg\/","datePublished": "2025-12-03T00:00:00+00:00","dateModified": "2025-12-03T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Hugo Sokołowski-Katzer"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/">Home</a></li><li class="menu-item">
+              <a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item">
+              <a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/">About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+      <div class="theme-switch" role="button" aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></div>
+      <div class="menu-toggle" id="menu-toggle-mobile" role="button" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/">Home</a></li><li class="menu-item"><a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item"><a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item"><a class="menu-link" href="/about/">About me</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item" data-separator="/"><a href="/projects/" title="Projects">Projects</a></li><li class="breadcrumb-item active" data-separator="/" aria-current="page">Stumberg</li>
+    </ol>
+  </nav><main class="fi-container"><article class="page single special">
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Stumberg</h1></div><div class="content" id="content"><p>Stumberg is my crown jewel. It is my largest personal project so far, and the first in this series. The original idea was to replicate the functionality of chatgpt but tailored to my needs. I hated repeating myself all the time and trying to curb its agreeable responses, so I set out on this journey.</p>
+<p>The final product was a working agent with multiple modes, persistent conversations, file context, and a search subagent, all tailored to me. Although I will admit that I have discontinued use and maintenence of the project, as the scope of the project just grew larger and larger, upkeep of API&rsquo;s bugfixing etc, all take lots of time, time which I wanted to spend learning other new things.</p>
+<p>Also the usage was not that practical, booting up a docker container and running in localhost is not ideal, if I were to revisit this project I would definitely prioritize having CI/CD and a proper deployment pipeline.</p>
+<p>Although the idea of stumberg was somewhat revived in my project &ldquo;Goswin&rdquo;, you can learn more about it <a href="/projects/goswin/">here</a>.</p>
+<h2 class="heading-element" id="features"><span>Features</span>
+  <a href="#features" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Multi-Mode Operation</strong></td>
+            <td>Four distinct modes with tailored system prompts, model selection, and tool access</td>
+        </tr>
+        <tr>
+            <td><strong>Persistent Conversations</strong></td>
+            <td>PostgreSQL-backed state with thread-based history and automatic checkpointing</td>
+        </tr>
+        <tr>
+            <td><strong>File Context</strong></td>
+            <td>Per-conversation uploads (txt, md, py, json, pdf) injected into system prompts</td>
+        </tr>
+        <tr>
+            <td><strong>Search Subagent</strong></td>
+            <td>Dedicated subagent with web, Reddit, subreddit, and r/BuyItForLife search</td>
+        </tr>
+        <tr>
+            <td><strong>Vector Search (RAG)</strong></td>
+            <td>Pinecone-powered semantic retrieval for knowledge base querying</td>
+        </tr>
+        <tr>
+            <td><strong>Weather</strong></td>
+            <td>Real-time, location-based weather via Open-Meteo</td>
+        </tr>
+    </tbody>
+  </table>
+</div><h2 class="heading-element" id="modes"><span>Modes</span>
+  <a href="#modes" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Mode</th>
+            <th>Model</th>
+            <th>Purpose</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Personal</strong></td>
+            <td>GPT-4o</td>
+            <td>Shopping &amp; lifestyle — Reddit + r/BuyItForLife integration</td>
+        </tr>
+        <tr>
+            <td><strong>Work</strong></td>
+            <td>GPT-4o</td>
+            <td>Factual research &amp; study — no assumptions</td>
+        </tr>
+        <tr>
+            <td><strong>Code</strong></td>
+            <td>GPT-4o</td>
+            <td>Code creation, debugging &amp; optimization — full output, no fluff</td>
+        </tr>
+        <tr>
+            <td><strong>Fast</strong></td>
+            <td>GPT-4.1-nano</td>
+            <td>Ultra-fast, minimal responses</td>
+        </tr>
+    </tbody>
+  </table>
+</div><h2 class="heading-element" id="architecture"><span>Architecture</span>
+  <a href="#architecture" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>LangGraph state machine with the following flow:</p>
+<div class="diagram-container">
+  <pre class="mermaid">graph LR
     A[Streamlit UI] --> B[Agent Graph]
     B --> C{Tool Routing}
     C --> D[Weather Tool]
@@ -11,7 +174,8 @@
     F --> H[Reddit Search]
     F --> I[Subreddit Search]
     F --> J[BuyForLife Search]
-    B --> K[(PostgreSQL)]</pre><pre class=mermaid-dark>graph LR
+    B --> K[(PostgreSQL)]</pre>
+  <pre class="mermaid-dark">graph LR
     A[Streamlit UI] --> B[Agent Graph]
     B --> C{Tool Routing}
     C --> D[Weather Tool]
@@ -21,7 +185,8 @@
     F --> H[Reddit Search]
     F --> I[Subreddit Search]
     F --> J[BuyForLife Search]
-    B --> K[(PostgreSQL)]</pre><pre class=mermaid-neutral>graph LR
+    B --> K[(PostgreSQL)]</pre>
+  <pre class="mermaid-neutral">graph LR
     A[Streamlit UI] --> B[Agent Graph]
     B --> C{Tool Routing}
     C --> D[Weather Tool]
@@ -31,7 +196,8 @@
     F --> H[Reddit Search]
     F --> I[Subreddit Search]
     F --> J[BuyForLife Search]
-    B --> K[(PostgreSQL)]</pre><div class=diagram-copy-btn aria-label="Copy Mermaid code" role=button><i class="fa-regular fa-clone fa-width-auto" aria-hidden=true></i></div><template><pre>graph LR
+    B --> K[(PostgreSQL)]</pre><div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"><i class="fa-regular fa-clone fa-width-auto" aria-hidden="true"></i></div>
+<template><pre>graph LR
     A[Streamlit UI] --> B[Agent Graph]
     B --> C{Tool Routing}
     C --> D[Weather Tool]
@@ -41,10 +207,118 @@
     F --> H[Reddit Search]
     F --> I[Subreddit Search]
     F --> J[BuyForLife Search]
-    B --> K[(PostgreSQL)]</pre></template></div><h3 class=heading-element id=tools><span>Tools</span>
-<a href=#tools class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h3><div class=table-wrapper><table><thead><tr><th>Tool</th><th>Source</th><th>Description</th></tr></thead><tbody><tr><td><code>get_weather</code></td><td>Open-Meteo API</td><td>Real-time weather data</td></tr><tr><td><code>retrieve_context</code></td><td>Pinecone</td><td>Vector search for RAG</td></tr><tr><td><code>ask_search_agent</code></td><td>Search Subagent</td><td>Delegates to specialized search tools ↓</td></tr><tr><td>↳ <code>general_search</code></td><td>LinkupClient</td><td>Web search</td></tr><tr><td>↳ <code>reddit_search</code></td><td>PRAW</td><td>Reddit-wide search</td></tr><tr><td>↳ <code>subreddit_search</code></td><td>PRAW</td><td>Targeted subreddit search</td></tr><tr><td>↳ <code>buyforlife_search</code></td><td>PRAW</td><td>r/BuyItForLife scraping</td></tr></tbody></table></div><hr><h2 class=heading-element id=-tech-stack><span>🛠️ Tech Stack</span>
-<a href=#-tech-stack class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><div class=table-wrapper><table><thead><tr><th>Layer</th><th>Technology</th></tr></thead><tbody><tr><td><strong>Orchestration</strong></td><td>LangGraph</td></tr><tr><td><strong>LLM Framework</strong></td><td>LangChain</td></tr><tr><td><strong>UI</strong></td><td>Streamlit</td></tr><tr><td><strong>Database</strong></td><td>PostgreSQL (<code>langgraph.checkpoint.postgres</code>)</td></tr><tr><td><strong>Models</strong></td><td>GPT-4o, GPT-4.1-nano (OpenAI)</td></tr><tr><td><strong>Vector DB</strong></td><td>Pinecone</td></tr><tr><td><strong>Web Search</strong></td><td>LinkupClient</td></tr><tr><td><strong>Reddit</strong></td><td>PRAW</td></tr><tr><td><strong>Weather</strong></td><td>Open-Meteo API</td></tr><tr><td><strong>Tracing</strong></td><td>LangSmith <em>(optional)</em></td></tr></tbody></table></div><hr><h2 class=heading-element id=-project-structure><span>📁 Project Structure</span>
-<a href=#-project-structure class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><pre tabindex=0><code>Stumberg/
+    B --> K[(PostgreSQL)]</pre></template>
+</div><h3 class="heading-element" id="tools"><span>Tools</span>
+  <a href="#tools" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Tool</th>
+            <th>Source</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>get_weather</code></td>
+            <td>Open-Meteo API</td>
+            <td>Real-time weather data</td>
+        </tr>
+        <tr>
+            <td><code>retrieve_context</code></td>
+            <td>Pinecone</td>
+            <td>Vector search for RAG</td>
+        </tr>
+        <tr>
+            <td><code>ask_search_agent</code></td>
+            <td>Search Subagent</td>
+            <td>Delegates to specialized search tools ↓</td>
+        </tr>
+        <tr>
+            <td>↳ <code>general_search</code></td>
+            <td>LinkupClient</td>
+            <td>Web search</td>
+        </tr>
+        <tr>
+            <td>↳ <code>reddit_search</code></td>
+            <td>PRAW</td>
+            <td>Reddit-wide search</td>
+        </tr>
+        <tr>
+            <td>↳ <code>subreddit_search</code></td>
+            <td>PRAW</td>
+            <td>Targeted subreddit search</td>
+        </tr>
+        <tr>
+            <td>↳ <code>buyforlife_search</code></td>
+            <td>PRAW</td>
+            <td>r/BuyItForLife scraping</td>
+        </tr>
+    </tbody>
+  </table>
+</div><h2 class="heading-element" id="tech-stack"><span>Tech Stack</span>
+  <a href="#tech-stack" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Layer</th>
+            <th>Technology</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Orchestration</strong></td>
+            <td>LangGraph</td>
+        </tr>
+        <tr>
+            <td><strong>LLM Framework</strong></td>
+            <td>LangChain</td>
+        </tr>
+        <tr>
+            <td><strong>UI</strong></td>
+            <td>Streamlit</td>
+        </tr>
+        <tr>
+            <td><strong>Database</strong></td>
+            <td>PostgreSQL (<code>langgraph.checkpoint.postgres</code>)</td>
+        </tr>
+        <tr>
+            <td><strong>Models</strong></td>
+            <td>GPT-4o, GPT-4.1-nano (OpenAI)</td>
+        </tr>
+        <tr>
+            <td><strong>Vector DB</strong></td>
+            <td>Pinecone</td>
+        </tr>
+        <tr>
+            <td><strong>Web Search</strong></td>
+            <td>LinkupClient</td>
+        </tr>
+        <tr>
+            <td><strong>Reddit</strong></td>
+            <td>PRAW</td>
+        </tr>
+        <tr>
+            <td><strong>Weather</strong></td>
+            <td>Open-Meteo API</td>
+        </tr>
+        <tr>
+            <td><strong>Tracing</strong></td>
+            <td>LangSmith <em>(optional)</em></td>
+        </tr>
+    </tbody>
+  </table>
+</div><h2 class="heading-element" id="project-structure"><span>Project Structure</span>
+  <a href="#project-structure" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><pre tabindex="0"><code>Stumberg/
 ├── app.py                  # Streamlit interface
 ├── main.py                 # CLI entry point
 ├── graph.py                # LangGraph agent graph
@@ -63,51 +337,112 @@
 ├── Dockerfile
 ├── requirements.txt
 ├── langgraph.json          # LangGraph deployment config
-└── ROADMAP.md</code></pre><hr><h2 class=heading-element id=-getting-started><span>🚀 Getting Started</span>
-<a href=#-getting-started class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><h3 class=heading-element id=prerequisites><span>Prerequisites</span>
-<a href=#prerequisites class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h3><ul><li>Python 3.10+</li><li>PostgreSQL</li><li>OpenAI API key</li></ul><h3 class=heading-element id=install><span>Install</span>
-<a href=#install class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h3><div class="code-block highlight" data-mode=classic data-copyable=true><div class=chroma><div class="code-header language-bash"><span class=code-title><i class="arrow fa-solid fa-chevron-down" aria-hidden=true></i></span><span class=ellipses-btn aria-label="Show more options" role=button><i class="fa-solid fa-ellipsis-h" aria-hidden=true></i></span><span class=line-nos-btn aria-label="Toggle line numbers" role=button title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden=true></i></span><span class=line-wrap-btn aria-label="Toggle code wrap" role=button title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden=true></i></span><span class=copy-btn aria-label="Copy to clipboard" role=button title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden=true></i></span></div><div class=code-wrapper data-max=10 data-line-digit=1 style=--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>pip install -r requirements.txt</span></span></code></pre></td></tr></table></div></div></div><h3 class=heading-element id=configure><span>Configure</span>
-<a href=#configure class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h3><p>Create a <code>.env</code> file:</p><div class="code-block highlight" data-mode=classic data-copyable=true><div class=chroma><div class="code-header language-env"><span class=code-title><i class="arrow fa-solid fa-chevron-down" aria-hidden=true></i></span><span class=ellipses-btn aria-label="Show more options" role=button><i class="fa-solid fa-ellipsis-h" aria-hidden=true></i></span><span class=line-nos-btn aria-label="Toggle line numbers" role=button title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden=true></i></span><span class=line-wrap-btn aria-label="Toggle code wrap" role=button title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden=true></i></span><span class=copy-btn aria-label="Copy to clipboard" role=button title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden=true></i></span></div><div class=code-wrapper data-max=10 data-line-digit=2 style=--fi-max-shown-lines:10;--fi-line-digit:2;--fi-line-start:1><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-env data-lang=env><span class=line><span class=cl><span class=c1># Required</span>
-</span></span><span class=line><span class=cl><span class=nv>OPENAI_API_KEY</span><span class=o>=</span>your_key
-</span></span><span class=line><span class=cl><span class=nv>DB_URI</span><span class=o>=</span>postgresql://user:password@host:port/database
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1># Optional</span>
-</span></span><span class=line><span class=cl><span class=nv>PINECONE_API_KEY</span><span class=o>=</span>your_key
-</span></span><span class=line><span class=cl><span class=nv>LINKUP_API_KEY</span><span class=o>=</span>your_key
-</span></span><span class=line><span class=cl><span class=nv>LANGCHAIN_API_KEY</span><span class=o>=</span>your_key
-</span></span><span class=line><span class=cl><span class=nv>LANGCHAIN_PROJECT</span><span class=o>=</span>your_project
-</span></span><span class=line><span class=cl><span class=nv>CONVERSATION_DATA_PATH</span><span class=o>=</span>/path/to/conversation/data</span></span></code></pre></td></tr></table></div></div></div><h3 class=heading-element id=run><span>Run</span>
-<a href=#run class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h3><div class="code-block highlight" data-mode=classic data-copyable=true><div class=chroma><div class="code-header language-bash"><span class=code-title><i class="arrow fa-solid fa-chevron-down" aria-hidden=true></i></span><span class=ellipses-btn aria-label="Show more options" role=button><i class="fa-solid fa-ellipsis-h" aria-hidden=true></i></span><span class=line-nos-btn aria-label="Toggle line numbers" role=button title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden=true></i></span><span class=line-wrap-btn aria-label="Toggle code wrap" role=button title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden=true></i></span><span class=copy-btn aria-label="Copy to clipboard" role=button title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden=true></i></span></div><div class=code-wrapper data-max=10 data-line-digit=1 style=--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Streamlit UI</span>
-</span></span><span class=line><span class=cl>streamlit run app.py
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1># CLI</span>
-</span></span><span class=line><span class=cl>python main.py</span></span></code></pre></td></tr></table></div></div></div><h3 class=heading-element id=docker><span>Docker</span>
-<a href=#docker class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h3><div class="code-block highlight" data-mode=classic data-copyable=true><div class=chroma><div class="code-header language-bash"><span class=code-title><i class="arrow fa-solid fa-chevron-down" aria-hidden=true></i></span><span class=ellipses-btn aria-label="Show more options" role=button><i class="fa-solid fa-ellipsis-h" aria-hidden=true></i></span><span class=line-nos-btn aria-label="Toggle line numbers" role=button title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden=true></i></span><span class=line-wrap-btn aria-label="Toggle code wrap" role=button title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden=true></i></span><span class=copy-btn aria-label="Copy to clipboard" role=button title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden=true></i></span></div><div class=code-wrapper data-max=10 data-line-digit=1 style=--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>docker build -t stumberg-agent .
-</span></span><span class=line><span class=cl>docker run -p 8501:8501 <span class=se>\
-</span></span></span><span class=line><span class=cl>  -v /path/to/data:/host_e/conversation_data <span class=se>\
-</span></span></span><span class=line><span class=cl>  --env-file .env <span class=se>\
-</span></span></span><span class=line><span class=cl>  stumberg-agent</span></span></code></pre></td></tr></table></div></div></div><hr><h2 class=heading-element id=-license><span>📄 License</span>
-<a href=#-license class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><p>Personal use and experimentation.</p></div></article></main><footer class=footer><div class=footer-container><div class="footer-line powered">Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreferrer" title="Hugo 0.156.0"><img class=hugo-icon src=/images/hugo.min.svg alt="Hugo logo"> Hugo</a> | Theme - <a href=https://github.com/hugo-fixit/FixIt target=_blank rel=external title="FixIt v0.4.3-20260130042349-e23a50d7"><img class=fixit-icon src=/images/fixit.min.svg alt="FixIt logo"> FixIt</a></div><div class="footer-line copyright" itemscope itemtype=http://schema.org/CreativeWork><i class="fa-regular fa-copyright" aria-hidden=true></i>
-<span itemprop=copyrightYear>2025 - 2026</span><span class=author itemprop=copyrightHolder>
-<a href=/>Hugo Sokołowski-Katzer</a></span></div></div></footer></div><div class=widgets><div class=fixed-buttons><div class="fixed-button back-to-top animate__faster d-none" role=button aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden=true></i></div></div><div id=mask></div><noscript><div class=noscript-warning>This website works best with JavaScript enabled.</div></noscript></div><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script src=/lib/cookieconsent/cookieconsent.min.js defer></script><script src=/js/config/ab21298dab80e2b7f67b642f45b30b8f.js defer></script><script src=/js/lib/mermaid.min.js type=module></script><script src=/js/theme.min.js defer></script></body></html>
+└── ROADMAP.md</code></pre><hr>
+<h2 class="heading-element" id="getting-started"><span>Getting Started</span>
+  <a href="#getting-started" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="prerequisites"><span>Prerequisites</span>
+  <a href="#prerequisites" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li>Python 3.10+</li>
+<li>PostgreSQL</li>
+<li>OpenAI API key</li>
+</ul>
+<h3 class="heading-element" id="install"><span>Install</span>
+  <a href="#install" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-bash"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install -r requirements.txt</span></span></code></pre></td></tr></table></div>
+</div>
+</div><h3 class="heading-element" id="configure"><span>Configure</span>
+  <a href="#configure" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Create a <code>.env</code> file:</p>
+<div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-env"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="2" style="--fi-max-shown-lines:10;--fi-line-digit:2;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-env" data-lang="env"><span class="line"><span class="cl"><span class="c1"># Required</span>
+</span></span><span class="line"><span class="cl"><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>your_key
+</span></span><span class="line"><span class="cl"><span class="nv">DB_URI</span><span class="o">=</span>postgresql://user:password@host:port/database
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Optional</span>
+</span></span><span class="line"><span class="cl"><span class="nv">PINECONE_API_KEY</span><span class="o">=</span>your_key
+</span></span><span class="line"><span class="cl"><span class="nv">LINKUP_API_KEY</span><span class="o">=</span>your_key
+</span></span><span class="line"><span class="cl"><span class="nv">LANGCHAIN_API_KEY</span><span class="o">=</span>your_key
+</span></span><span class="line"><span class="cl"><span class="nv">LANGCHAIN_PROJECT</span><span class="o">=</span>your_project
+</span></span><span class="line"><span class="cl"><span class="nv">CONVERSATION_DATA_PATH</span><span class="o">=</span>/path/to/conversation/data</span></span></code></pre></td></tr></table></div>
+</div>
+</div><h3 class="heading-element" id="run"><span>Run</span>
+  <a href="#run" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-bash"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Streamlit UI</span>
+</span></span><span class="line"><span class="cl">streamlit run app.py
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># CLI</span>
+</span></span><span class="line"><span class="cl">python main.py</span></span></code></pre></td></tr></table></div>
+</div>
+</div><h3 class="heading-element" id="docker"><span>Docker</span>
+  <a href="#docker" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-bash"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker build -t stumberg-agent .
+</span></span><span class="line"><span class="cl">docker run -p 8501:8501 <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -v /path/to/data:/host_e/conversation_data <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --env-file .env <span class="se">\
+</span></span></span><span class="line"><span class="cl">  stumberg-agent</span></span></code></pre></td></tr></table></div>
+</div>
+</div><hr>
+<h2 class="heading-element" id="license"><span>License</span>
+  <a href="#license" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Personal use and experimentation.</p>
+</div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.156.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.3-20260130042349-e23a50d7"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025 - 2026</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Hugo Sokołowski-Katzer</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config/ab21298dab80e2b7f67b642f45b30b8f.js" defer></script><script src="/js/lib/mermaid.js" type="module"></script><script src="/js/theme.min.js" defer></script></body>
+</html>
