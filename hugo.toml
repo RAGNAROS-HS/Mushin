@@ -99,10 +99,11 @@ enableEmoji = true
     profile = ['custom/github-calendar.html']
 
   [params.social]
-    GitHub = 'https://github.com/RAGNAROS-HS'
-    Linkedin = 'https://www.linkedin.com/in/hugo-sokolowski-katzer-715577248/'
+    GitHub = 'RAGNAROS-HS'
+    Linkedin = 'hugo-sokolowski-katzer-715577248/'
     Email = 'hugo.s.katzer@gmail.com'
     RSS = false
+
 
   [params.app]
   svgFavicon = "/img/stumlogoLookingLeft.png"

@@ -7,5 +7,5 @@ Nothing yet, stay tuned
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/devlog/  
+> URL: http://localhost:49560/devlog/  
 

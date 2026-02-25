@@ -64,5 +64,5 @@ The `legacy/` folder contains an earlier prototype that used a simpler per-chara
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/projects/tosach/  
+> URL: http://localhost:49560/projects/tosach/  
 

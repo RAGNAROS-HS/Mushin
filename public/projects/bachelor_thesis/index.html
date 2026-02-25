@@ -1,9 +1,375 @@
-<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=2"><meta name=robots content="noodp"><title>Bachelor Thesis - Hugo Sokolowski-Katzer</title><meta name=author content="Hugo Sokołowski-Katzer"><meta name=description content="Detecting collapsed buildings using UNET++"><meta name=keywords content='CNN,Pytorch,VertexAI'><meta itemprop=name content="Bachelor Thesis"><meta itemprop=description content="Detecting collapsed buildings using UNET++"><meta itemprop=datePublished content="2025-06-01T00:00:00+00:00"><meta itemprop=dateModified content="2025-06-01T00:00:00+00:00"><meta itemprop=wordCount content="440"><meta itemprop=keywords content="CNN,Pytorch,VertexAI"><meta property="og:url" content="https://hugokatzer.tech/projects/bachelor_thesis/"><meta property="og:site_name" content="Hugo Sokolowski-Katzer"><meta property="og:title" content="Bachelor Thesis"><meta property="og:description" content="Detecting collapsed buildings using UNET++"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="projects"><meta property="article:published_time" content="2025-06-01T00:00:00+00:00"><meta property="article:modified_time" content="2025-06-01T00:00:00+00:00"><meta property="article:tag" content="CNN"><meta property="article:tag" content="Pytorch"><meta property="article:tag" content="VertexAI"><meta name=twitter:card content="summary"><meta name=twitter:title content="Bachelor Thesis"><meta name=twitter:description content="Detecting collapsed buildings using UNET++"><meta name=application-name content="FixIt"><meta name=apple-mobile-web-app-title content="FixIt"><meta name=theme-color data-light=#f8f8f8 data-dark=#252627 content="#f8f8f8"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/img/stumlogoLookingLeft.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical type=text/html href=https://hugokatzer.tech/projects/bachelor_thesis/ title="Bachelor Thesis - Hugo Sokolowski-Katzer"><link rel=prev type=text/html href=https://hugokatzer.tech/about/ title="About Me"><link rel=next type=text/html href=https://hugokatzer.tech/projects/himantes/ title=Himantes><link rel=alternate type=text/markdown href=https://hugokatzer.tech/projects/bachelor_thesis/index.md title="Bachelor Thesis - Hugo Sokolowski-Katzer"><link rel=stylesheet href=/css/config.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload href=/lib/fontawesome-free/all.min.css as=style onload='this.removeAttribute("onload"),this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload href=/lib/animate/animate.min.css as=style onload='this.removeAttribute("onload"),this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Bachelor Thesis","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugokatzer.tech\/projects\/bachelor_thesis\/"},"genre":"projects","keywords":"CNN, Pytorch, VertexAI","wordcount":440,"url":"https:\/\/hugokatzer.tech\/projects\/bachelor_thesis\/","datePublished":"2025-06-01T00:00:00+00:00","dateModified":"2025-06-01T00:00:00+00:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Hugo Sokołowski-Katzer"},"description":""}</script><script src=/js/head/color-scheme.min.js></script></head><body data-instant-intensity=viewport data-header-desktop=fixed data-header-mobile=auto><div class=wrapper data-page-style=normal><header class="desktop animate__faster" id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Hugo Sokolowski-Katzer"><span class=header-title-text>Hugo Sokołowski-Katzer</span></a><span class=header-subtitle></span></div><nav><ul class=menu><li class=menu-item><a class=menu-link href=/>Home</a></li><li class=menu-item><a class=menu-link href=/devlog/>Devlog</a></li><li class=menu-item><a class=menu-link href=/projects/>Projects</a></li><li class=menu-item><a class=menu-link href=/about/>About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role=button aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden=true></i></li></ul></nav></div></header><header class="mobile animate__faster" id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Hugo Sokolowski-Katzer"><span class=header-title-text>Hugo Sokołowski-Katzer</span></a><span class=header-subtitle></span></div><div class=theme-switch role=button aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden=true></i></div><div class=menu-toggle id=menu-toggle-mobile role=button aria-labelledby=menu-mobile><span></span><span></span><span></span></div></div><nav><ul class=menu id=menu-mobile><li class=menu-item><a class=menu-link href=/>Home</a></li><li class=menu-item><a class=menu-link href=/devlog/>Devlog</a></li><li class=menu-item><a class=menu-link href=/projects/>Projects</a></li><li class=menu-item><a class=menu-link href=/about/>About me</a></li><li class="menu-item menu-system"></li></ul></nav></div></header><nav aria-label=breadcrumb class=breadcrumb-container><ol class=breadcrumb><li class=breadcrumb-item data-separator=/><a href=/projects/ title=Projects>Projects</a></li><li class="breadcrumb-item active" data-separator=/ aria-current=page>Bachelor Thesis</li></ol></nav><main class=fi-container><article class="page single special"><div class=header><h1 class="single-title animate__animated animate__pulse animate__faster">Bachelor Thesis</h1></div><div class=content id=content><p>My bachelor&rsquo;s degree concluded with this projec - detecting collapsed buildings using UNET++ and shadow-based heuristics from satellite imagery. It is quite expansive so I highly recommend reading through the thesis itself if you&rsquo;d like to understand it in its entirety:</p><script type=text/javascript src=/js/pdf-js/build/pdf.js></script><style>#embed-pdf-container{position:relative;width:100%;height:auto;min-height:20vh}.pdf-canvas{border:1px solid #000;direction:ltr;width:100%;height:auto;display:none}#the-canvas{border:1px solid #000;direction:ltr;width:100%;height:auto;display:none}.pdf-loadingWrapper{display:none;justify-content:center;align-items:center;width:100%;height:350px}.pdf-loading{display:inline-block;width:50px;height:50px;border:3px solid #d2d0d0;border-radius:50%;border-top-color:#383838;animation:spin 1s ease-in-out infinite;-webkit-animation:spin 1s ease-in-out infinite}#overlayText{word-wrap:break-word;display:grid;justify-content:end}#overlayText a{position:relative;top:10px;right:4px;color:#000;margin:auto;background-color:#eee;padding:.3em 1em;border:solid 2px;border-radius:12px;border-color:#00000030;text-decoration:none}#overlayText svg{height:clamp(1em,2vw,1.4em);width:clamp(1em,2vw,1.4em)}@keyframes spin{to{-webkit-transform:rotate(360deg)}}@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg)}}</style><div class=embed-pdf-container id=embed-pdf-container-38bef92d><div class=pdf-loadingWrapper id=pdf-loadingWrapper-38bef92d><div class=pdf-loading id=pdf-loading-38bef92d></div></div><div id=overlayText><a href=/pdfs/Thesis_Hugo_SK%20%282%29.pdf aria-label=Download download><svg aria-hidden="true" viewBox="0 0 18 18"><path d="M9 13c.3.0.5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z"/></svg></a></div><canvas class=pdf-canvas id=pdf-canvas-38bef92d></canvas></div><div class=pdf-paginator id=pdf-paginator-38bef92d><button id=pdf-prev-38bef92d>Previous</button>
-<button id=pdf-next-38bef92d>Next</button> &nbsp; &nbsp;
-<span><span class=pdf-pagenum id=pdf-pagenum-38bef92d></span> / <span class=pdf-pagecount id=pdf-pagecount-38bef92d></span>
-</span><a class=pdf-source id=pdf-source-38bef92d href=/pdfs/Thesis_Hugo_SK%20%282%29.pdf>[pdf]</a></div><noscript>View the PDF file <a class=pdf-source id=pdf-source-noscript-38bef92d href=/pdfs/Thesis_Hugo_SK%20%282%29.pdf>here</a>.</noscript><script type=text/javascript>(function(){c="/pdfs/Thesis_Hugo_SK (2).pdf",u=""==="true",l=""==="true",h=parseInt("")||1,s=window["pdfjs-dist/build/pdf"],s.GlobalWorkerOptions.workerSrc==""&&(s.GlobalWorkerOptions.workerSrc="https://hugokatzer.tech/js/pdf-js/build/pdf.worker.js");var s,c,l,u,h,n=null,e=h,i=!1,o=null,b=3,t=document.getElementById("pdf-canvas-38bef92d"),m=t.getContext("2d"),f=document.getElementById("pdf-paginator-38bef92d"),r=document.getElementById("pdf-loadingWrapper-38bef92d");v(),g();function a(e){i=!0,n.getPage(e).then(function(e){var s,r,n=e.getViewport({scale:b});t.height=n.height,t.width=n.width,s={canvasContext:m,viewport:n},r=e.render(s),r.promise.then(function(){i=!1,p(),o!==null&&(a(o),o=null)})}),document.getElementById("pdf-pagenum-38bef92d").textContent=e}function p(){r.style.display="none",t.style.display="block"}function g(){if(l)return;r.style.display="flex",t.style.display="none"}function v(){if(u)return;f.style.display="block"}function d(e){i?o=e:a(e)}function j(){if(e<=1)return;e--,d(e)}document.getElementById("pdf-prev-38bef92d").addEventListener("click",j);function y(){if(e>=n.numPages)return;e++,d(e)}document.getElementById("pdf-next-38bef92d").addEventListener("click",y),s.getDocument(c).promise.then(function(t){n=t;var s=n.numPages;document.getElementById("pdf-pagecount-38bef92d").textContent=s,e>s&&(e=s),a(e)})})()</script><hr><h2 class=heading-element id=notes--reflections><span>Notes & Reflections</span>
-<a href=#notes--reflections class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><p>But I can give some notes of my own, since some time has passed since I handed this in (as of the time of writing this).</p><p>Firstly I would say that this thesis was a giant jump in terms of data volume and project scope from anything I had done before. I managed to cobble it together, but if I were to do it all again, much would be different:</p><hr><h2 class=heading-element id=lessons-learned><span>Lessons Learned</span>
-<a href=#lessons-learned class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><ul><li><p><strong>Trusted my predecessor too much</strong> — since someone had given a quite successful crack at it the previous year, I though that I would simply run what they made and expand upon it. But in the end I lost lots of time trying to fix or interpret what they did, rather than pursue my own original direction.</p></li><li><p><strong>Did not analyze my data enough</strong> — sure - some graphs and distributions are shown, but I should have spent at least triple the amount of time delving deep into the images, keeping the data imbalance in mind.</p></li><li><p><strong>Got lost in my own code</strong> — having such a large scope I ended up forgetting, not understanding and/or patching together code snippets from sources which I did not fully understand. I spent significant amounts of time walking in circles just because I had not built a solid foundation of understanding.</p></li><li><p><strong>Didn&rsquo;t carve out a test set early</strong> — with the data volume being staggeringly high, lots was wasted on errored or faulty transformations of this dataset. More dry runs and end to end runs on small fragments were definitely in order.</p></li><li><p><strong>Didn&rsquo;t use LATEX</strong> — it seemed too daunting and impractical, but over the last couple of months I&rsquo;ve grown to like it and appreciate its efficiency and looks, will definitely use overleaf latex next time.</p></li></ul><hr><h2 class=heading-element id=takeaway><span>Takeaway</span>
-<a href=#takeaway class=heading-mark><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5.0 114.95 4.95l-2.5 2.5a3.5 3.5.0 01-4.95.0.751.751.0 01.018-1.042.751.751.0 011.042-.018 1.998 1.998.0 002.83.0l2.5-2.5a2.002 2.002.0 00-2.83-2.83l-1.25 1.25a.751.751.0 01-1.042-.018.751.751.0 01-.018-1.042zm-4.69 9.64a1.998 1.998.0 002.83.0l1.25-1.25a.751.751.0 011.042.018.751.751.0 01.018 1.042l-1.25 1.25a3.5 3.5.0 11-4.95-4.95l2.5-2.5a3.5 3.5.0 014.95.0.751.751.0 01-.018 1.042.751.751.0 01-1.042.018 1.998 1.998.0 00-2.83.0l-2.5 2.5a1.998 1.998.0 000 2.83z"/></svg></a></h2><p>You might read all these and think - oh my god, this dude had no idea what he was doing. And you would be right. But in the end, I learned so much from these failures and shortcomings. Every time I see a dataset or every time I inherit some architecture or review an AI code snippet, this project comes to mind. It has taught me to be more thoughtful, careful, and most importantly - patient. Taking a step back and not rushing saves you time in the long run.</p></div></article></main><footer class=footer><div class=footer-container><div class="footer-line powered">Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreferrer" title="Hugo 0.156.0"><img class=hugo-icon src=/images/hugo.min.svg alt="Hugo logo"> Hugo</a> | Theme - <a href=https://github.com/hugo-fixit/FixIt target=_blank rel=external title="FixIt v0.4.3-20260130042349-e23a50d7"><img class=fixit-icon src=/images/fixit.min.svg alt="FixIt logo"> FixIt</a></div><div class="footer-line copyright" itemscope itemtype=http://schema.org/CreativeWork><i class="fa-regular fa-copyright" aria-hidden=true></i>
-<span itemprop=copyrightYear>2025 - 2026</span><span class=author itemprop=copyrightHolder>
-<a href=/>Hugo Sokołowski-Katzer</a></span></div></div></footer></div><div class=widgets><div class=fixed-buttons><div class="fixed-button back-to-top animate__faster d-none" role=button aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden=true></i></div></div><div id=mask></div><noscript><div class=noscript-warning>This website works best with JavaScript enabled.</div></noscript></div><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script src=/lib/cookieconsent/cookieconsent.min.js defer></script><script src=/js/config/a795ef94e791a72be561773a723af7e2.js defer></script><script src=/js/theme.min.js defer></script></body></html>
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=49560&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Bachelor Thesis - Hugo Sokolowski-Katzer</title><meta name="author" content="Hugo Sokołowski-Katzer">
+<meta name="description" content="Detecting collapsed buildings using UNET&#43;&#43;"><meta name="keywords" content='CNN, Pytorch, VertexAI'>
+  <meta itemprop="name" content="Bachelor Thesis">
+  <meta itemprop="description" content="Detecting collapsed buildings using UNET&#43;&#43;">
+  <meta itemprop="datePublished" content="2025-06-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-06-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="440">
+  <meta itemprop="keywords" content="CNN,PyTorch,VertexAI"><meta property="og:url" content="http://localhost:49560/projects/bachelor_thesis/">
+  <meta property="og:site_name" content="Hugo Sokolowski-Katzer">
+  <meta property="og:title" content="Bachelor Thesis">
+  <meta property="og:description" content="Detecting collapsed buildings using UNET&#43;&#43;">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2025-06-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-01T00:00:00+00:00">
+    <meta property="article:tag" content="CNN">
+    <meta property="article:tag" content="PyTorch">
+    <meta property="article:tag" content="VertexAI">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bachelor Thesis">
+  <meta name="twitter:description" content="Detecting collapsed buildings using UNET&#43;&#43;">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/stumlogoLookingLeft.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:49560/projects/bachelor_thesis/" title="Bachelor Thesis - Hugo Sokolowski-Katzer" /><link rel="prev" type="text/html" href="http://localhost:49560/about/" title="About Me" /><link rel="next" type="text/html" href="http://localhost:49560/projects/himantes/" title="Himantes" /><link rel="alternate" type="text/markdown" href="http://localhost:49560/projects/bachelor_thesis/index.md" title="Bachelor Thesis - Hugo Sokolowski-Katzer"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Bachelor Thesis",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:49560\/projects\/bachelor_thesis\/"
+    },"genre": "projects","keywords": "CNN, Pytorch, VertexAI","wordcount":  440 ,
+    "url": "http:\/\/localhost:49560\/projects\/bachelor_thesis\/","datePublished": "2025-06-01T00:00:00+00:00","dateModified": "2025-06-01T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Hugo Sokołowski-Katzer"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/">Home</a></li><li class="menu-item">
+              <a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item">
+              <a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/">About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+      <div class="theme-switch" role="button" aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></div>
+      <div class="menu-toggle" id="menu-toggle-mobile" role="button" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/">Home</a></li><li class="menu-item"><a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item"><a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item"><a class="menu-link" href="/about/">About me</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item" data-separator="/"><a href="/projects/" title="Projects">Projects</a></li><li class="breadcrumb-item active" data-separator="/" aria-current="page">Bachelor Thesis</li>
+    </ol>
+  </nav><main class="fi-container"><article class="page single special">
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Bachelor Thesis</h1></div><div class="content" id="content"><p>My bachelor&rsquo;s degree concluded with this projec - detecting collapsed buildings using UNET++ and shadow-based heuristics from satellite imagery. It is quite expansive so I highly recommend reading through the thesis itself if you&rsquo;d like to understand it in its entirety:</p>
+<script type="text/javascript" src= '/js/pdf-js/build/pdf.js'></script>
+
+<style>
+  #embed-pdf-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+     
+  }
+  
+  .pdf-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  #the-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  
+  .pdf-loadingWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .pdf-loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #d2d0d0;;
+    border-radius: 50%;
+    border-top-color: #383838;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  
+  
+  
+  
+  #overlayText {
+    word-wrap: break-word;
+    display: grid;
+    justify-content: end;
+  }
+  
+  #overlayText a {
+    position: relative;
+    top: 10px;
+    right: 4px;
+    color: #000;
+    margin: auto;
+    background-color: #eeeeee;
+    padding: 0.3em 1em;
+    border: solid 2px;
+    border-radius: 12px;
+    border-color: #00000030;
+    text-decoration: none;
+  }
+  
+  #overlayText svg {
+    height: clamp(1em, 2vw, 1.4em);
+    width:  clamp(1em, 2vw, 1.4em);
+  }
+  
+  
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  </style><div class="embed-pdf-container" id="embed-pdf-container-38bef92d">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-38bef92d">
+        <div class="pdf-loading" id="pdf-loading-38bef92d"></div>
+    </div>
+    <div id="overlayText">
+      <a href="/pdfs/Thesis_Hugo_SK%20%282%29.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-38bef92d"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-38bef92d">
+    <button id="pdf-prev-38bef92d">Previous</button>
+    <button id="pdf-next-38bef92d">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-38bef92d"></span> / <span class="pdf-pagecount" id="pdf-pagecount-38bef92d"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-38bef92d" href="/pdfs/Thesis_Hugo_SK%20%282%29.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-38bef92d" href="/pdfs/Thesis_Hugo_SK%20%282%29.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = '\/pdfs\/Thesis_Hugo_SK (2).pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "http:\/\/localhost:49560\/" + 'js/pdf-js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-38bef92d'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-38bef92d"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-38bef92d');
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-38bef92d').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-38bef92d').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-38bef92d').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-38bef92d').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+
+<hr>
+<h2 class="heading-element" id="notes--reflections"><span>Notes &amp; Reflections</span>
+  <a href="#notes--reflections" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>But I can give some notes of my own, since some time has passed since I handed this in (as of the time of writing this).</p>
+<p>Firstly I would say that this thesis was a giant jump in terms of data volume and project scope from anything I had done before. I managed to cobble it together, but if I were to do it all again, much would be different:</p>
+<hr>
+<h2 class="heading-element" id="lessons-learned"><span>Lessons Learned</span>
+  <a href="#lessons-learned" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ul>
+<li>
+<p><strong>Trusted my predecessor too much</strong> — since someone had given a quite successful crack at it the previous year, I though that I would simply run what they made and expand upon it. But in the end I lost lots of time trying to fix or interpret what they did, rather than pursue my own original direction.</p>
+</li>
+<li>
+<p><strong>Did not analyze my data enough</strong> — sure - some graphs and distributions are shown, but I should have spent at least triple the amount of time delving deep into the images, keeping the data imbalance in mind.</p>
+</li>
+<li>
+<p><strong>Got lost in my own code</strong> — having such a large scope I ended up forgetting, not understanding and/or patching together code snippets from sources which I did not fully understand. I spent significant amounts of time walking in circles just because I had not built a solid foundation of understanding.</p>
+</li>
+<li>
+<p><strong>Didn&rsquo;t carve out a test set early</strong> — with the data volume being staggeringly high, lots was wasted on errored or faulty transformations of this dataset. More dry runs and end to end runs on small fragments were definitely in order.</p>
+</li>
+<li>
+<p><strong>Didn&rsquo;t use LATEX</strong> — it seemed too daunting and impractical, but over the last couple of months I&rsquo;ve grown to like it and appreciate its efficiency and looks, will definitely use overleaf latex next time.</p>
+</li>
+</ul>
+<hr>
+<h2 class="heading-element" id="takeaway"><span>Takeaway</span>
+  <a href="#takeaway" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>You might read all these and think - oh my god, this dude had no idea what he was doing. And you would be right. But in the end, I learned so much from these failures and shortcomings. Every time I see a dataset or every time I inherit some architecture or review an AI code snippet, this project comes to mind. It has taught me to be more thoughtful, careful, and most importantly - patient. Taking a step back and not rushing saves you time in the long run.</p>
+</div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.156.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.3-20260130042349-e23a50d7"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025 - 2026</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Hugo Sokołowski-Katzer</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config/a795ef94e791a72be561773a723af7e2.js" defer></script><script src="/js/theme.min.js" defer></script></body>
+</html>

@@ -5,3 +5,8 @@
     object-fit: cover !important;
     border-radius: 50% !important;
 }
+
+/* Invert colors in light mode (default or explicit) */
+:root:not([data-theme='dark']) .home .home-profile .home-avatar img {
+    filter: invert(100%);
+}

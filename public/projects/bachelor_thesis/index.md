@@ -38,5 +38,5 @@ You might read all these and think - oh my god, this dude had no idea what he wa
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/projects/bachelor_thesis/  
+> URL: http://localhost:49560/projects/bachelor_thesis/  
 

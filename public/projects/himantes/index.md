@@ -78,5 +78,5 @@ python analyze_distribution.py
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/projects/himantes/  
+> URL: http://localhost:49560/projects/himantes/  
 

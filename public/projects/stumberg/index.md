@@ -10,7 +10,7 @@ Also the usage was not that practical, booting up a docker container and running
 
 Although the idea of stumberg was somewhat revived in my project "Goswin", you can learn more about it [here](/projects/goswin/).
 
-## ✨ Features
+## Features
 
 | Feature                      | Description                                                                        |
 | ---------------------------- | ---------------------------------------------------------------------------------- |
@@ -21,9 +21,9 @@ Although the idea of stumberg was somewhat revived in my project "Goswin", you c
 | **Vector Search (RAG)**      | Pinecone-powered semantic retrieval for knowledge base querying                    |
 | **Weather**                  | Real-time, location-based weather via Open-Meteo                                   |
 
----
 
-## 🎛️ Modes
+
+## Modes
 
 | Mode         | Model        | Purpose                                                         |
 | ------------ | ------------ | --------------------------------------------------------------- |
@@ -32,9 +32,9 @@ Although the idea of stumberg was somewhat revived in my project "Goswin", you c
 | **Code**     | GPT-4o       | Code creation, debugging & optimization — full output, no fluff |
 | **Fast**     | GPT-4.1-nano | Ultra-fast, minimal responses                                   |
 
----
 
-## 🏗️ Architecture
+
+## Architecture
 
 LangGraph state machine with the following flow:
 
@@ -64,9 +64,9 @@ graph LR
 | ↳ `subreddit_search`  | PRAW            | Targeted subreddit search               |
 | ↳ `buyforlife_search` | PRAW            | r/BuyItForLife scraping                 |
 
----
 
-## 🛠️ Tech Stack
+
+## Tech Stack
 
 | Layer             | Technology                                   |
 | ----------------- | -------------------------------------------- |
@@ -81,9 +81,9 @@ graph LR
 | **Weather**       | Open-Meteo API                               |
 | **Tracing**       | LangSmith *(optional)*                       |
 
----
 
-## 📁 Project Structure
+
+## Project Structure
 
 ```
 Stumberg/
@@ -110,7 +110,7 @@ Stumberg/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -163,7 +163,7 @@ docker run -p 8501:8501 \
 
 ---
 
-## 📄 License
+## License
 
 Personal use and experimentation.
 
@@ -171,5 +171,5 @@ Personal use and experimentation.
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/projects/stumberg/  
+> URL: http://localhost:49560/projects/stumberg/  
 
