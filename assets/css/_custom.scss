@@ -102,3 +102,22 @@
 [data-theme='dark'] .calendar .ContributionCalendar-day[data-level='0'] {
     fill: #161b22 !important;
 }
+
+// ==============================
+// Home Avatar
+// ==============================
+
+.home .home-profile .home-avatar img {
+    width: 8rem !important;
+    height: 8rem !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+
+    // Invert colors in light mode (default)
+    filter: invert(100%);
+
+    // Original colors in dark mode
+    [data-theme='dark'] & {
+        filter: none;
+    }
+}

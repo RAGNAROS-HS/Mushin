@@ -67,10 +67,11 @@ enableEmoji = true
 
   [params.footer]
     enable = true
-    hugo = true
     copyright = true
     author = true
-    since = 2025
+    since = 2026
+    [params.footer.powered]
+      enable = false
 
   [params.home]
     [params.home.profile]
@@ -107,3 +108,4 @@ enableEmoji = true
 
   [params.app]
   svgFavicon = "/img/stumlogoLookingLeft.png"
+
