@@ -1,0 +1,43 @@
+{{- define "title" -}}
+{{ .Title }} - {{ .Site.Title }}
+{{- end -}}
+
+{{- define "content" -}}
+<div class="page archive">
+    <div class="header">
+        <h1 class="single-title animate__animated animate__pulse animate__faster">
+            {{- .Title -}}
+        </h1>
+    </div>
+
+    {{- if .Content }}
+    <div class="content" style="margin-bottom: 1.5rem;">
+        {{ .Content }}
+    </div>
+    {{- end }}
+
+    {{- /* Devlog Scrolling List */ -}}
+    {{- $pages := union .RegularPages .Sections -}}
+    {{- if $pages -}}
+    <div class="devlog-list-container">
+        {{- range $pages -}}
+        <article class="devlog-post-card">
+            <a href="{{ .RelPermalink }}" class="devlog-card-link">
+                <div class="devlog-card-header">
+                    <h3 class="devlog-card-title">{{ .Title }}</h3>
+                    <span class="devlog-date">{{ .Date.Format "January 2, 2006" }}</span>
+                </div>
+                {{- if .Params.summary }}
+                <p class="devlog-card-summary">{{ .Params.summary }}</p>
+                {{- else if .Summary }}
+                <p class="devlog-card-summary">{{ .Summary | plainify | htmlUnescape | truncate 150 }}</p>
+                {{- end }}
+            </a>
+        </article>
+        {{- end -}}
+    </div>
+    {{- else }}
+    <p>Nothing yet, stay tuned</p>
+    {{- end -}}
+</div>
+{{- end -}}

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI - Tag - Hugo Sokolowski-Katzer</title>
-    <link>http://localhost:1313/tags/ai/</link>
+    <link>https://hugokatzer.tech/tags/ai/</link>
     <description>Personal Site</description>
     <generator>Hugo 0.156.0 &amp; FixIt v0.4.3-20260130042349-e23a50d7</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 27 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugokatzer.tech/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stumberg</title>
-      <link>http://localhost:1313/projects/stumberg/</link>
+      <link>https://hugokatzer.tech/projects/stumberg/</link>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/stumberg/</guid>
+      <guid>https://hugokatzer.tech/projects/stumberg/</guid>
       <description>Personal AI Agent</description>
     </item>
     <item>
       <title>Tosach</title>
-      <link>http://localhost:1313/projects/tosach/</link>
+      <link>https://hugokatzer.tech/projects/tosach/</link>
       <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tosach/</guid>
+      <guid>https://hugokatzer.tech/projects/tosach/</guid>
       <description>Text recognition using CRNN</description>
     </item>
   </channel>

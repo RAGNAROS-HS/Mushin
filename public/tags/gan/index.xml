@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GAN - Tag - Hugo Sokolowski-Katzer</title>
-    <link>http://localhost:1313/tags/gan/</link>
+    <link>https://hugokatzer.tech/tags/gan/</link>
     <description>Personal Site</description>
     <generator>Hugo 0.156.0 &amp; FixIt v0.4.3-20260130042349-e23a50d7</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gan/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugokatzer.tech/tags/gan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Himantes</title>
-      <link>http://localhost:1313/projects/himantes/</link>
+      <link>https://hugokatzer.tech/projects/himantes/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/himantes/</guid>
+      <guid>https://hugokatzer.tech/projects/himantes/</guid>
       <description>Pokemon Classifier and Generator</description>
     </item>
   </channel>

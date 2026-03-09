@@ -1,8 +1,6 @@
 ---
 title: "Devlog"
-
 draft: false
 ---
 
-
-Nothing yet, stay tuned 
+Welcome to my development log!

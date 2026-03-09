@@ -1,104 +1,113 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/stumberg/</loc>
+    <loc>https://hugokatzer.tech/projects/stumberg/</loc>
     <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/zamin/</loc>
+    <loc>https://hugokatzer.tech/projects/zamin/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/tosach/</loc>
+    <loc>https://hugokatzer.tech/projects/tosach/</loc>
     <lastmod>2026-01-27T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/goswin/</loc>
+    <loc>https://hugokatzer.tech/projects/goswin/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/github/</loc>
+    <loc>https://hugokatzer.tech/devlog/</loc>
+    <lastmod>2026-03-05T09:30:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://hugokatzer.tech/</loc>
+    <lastmod>2026-03-05T09:30:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://hugokatzer.tech/devlog/second-post/</loc>
+    <lastmod>2026-03-05T09:30:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://hugokatzer.tech/devlog/first-post/</loc>
+    <lastmod>2026-03-01T12:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://hugokatzer.tech/tags/github/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/go/</loc>
+    <loc>https://hugokatzer.tech/tags/go/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://hugokatzer.tech/tags/hugo/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://hugokatzer.tech/projects/mushin/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/mushin/</loc>
+    <loc>https://hugokatzer.tech/projects/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://hugokatzer.tech/tags/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/linear-regression/</loc>
+    <loc>https://hugokatzer.tech/tags/linear-regression/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/nn/</loc>
+    <loc>https://hugokatzer.tech/tags/nn/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://hugokatzer.tech/tags/python/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>https://hugokatzer.tech/tags/ai/</loc>
     <lastmod>2026-01-27T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/ml/</loc>
+    <loc>https://hugokatzer.tech/tags/ml/</loc>
     <lastmod>2026-01-27T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/cnn/</loc>
+    <loc>https://hugokatzer.tech/tags/cnn/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/gan/</loc>
+    <loc>https://hugokatzer.tech/tags/gan/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/himantes/</loc>
+    <loc>https://hugokatzer.tech/projects/himantes/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/pytorch/</loc>
+    <loc>https://hugokatzer.tech/tags/pytorch/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/bachelor_thesis/</loc>
+    <loc>https://hugokatzer.tech/projects/bachelor_thesis/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/vertexai/</loc>
+    <loc>https://hugokatzer.tech/tags/vertexai/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://hugokatzer.tech/about/</loc>
     <lastmod>2025-02-24T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://hugokatzer.tech/categories/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/collections/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/devlog/</loc>
+    <loc>https://hugokatzer.tech/collections/</loc>
   </url>
 </urlset>
