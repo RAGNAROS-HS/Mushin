@@ -14,4 +14,4 @@ Every mistake I made during my thesis was "adressed" so to say, there were no ma
 
 In any case, this project was pretty fun to do, even though the topic was quite niche and "boring". The clear results, easy and standard data formats along with the low file sizes made it enjoyable.
 
-Looking forward to the next one!
+Looking forward I'm definitely going to be more focused on Neural Networks, I find them really interesing and after this one, I think I've got the work format really honed in. Onto the next!
