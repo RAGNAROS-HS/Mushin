@@ -1,6 +1,6 @@
 ---
 title: "Simurgh Released"
-date: 2026-03-13T12:00:00Z
+date: 2026-03-13T10:00:00Z
 draft: false
 summary: "Humble beginnings, writing my initial thoughts and plans for this section as a whole"
 ---
