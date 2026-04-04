@@ -1,6 +1,6 @@
 ---
 title: "First Post :)"
-date: 2026-03-01T12:00:00Z
+date: 2026-03-01
 draft: false
 summary: "Humble beginnings, writing my initial thoughts and plans for this section as a whole"
 ---

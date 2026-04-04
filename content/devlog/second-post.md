@@ -1,6 +1,6 @@
 ---
 title: "Second Devlog Post"
-date: 2026-03-08T09:30:00Z
+date: 2026-03-08
 draft: false
 summary: "New project in the works"
 ---
