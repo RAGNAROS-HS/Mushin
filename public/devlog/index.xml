@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devlog - Hugo Sokolowski-Katzer</title>
-    <link>https://hugokatzer.tech/devlog/</link>
+    <link>http://localhost:1313/devlog/</link>
     <description>Personal Site</description>
     <generator>Hugo 0.156.0 &amp; FixIt v0.4.3-20260130042349-e23a50d7</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Apr 2026 10:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hugokatzer.tech/devlog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/devlog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Halghe Progress</title>
-      <link>https://hugokatzer.tech/devlog/halghe-progress/</link>
-      <pubDate>Sat, 04 Apr 2026 10:00:00 +0000</pubDate>
-      <guid>https://hugokatzer.tech/devlog/halghe-progress/</guid>
+      <link>http://localhost:1313/devlog/halghe-progress/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/devlog/halghe-progress/</guid>
       <description>Some insight on my next project - an RL Agario clone</description>
     </item>
     <item>
       <title>Simurgh Released</title>
-      <link>https://hugokatzer.tech/devlog/simurgh-release/</link>
-      <pubDate>Fri, 13 Mar 2026 10:00:00 +0000</pubDate>
-      <guid>https://hugokatzer.tech/devlog/simurgh-release/</guid>
+      <link>http://localhost:1313/devlog/simurgh-release/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/devlog/simurgh-release/</guid>
       <description>Humble beginnings, writing my initial thoughts and plans for this section as a whole</description>
     </item>
     <item>
       <title>Second Devlog Post</title>
-      <link>https://hugokatzer.tech/devlog/second-post/</link>
-      <pubDate>Sun, 08 Mar 2026 09:30:00 +0000</pubDate>
-      <guid>https://hugokatzer.tech/devlog/second-post/</guid>
+      <link>http://localhost:1313/devlog/second-post/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/devlog/second-post/</guid>
       <description>New project in the works</description>
     </item>
     <item>
       <title>First Post :)</title>
-      <link>https://hugokatzer.tech/devlog/first-post/</link>
-      <pubDate>Sun, 01 Mar 2026 12:00:00 +0000</pubDate>
-      <guid>https://hugokatzer.tech/devlog/first-post/</guid>
+      <link>http://localhost:1313/devlog/first-post/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/devlog/first-post/</guid>
       <description>Humble beginnings, writing my initial thoughts and plans for this section as a whole</description>
     </item>
   </channel>

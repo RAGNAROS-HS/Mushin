@@ -9,5 +9,5 @@ To do: explain the rest
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/projects/goswin/  
+> URL: http://localhost:1313/projects/goswin/  
 

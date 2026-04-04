@@ -352,5 +352,5 @@ Whatever the case - I think I've taken an interesting step into tackling a niche
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/projects/simurgh/  
+> URL: http://localhost:1313/projects/simurgh/  
 

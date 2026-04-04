@@ -171,5 +171,5 @@ Personal use and experimentation.
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/projects/stumberg/  
+> URL: http://localhost:1313/projects/stumberg/  
 

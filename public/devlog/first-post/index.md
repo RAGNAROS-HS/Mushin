@@ -15,5 +15,5 @@ oh and to be clear - there will be ZERO AI in these posts, rest asssured every l
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/devlog/first-post/  
+> URL: http://localhost:1313/devlog/first-post/  
 
