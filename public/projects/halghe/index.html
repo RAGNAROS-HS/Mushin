@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Jadid Halghe - Hugo Sokolowski-Katzer</title><meta name="author" content="Hugo Sokołowski-Katzer">
+<meta name="description" content="Teaching AI agents to dominate an agar.io clone"><meta name="keywords" content='RL, Python, PyTorch, Game Engine'>
+  <meta itemprop="name" content="Jadid Halghe">
+  <meta itemprop="description" content="Teaching AI agents to dominate an agar.io clone">
+  <meta itemprop="datePublished" content="2026-04-05T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-04-05T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1687">
+  <meta itemprop="keywords" content="RL,Python,PyTorch,Game Engine"><meta property="og:url" content="http://localhost:1313/projects/halghe/">
+  <meta property="og:site_name" content="Hugo Sokolowski-Katzer">
+  <meta property="og:title" content="Jadid Halghe">
+  <meta property="og:description" content="Teaching AI agents to dominate an agar.io clone">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2026-04-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-05T00:00:00+00:00">
+    <meta property="article:tag" content="RL">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="PyTorch">
+    <meta property="article:tag" content="Game Engine">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jadid Halghe">
+  <meta name="twitter:description" content="Teaching AI agents to dominate an agar.io clone">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/stumlogoLookingLeft.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/projects/halghe/" title="Jadid Halghe - Hugo Sokolowski-Katzer" /><link rel="prev" type="text/html" href="http://localhost:1313/projects/tosach/" title="Tosach" /><link rel="next" type="text/html" href="http://localhost:1313/projects/zamin/" title="Zamin" /><link rel="alternate" type="text/markdown" href="http://localhost:1313/projects/halghe/index.md" title="Jadid Halghe - Hugo Sokolowski-Katzer"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Jadid Halghe",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/projects\/halghe\/"
+    },"genre": "projects","keywords": "RL, Python, PyTorch, Game Engine","wordcount":  1687 ,
+    "url": "http:\/\/localhost:1313\/projects\/halghe\/","datePublished": "2026-04-05T00:00:00+00:00","dateModified": "2026-04-05T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Hugo Sokołowski-Katzer"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/">Home</a></li><li class="menu-item">
+              <a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item">
+              <a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/">About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+      <div class="theme-switch" role="button" aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></div>
+      <div class="menu-toggle" id="menu-toggle-mobile" role="button" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/">Home</a></li><li class="menu-item"><a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item"><a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item"><a class="menu-link" href="/about/">About me</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item" data-separator="/"><a href="/projects/" title="Projects">Projects</a></li><li class="breadcrumb-item active" data-separator="/" aria-current="page">Jadid Halghe</li>
+    </ol>
+  </nav><main class="fi-container"><article class="page single special">
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Jadid Halghe</h1></div><div class="content" id="content"><h1 class="heading-element" id="jadid-halghe"><span>Jadid Halghe</span>
+  <a href="#jadid-halghe" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h1><p>Teaching AI agents to dominate an agar.io clone through deep reinforcement learning. Built from scratch in Python and PyTorch — game engine, RL environment, policy architecture, training loop, and evaluation harness.</p>
+<hr>
+<h2 class="heading-element" id="the-problem"><span>The Problem</span>
+  <a href="#the-problem" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Agar.io is a surprisingly rich environment for RL research. At any moment an agent must:</p>
+<ul>
+<li><strong>Navigate</strong> a continuous 2D space toward food while avoiding larger enemies</li>
+<li><strong>Decide when to split</strong> — doubling mobility at the cost of becoming individually smaller and harder to control</li>
+<li><strong>Reason about mass ratios</strong> — you can only eat entities smaller than 1/1.21 of your own mass, and be eaten by anything bigger</li>
+<li><strong>Manage multiple bodies</strong> — a split player controls up to 16 simultaneous cells, each moving toward the same cursor target but following independent physics</li>
+</ul>
+<p>This creates a non-trivial partial-observability problem: the world is large, entities are numerous, and the optimal action depends on continuous mass comparisons across a variable-size entity set.</p>
+<hr>
+<h2 class="heading-element" id="game-engine"><span>Game Engine</span>
+  <a href="#game-engine" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The first challenge was building a simulation fast enough for RL training. A naive Python implementation of agar.io — looping over entities in Python, checking collisions one-by-one — runs at roughly 50 ticks/sec. That&rsquo;s playable, but training PPO to 10M steps would take weeks.</p>
+<p>The solution is to represent every entity type as a <strong>contiguous NumPy array</strong> and express all game logic as vectorized operations over those arrays.</p>
+<h3 class="heading-element" id="entity-model"><span>Entity model</span>
+  <a href="#entity-model" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><pre tabindex="0"><code>CellArrays:   pos[N,2]   mass[N]   vel[N,2]   split_vel[N,2]   owner[N]   alive[N]
+FoodArrays:   pos[F,2]   (compact layout — no gaps, swap-with-last on free)
+VirusArrays:  pos[V,2]   mass[V]
+EjectedArrays: pos[E,2]  vel[E,2]  owner[E]   settle_timer[E]</code></pre><p>Dead slots are recycled through a free-list <code>deque</code>. Allocation/deallocation only happens at discrete events (splits, deaths, spawns) — never in the hot collision path, which reads and writes only the <code>pos[0:n_alive]</code> slice.</p>
+<h3 class="heading-element" id="collision-detection"><span>Collision detection</span>
+  <a href="#collision-detection" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Eating uses <strong>O(n²) NumPy broadcasting</strong> over the alive-cell subset:</p>
+<div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-python"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Both conditions must hold simultaneously:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 1. mass_A &gt; 1.21 × mass_B  (eat_ratio² avoids two sqrt calls per pair)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. distance(center_A, center_B) &lt; radius_A</span></span></span></code></pre></td></tr></table></div>
+</div>
+</div><p>The 1.21× threshold comes from squaring the 1.1× radius ratio, which avoids computing <code>sqrt(mass)</code> for every pair — a meaningful saving when cells number in the hundreds.</p>
+<p>For mass accumulation after eating, <code>np.add.at</code> handles the case where one predator eats multiple prey in the same tick. It&rsquo;s slower than <code>+=</code> but correct when indices repeat.</p>
+<h3 class="heading-element" id="physics"><span>Physics</span>
+  <a href="#physics" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Speed scales inversely with mass: <code>base_speed / mass^0.439</code>. This means small cells are fast and nimble; large cells are slow and vulnerable. At start mass 2500, a cell moves ~26 units per tick (at 25 TPS). The formula is applied elementwise across all alive cells in one vectorized call.</p>
+<p>Split momentum lives in a separate <code>split_vel</code> array, which decays by a multiplier each tick. The position update sums both:</p>
+<div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-python"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">cell_pos</span> <span class="o">+=</span> <span class="p">(</span><span class="n">cell_vel</span> <span class="o">+</span> <span class="n">cell_split_vel</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+</span></span><span class="line"><span class="cl"><span class="n">cell_split_vel</span> <span class="o">*=</span> <span class="n">split_decay</span></span></span></code></pre></td></tr></table></div>
+</div>
+</div><p>This keeps the steering velocity (<code>cell_vel</code>) clean — it&rsquo;s overwritten every tick from the action input — while preserving split momentum across ticks.</p>
+<h3 class="heading-element" id="throughput"><span>Throughput</span>
+  <a href="#throughput" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Scenario</th>
+            <th>TPS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2 players / 500 food</td>
+            <td>~4 300</td>
+        </tr>
+        <tr>
+            <td>4 players / 1 000 food</td>
+            <td>~4 000</td>
+        </tr>
+        <tr>
+            <td>8 players / 2 000 food</td>
+            <td>~3 500</td>
+        </tr>
+    </tbody>
+  </table>
+</div><p>Single-world throughput is bottlenecked by Python dispatch overhead (~3 µs × ~25 NumPy calls/tick = ~75 µs floor), not computation. The 10k agent-steps/sec training target is reached by running 3 independent worlds in parallel via <code>VecAgarEnv</code>.</p>
+<hr>
+<h2 class="heading-element" id="rl-environment"><span>RL Environment</span>
+  <a href="#rl-environment" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The game engine exposes <code>world.step(actions) → (rewards, dones, info)</code> and <code>world.get_state()</code> as separate calls. Keeping state serialization out of the tick loop saves ~15% of tick time in training.</p>
+<h3 class="heading-element" id="observation-design"><span>Observation design</span>
+  <a href="#observation-design" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The core challenge is encoding a variable-size entity set into a fixed-size vector for the neural network. The solution: <strong>ego-centric K-nearest-neighbor groups</strong>.</p>
+<p>From the agent&rsquo;s centroid, we collect:</p>
+<div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Group</th>
+            <th>K</th>
+            <th>Features per entity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Own cells</td>
+            <td>16</td>
+            <td><code>(rel_x, rel_y, log_mass_norm)</code></td>
+        </tr>
+        <tr>
+            <td>Food</td>
+            <td>20</td>
+            <td><code>(rel_x, rel_y)</code></td>
+        </tr>
+        <tr>
+            <td>Viruses</td>
+            <td>10</td>
+            <td><code>(rel_x, rel_y)</code></td>
+        </tr>
+        <tr>
+            <td>Threat enemies</td>
+            <td>10</td>
+            <td><code>(rel_x, rel_y, delta_log_mass)</code></td>
+        </tr>
+        <tr>
+            <td>Prey enemies</td>
+            <td>10</td>
+            <td><code>(rel_x, rel_y, delta_log_mass)</code></td>
+        </tr>
+    </tbody>
+  </table>
+</div><p>Total: <strong>170 float32 features</strong>.</p>
+<p>The threat/prey split is deliberate. Enemy cells are classified at observation-build time — threats (larger than self) get <code>delta_log_mass &gt; 0</code>, prey (smaller) get <code>delta_log_mass &lt;= 0</code>. This means the network never needs to learn a subtraction to distinguish them; the sign of the mass feature carries that information directly.</p>
+<p>All positions are divided by <code>max(width, height) / 2</code> and clipped to <code>[-10, 10]</code>. Log-mass features use <code>log(mass / start_mass + 1e-6) / 5</code>.</p>
+<h3 class="heading-element" id="action-space"><span>Action space</span>
+  <a href="#action-space" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Continuous: <code>Box([-1,-1,-1,-1], [1,1,1,1])</code>. The first two dimensions encode a movement direction, projected to a world-space cursor position as <code>target = centroid + direction × large_scale</code>. Split and eject are thresholded at 0 — positive logit fires the action.</p>
+<p>The pre-tanh sample <code>z</code> is stored in the rollout buffer rather than the squashed action <code>tanh(z)</code>. This ensures the Jacobian correction in the log-probability calculation is exact, and avoids numerical issues from inverting tanh near ±1.</p>
+<h3 class="heading-element" id="reward-function"><span>Reward function</span>
+  <a href="#reward-function" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><pre tabindex="0"><code>reward = Δ(own_mass) / start_mass
+       + survival_bonus per tick (0.01)
+       - player_mass / reward_scale on death</code></pre><p>The death penalty scales with current mass so that dying is always a net loss regardless of how large the agent has grown. Without this, an agent that grew very large could benefit from dying (resetting to start mass and collecting food again). The survival bonus at 0.01 equals <code>food_mass / start_mass</code> — roughly one food pellet per tick in value.</p>
+<hr>
+<h2 class="heading-element" id="policy-architecture"><span>Policy Architecture</span>
+  <a href="#policy-architecture" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="baseline-mlp"><span>Baseline: MLP</span>
+  <a href="#baseline-mlp" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>A flat 3-layer MLP (256 → 128) over the 170-dim observation. Shared encoder, separate actor mean head + shared <code>log_std</code> parameter + critic head. Orthogonal initialization throughout (gain √2; output heads: 0.01 for actor, 1.0 for critic — standard PPO practice).</p>
+<h3 class="heading-element" id="primary-attention-policy"><span>Primary: Attention policy</span>
+  <a href="#primary-attention-policy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The MLP treats all 170 features as a flat vector, losing the natural entity structure. The attention policy exploits it.</p>
+<p>Each entity group is projected to a common <code>embed_dim=64</code> with a learned type embedding added:</p>
+<pre tabindex="0"><code>own_emb   = own_proj(own_tokens)   + type_emb[0]   # (B, 16, 64)
+food_emb  = food_proj(food_tokens) + type_emb[1]   # (B, 20, 64)
+...
+tokens = cat([own_emb, food_emb, virus_emb, threat_emb, prey_emb], dim=1)  # (B, 66, 64)</code></pre><p>A 2-layer Pre-LN <code>TransformerEncoder</code> (4 heads) then attends over all 66 entity slots. Pre-LayerNorm (<code>norm_first=True</code>) gives more stable training than post-LN.</p>
+<p>Zero-padded slots (fewer than K entities present) are masked in the attention computation. The output is mean-pooled over real tokens only:</p>
+<div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-python"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n_real</span> <span class="o">=</span> <span class="n">is_real</span><span class="o">.</span><span class="n">float</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdim</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">clamp</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">pooled</span> <span class="o">=</span> <span class="p">(</span><span class="n">out</span> <span class="o">*</span> <span class="n">is_real</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">float</span><span class="p">())</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_real</span></span></span></code></pre></td></tr></table></div>
+</div>
+</div><p>The two global scalar features (log total mass, cell count fraction) are concatenated to the pooled representation before the actor and critic heads.</p>
+<h3 class="heading-element" id="attention-visualization"><span>Attention visualization</span>
+  <a href="#attention-visualization" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><code>AttentionPolicy.attention_maps(obs)</code> manually steps through each transformer layer, calling <code>MultiheadAttention</code> with <code>need_weights=True, average_attn_weights=False</code> to extract per-head weights. This is displayed as a glow overlay in the live renderer — entities that receive high attention get a halo sized proportionally to their attention weight.</p>
+<pre tabindex="0"><code>python main.py --checkpoint ckpt.pt --attention-viz</code></pre><p>The inference runs once per simulation tick (25 Hz) and is cached; the renderer reads it at 60 Hz. This keeps expensive network inference out of the render path.</p>
+<h3 class="heading-element" id="recurrent-option"><span>Recurrent option</span>
+  <a href="#recurrent-option" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><code>RecurrentPolicy</code> wraps an MLP encoder with a GRU hidden state, threading <code>(hidden_state_in, hidden_state_out)</code> through each <code>act()</code> call. Useful for partial-observability experiments where entity history matters.</p>
+<hr>
+<h2 class="heading-element" id="training"><span>Training</span>
+  <a href="#training" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="ppo"><span>PPO</span>
+  <a href="#ppo" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Standard clipped surrogate objective with GAE:</p>
+<pre tabindex="0"><code>L = L_clip + c_v · L_value - c_e · L_entropy
+
+L_clip = E[min(r·A, clip(r, 1±ε)·A)]</code></pre><p>Advantages are computed with GAE (λ=0.95) and normalized per rollout. The rollout buffer is pre-allocated (<code>T × N</code> tensors) — no per-step allocation in the collect loop.</p>
+<p>Key hyperparameters:</p>
+<div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Rollout length</td>
+            <td>512 steps/env</td>
+        </tr>
+        <tr>
+            <td>Parallel envs</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Minibatch size</td>
+            <td>256</td>
+        </tr>
+        <tr>
+            <td>Epochs per rollout</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Clip range ε</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Entropy bonus</td>
+            <td>0.01</td>
+        </tr>
+        <tr>
+            <td>Learning rate</td>
+            <td>3e-4</td>
+        </tr>
+        <tr>
+            <td>Total steps</td>
+            <td>10M</td>
+        </tr>
+    </tbody>
+  </table>
+</div><h3 class="heading-element" id="self-play-curriculum"><span>Self-play curriculum</span>
+  <a href="#self-play-curriculum" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Standard PPO against random bots hits a ceiling quickly — the agent learns to eat food and avoid naive opponents, but never develops the split-timing and positional play needed against skilled opposition.</p>
+<p>The solution is <code>OpponentPool</code>: a ring buffer of past policy snapshots. Every 50 rollouts, the current policy is saved to the pool (max 20 snapshots). During rollout collection, ~80% of episodes use a randomly sampled past snapshot as the bot opponent; 20% use random walk to preserve diversity.</p>
+<div class="code-block highlight" data-mode="classic" data-copyable="true"><div class="chroma">
+<div class="code-header language-yaml"><span class="code-title"><i class="arrow fa-solid fa-chevron-down" aria-hidden="true"></i></span><span class="ellipses-btn" aria-label="Show more options" role="button"><i class="fa-solid fa-ellipsis-h" aria-hidden="true"></i></span><span class="line-nos-btn" aria-label="Toggle line numbers" role="button" title="Toggle line numbers"><i class="fa-solid fa-list-ol" aria-hidden="true"></i></span><span class="line-wrap-btn" aria-label="Toggle code wrap" role="button" title="Toggle code wrap"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><span class="copy-btn" aria-label="Copy to clipboard" role="button" title="Copy to clipboard"><i class="fa-regular fa-clone" aria-hidden="true"></i></span></div><div class="code-wrapper" data-max="10" data-line-digit="1" style="--fi-max-shown-lines:10;--fi-line-digit:1;--fi-line-start:1;"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">selfplay</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pool_size</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">update_interval</span><span class="p">:</span><span class="w"> </span><span class="m">50</span><span class="w">   </span><span class="c"># rollouts between snapshots</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">selfplay_prob</span><span class="p">:</span><span class="w"> </span><span class="m">0.8</span></span></span></code></pre></td></tr></table></div>
+</div>
+</div><p>Policies are lazily loaded on first use and replaced when their ring slot is overwritten (GC collects the old instance). Bot opponents are hot-swapped between rollouts via <code>VecAgarEnv.set_bot_policy()</code> without reconstructing environments.</p>
+<p>The pool starts empty — opponents are random-walk bots until rollout 50. This bootstraps basic competence before self-play begins.</p>
+<h2 class="heading-element" id="training-progression"><span>Training Progression</span>
+  <a href="#training-progression" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div style="display: flex; gap: 15px; text-align: center;">
+  <div style="flex: 1; min-width: 0;">
+    <strong>Rollout 50 — early exploration</strong><br><br>
+    <img src="/img/first50.gif" style="width:100%; height:350px; object-fit:cover;">
+    <p><em>As you can see, at first the blobs move rather randomly, with little regard for food or viruses. They also split a for no reason</em></p>
+  </div>
+  <div style="flex: 1; min-width: 0;">
+    <strong>Rollout 1000 — emerging strategy</strong><br><br>
+    <img src="/img/first1000.gif" style="width:100%; height:350px; object-fit:cover;">
+    <p><em>Here we see blobd running away from one another, they posses a strong sense of danger when others are nearby.</em></p>
+  </div>
+  <div style="flex: 1; min-width: 0;">
+    <strong>Rollout 1500 — mature policy</strong><br><br>
+    <img src="/img/first1500.gif" style="width:100%; height:350px; object-fit:cover;">
+    <p><em>at this stage we see clear patterns of larger blobs hunting smaller ones, independant food scavenging and even the odd split in an attempt to hunt.</em></p>
+  </div>
+</div>
+<h2 class="heading-element" id="evaluation"><span>Evaluation</span>
+  <a href="#evaluation" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="baselines"><span>Baselines</span>
+  <a href="#baselines" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Policy</th>
+            <th>Behavior</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>RandomPolicy</code></td>
+            <td>Uniform random actions each tick</td>
+        </tr>
+        <tr>
+            <td><code>GreedyPolicy</code></td>
+            <td>Chase nearest edible enemy or food; flee nearest threat</td>
+        </tr>
+    </tbody>
+  </table>
+</div><h3 class="heading-element" id="elo-tournament"><span>Elo tournament</span>
+  <a href="#elo-tournament" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>To measure progress across training, <code>eval/elo.py</code> runs a round-robin tournament across checkpoint history. Each unordered pair <code>(A, B)</code> plays <code>episodes_per_pair</code> games in both directions (A as eval agent against B as bot, and vice versa) to cancel map-position advantage.</p>
+<p>Win/loss/draw is determined by final mass rank. Elo updates use the standard formula:</p>
+<pre tabindex="0"><code>E_A = 1 / (1 + 10^((R_B − R_A) / 400))
+R_A&#39; = R_A + K · (score_A − E_A)</code></pre><p>Policies are loaded pair-by-pair and freed immediately after their games — the full checkpoint history never needs to be in memory simultaneously.</p>
+<h3 class="heading-element" id="replay--visualization"><span>Replay &amp; visualization</span>
+  <a href="#replay--visualization" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Episodes can be saved to disk as <code>ReplayEpisode</code> objects (trajectory arrays) and replayed in the Pygame renderer at arbitrary speed. A mass-over-time plot is also available per episode via matplotlib.</p>
+<hr>
+<h2 class="heading-element" id="test-coverage"><span>Test coverage</span>
+  <a href="#test-coverage" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>Module</th>
+            <th>Tests</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Game mechanics</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>RL environment</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Agent / policy</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Training loop</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Evaluation harness</td>
+            <td>34</td>
+        </tr>
+    </tbody>
+  </table>
+</div><p>Tests cover eating rules, split physics, merge timer, boundary clamping, mass conservation, no-NaN guarantees, environment determinism, and PPO convergence on a small synthetic problem.</p>
+<hr>
+<h2 class="heading-element" id="stack"><span>Stack</span>
+  <a href="#stack" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Python 3.12 · PyTorch 2.x · NumPy · Gymnasium · PettingZoo · Pygame-CE · TensorBoard · Ruff</p>
+</div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2026</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Hugo Sokołowski-Katzer</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config/4a2186b95d180af1f50cfa14b3645697.js" defer></script><script src="/js/theme.min.js" defer></script></body>
+</html>

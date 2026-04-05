@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RL - Tag - Hugo Sokolowski-Katzer</title>
+    <link>http://localhost:1313/tags/rl/</link>
+    <description>Personal Site</description>
+    <generator>Hugo 0.156.0 &amp; FixIt v0.4.3-20260130042349-e23a50d7</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jadid Halghe</title>
+      <link>http://localhost:1313/projects/halghe/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/halghe/</guid>
+      <description>Teaching AI agents to dominate an agar.io clone through deep reinforcement learning.</description>
+    </item>
+  </channel>
+</rss>
