@@ -13,6 +13,10 @@
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url>
   <url>
+    <loc>http://localhost:1313/projects/halghe/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/projects/tosach/</loc>
     <lastmod>2026-01-27T00:00:00+00:00</lastmod>
   </url>
@@ -21,15 +25,39 @@
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url>
   <url>
+    <loc>http://localhost:1313/tags/game-engine/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/pytorch/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/rl/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/devlog/</loc>
     <lastmod>2026-04-04T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/devlog/halghe-progress/</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-04T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -41,15 +69,7 @@
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:1313/devlog/simurgh-release/</loc>
-    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -81,10 +101,6 @@
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/python/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2026-01-27T00:00:00+00:00</lastmod>
   </url>
@@ -105,10 +121,6 @@
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/pytorch/</loc>
-    <lastmod>2026-01-22T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:1313/projects/bachelor_thesis/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
   </url>
@@ -119,9 +131,6 @@
   <url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-02-24T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/projects/halghe/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/categories/</loc>
