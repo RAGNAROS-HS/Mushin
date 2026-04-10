@@ -12,14 +12,10 @@ font-size: 1.15rem;
 line-height: 1.8;
 margin-bottom: 3rem;
 padding: 1.5rem 2rem;
-background: rgba(110, 142, 251, 0.05);
+background: var(--color-background-code, rgba(128, 128, 128, 0.05));
 border-radius: 12px;
-border-left: 5px solid #6e8efb;
+border-left: 5px solid var(--theme-color, #888);
 box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-}
-
-[data-theme='dark'] .about-header {
-background: rgba(110, 142, 251, 0.05);
 }
 
 .timeline-section {
@@ -39,6 +35,7 @@ width: fit-content;
 
 .timeline-title i {
 font-size: 1.8rem;
+color: var(--theme-color, inherit);
 }
 
 .timeline {
@@ -53,7 +50,8 @@ top: 10px;
 bottom: 0;
 left: 6px;
 width: 3px;
-background: linear-gradient(to bottom, #6e8efb 0%, #a777e3 50%, rgba(167, 119, 227, 0) 100%);
+background: var(--theme-color, #ccc);
+opacity: 0.3;
 border-radius: 4px;
 }
 
@@ -74,27 +72,23 @@ top: 1.8rem;
 width: 14px;
 height: 14px;
 border-radius: 50%;
-background: #f8f9fa;
-border: 3px solid #6e8efb;
-box-shadow: 0 0 0 5px rgba(110, 142, 251, 0.1);
+background: var(--color-background, #fff);
+border: 3px solid var(--theme-color, #ccc);
+box-shadow: 0 0 0 5px rgba(128, 128, 128, 0.1);
 transition: all 0.3s ease;
 z-index: 2;
 }
 
-[data-theme='dark'] .timeline-dot {
-background: #1e1e1e;
-}
-
 .timeline-item:hover .timeline-dot {
-background: #a777e3;
-border-color: #a777e3;
-box-shadow: 0 0 15px rgba(167, 119, 227, 0.5), 0 0 0 6px rgba(167, 119, 227, 0.2);
+background: var(--theme-color, #888);
+border-color: var(--theme-color, #888);
+box-shadow: 0 0 15px rgba(128, 128, 128, 0.2), 0 0 0 6px rgba(128, 128, 128, 0.1);
 transform: scale(1.3);
 }
 
 .timeline-content {
-background: rgba(255, 255, 255, 0.5);
-border: 1px solid rgba(110, 142, 251, 0.15);
+background: var(--color-background-code, rgba(128, 128, 128, 0.05));
+border: 1px solid var(--color-border, rgba(128, 128, 128, 0.15));
 padding: 1.8rem 2.2rem;
 border-radius: 16px;
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
@@ -105,12 +99,6 @@ position: relative;
 overflow: hidden;
 }
 
-[data-theme='dark'] .timeline-content {
-background: rgba(30, 30, 35, 0.4);
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
 .timeline-content::before {
 content: '';
 position: absolute;
@@ -118,19 +106,19 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: linear-gradient(135deg, rgba(110, 142, 251, 0.05), rgba(167, 119, 227, 0.05));
+background: var(--theme-color, #888);
 opacity: 0;
 transition: opacity 0.3s ease;
 z-index: -1;
 }
 
 .timeline-item:hover .timeline-content {
-border-color: rgba(167, 119, 227, 0.4);
-box-shadow: 0 15px 35px rgba(167, 119, 227, 0.1);
+border-color: var(--theme-color, #888);
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
 }
 
 .timeline-item:hover .timeline-content::before {
-opacity: 1;
+opacity: 0.05;
 }
 
 .timeline-header {
@@ -141,11 +129,7 @@ flex-wrap: wrap;
 gap: 1rem;
 margin-bottom: 1.2rem;
 padding-bottom: 1.2rem;
-border-bottom: 1px solid rgba(110, 142, 251, 0.1);
-}
-
-[data-theme='dark'] .timeline-header {
-border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+border-bottom: 1px solid var(--color-border, rgba(128, 128, 128, 0.15));
 }
 
 .timeline-role {
@@ -167,7 +151,7 @@ margin: 0;
 .timeline-date {
 font-size: 0.85rem;
 font-weight: 700;
-background: rgba(167, 119, 227, 0.1);
+background: var(--color-background-code, rgba(128, 128, 128, 0.1));
 padding: 0.4rem 1.2rem;
 border-radius: 20px;
 display: flex;
@@ -175,10 +159,6 @@ align-items: center;
 gap: 0.5rem;
 white-space: nowrap;
 letter-spacing: 0.5px;
-}
-
-[data-theme='dark'] .timeline-date {
-background: rgba(167, 119, 227, 0.15);
 }
 
 .timeline-description {
@@ -200,6 +180,7 @@ content: "▹";
 position: absolute;
 left: -1.2rem;
 font-weight: bold;
+color: var(--theme-color, #888);
 }
 
 .timeline-description li:last-child {
@@ -214,7 +195,7 @@ margin-bottom: 2rem;
 }
 
 .skill-tag {
-background: rgba(110, 142, 251, 0.05);
+background: var(--color-background-code, rgba(128, 128, 128, 0.05));
 padding: 0.6rem 1.2rem;
 border-radius: 8px;
 font-size: 0.95rem;
@@ -222,29 +203,21 @@ font-weight: 600;
 display: inline-flex;
 align-items: center;
 gap: 0.6rem;
-border: 1px solid rgba(110, 142, 251, 0.2);
+border: 1px solid var(--color-border, rgba(128, 128, 128, 0.2));
 transition: all 0.3s ease;
 cursor: default;
 }
 
-[data-theme='dark'] .skill-tag {
-background: rgba(255, 255, 255, 0.02);
-border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .skill-tag i {
 font-size: 1.1rem;
+color: var(--theme-color, inherit);
 }
 
 .skill-tag:hover {
-background: rgba(110, 142, 251, 0.15);
+background: var(--color-background-code, rgba(128, 128, 128, 0.15));
 transform: translateY(-2px);
-border-color: #6e8efb;
-box-shadow: 0 4px 12px rgba(110, 142, 251, 0.1);
-}
-
-[data-theme='dark'] .skill-tag:hover {
-background: rgba(110, 142, 251, 0.2);
+border-color: var(--theme-color, #888);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .extra-section {
@@ -259,6 +232,33 @@ Hi there! I'm <strong>Hugo Sokołowski-Katzer</strong>, an MSc Artificial Intell
 <div class="timeline-section">
 <h2 class="timeline-title"><i class="fa-solid fa-briefcase"></i> Experience</h2>
 <div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<div class="timeline-header">
+<div>
+<h3 class="timeline-role">Data, Automation & AI Intern</h3>
+<div class="timeline-company"><i class="fa-solid fa-building"></i> Talk360 (Full-time) | Amsterdam, NL (Hybrid)</div>
+</div>
+<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> Apr 2026 - Present</div>
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<div class="timeline-header">
+<div>
+<h3 class="timeline-role">AI Team</h3>
+<div class="timeline-company"><i class="fa-solid fa-building"></i> Futurist Law Lab (Part-time) | Amsterdam, NL</div>
+</div>
+<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> Feb 2026 - Present</div>
+</div>
+</div>
+</div>
+
 <div class="timeline-item">
 <div class="timeline-dot"></div>
 <div class="timeline-content">
@@ -267,7 +267,7 @@ Hi there! I'm <strong>Hugo Sokołowski-Katzer</strong>, an MSc Artificial Intell
 <h3 class="timeline-role">Information Security Intern</h3>
 <div class="timeline-company"><i class="fa-solid fa-building"></i> Swapfiets</div>
 </div>
-<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> June 2025 - August 2025</div>
+<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> Jun 2025 - Jul 2025</div>
 </div>
 <ul class="timeline-description">
 <li>Assisted with SOC 2 compliance preparation by identifying relevant controls in Vanta and gathering supporting evidence.</li>
@@ -275,6 +275,7 @@ Hi there! I'm <strong>Hugo Sokołowski-Katzer</strong>, an MSc Artificial Intell
 </ul>
 </div>
 </div>
+
 <div class="timeline-item">
 <div class="timeline-dot"></div>
 <div class="timeline-content">
@@ -283,7 +284,7 @@ Hi there! I'm <strong>Hugo Sokołowski-Katzer</strong>, an MSc Artificial Intell
 <h3 class="timeline-role">IT Intern</h3>
 <div class="timeline-company"><i class="fa-solid fa-building"></i> Swapfiets</div>
 </div>
-<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> June 2024 - June 2025</div>
+<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> Jun 2024 - May 2025</div>
 </div>
 <ul class="timeline-description">
 <li>Resolved a wide range of IT support tickets, ensuring timely and effective resolution.</li>
@@ -292,6 +293,7 @@ Hi there! I'm <strong>Hugo Sokołowski-Katzer</strong>, an MSc Artificial Intell
 </ul>
 </div>
 </div>
+
 <div class="timeline-item">
 <div class="timeline-dot"></div>
 <div class="timeline-content">
@@ -300,7 +302,7 @@ Hi there! I'm <strong>Hugo Sokołowski-Katzer</strong>, an MSc Artificial Intell
 <h3 class="timeline-role">Shop Assistant</h3>
 <div class="timeline-company"><i class="fa-solid fa-store"></i> VU Amsterdam SPAR</div>
 </div>
-<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> January 2024 - June 2024</div>
+<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> Jan 2024 - Jun 2024</div>
 </div>
 <ul class="timeline-description">
 <li>Refilled amenities, products and organized incoming deliveries.</li>
@@ -308,6 +310,7 @@ Hi there! I'm <strong>Hugo Sokołowski-Katzer</strong>, an MSc Artificial Intell
 </ul>
 </div>
 </div>
+
 <div class="timeline-item">
 <div class="timeline-dot"></div>
 <div class="timeline-content">
@@ -316,13 +319,14 @@ Hi there! I'm <strong>Hugo Sokołowski-Katzer</strong>, an MSc Artificial Intell
 <h3 class="timeline-role">Housekeeper</h3>
 <div class="timeline-company"><i class="fa-solid fa-hotel"></i> Radisson Hotel & Suites Amsterdam South</div>
 </div>
-<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> July 2023 - August 2023</div>
+<div class="timeline-date"><i class="fa-regular fa-calendar-alt"></i> Jul 2023 - Aug 2023</div>
 </div>
 <ul class="timeline-description">
 <li>Managed urgent customer affairs and maintained high standards for public and private spaces.</li>
 </ul>
 </div>
 </div>
+
 </div>
 </div>
 
