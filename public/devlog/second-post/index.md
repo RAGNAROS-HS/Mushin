@@ -20,5 +20,5 @@ Berim Booooos.
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/devlog/second-post/  
+> URL: http://localhost:1313/devlog/second-post/  
 

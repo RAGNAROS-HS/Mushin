@@ -15,5 +15,5 @@ Looking forward I'm definitely going to be more focused on Neural Networks, I fi
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/devlog/simurgh-release/  
+> URL: http://localhost:1313/devlog/simurgh-release/  
 

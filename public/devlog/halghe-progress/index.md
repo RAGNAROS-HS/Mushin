@@ -24,5 +24,5 @@ Till next time.
 ---
 
 > Author: Hugo Sokołowski-Katzer  
-> URL: https://hugokatzer.tech/devlog/halghe-progress/  
+> URL: http://localhost:1313/devlog/halghe-progress/  
 

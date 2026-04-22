@@ -1,10 +1,127 @@
-<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=2"><meta name=robots content="noodp"><title>Halghe Progress - Hugo Sokolowski-Katzer</title><meta name=author content="Hugo Sokołowski-Katzer"><meta name=description content="Some insight on my next project - an RL Agario clone"><meta itemprop=name content="Halghe Progress"><meta itemprop=description content="Some insight on my next project - an RL Agario clone"><meta itemprop=datePublished content="2026-04-04T00:00:00+00:00"><meta itemprop=dateModified content="2026-04-04T00:00:00+00:00"><meta itemprop=wordCount content="492"><meta property="og:url" content="https://hugokatzer.tech/devlog/halghe-progress/"><meta property="og:site_name" content="Hugo Sokolowski-Katzer"><meta property="og:title" content="Halghe Progress"><meta property="og:description" content="Some insight on my next project - an RL Agario clone"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="devlog"><meta property="article:published_time" content="2026-04-04T00:00:00+00:00"><meta property="article:modified_time" content="2026-04-04T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Halghe Progress"><meta name=twitter:description content="Some insight on my next project - an RL Agario clone"><meta name=application-name content="FixIt"><meta name=apple-mobile-web-app-title content="FixIt"><meta name=theme-color data-light=#f8f8f8 data-dark=#252627 content="#f8f8f8"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/img/stumlogoLookingLeft.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical type=text/html href=https://hugokatzer.tech/devlog/halghe-progress/ title="Halghe Progress - Hugo Sokolowski-Katzer"><link rel=prev type=text/html href=https://hugokatzer.tech/devlog/simurgh-release/ title="Simurgh Released"><link rel=next type=text/html href=https://hugokatzer.tech/projects/goswin/ title=Goswin><link rel=alternate type=text/markdown href=https://hugokatzer.tech/devlog/halghe-progress/index.md title="Halghe Progress - Hugo Sokolowski-Katzer"><link rel=stylesheet href=/css/config.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload href=/lib/fontawesome-free/all.min.css as=style onload='this.removeAttribute("onload"),this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload href=/lib/animate/animate.min.css as=style onload='this.removeAttribute("onload"),this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Halghe Progress","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugokatzer.tech\/devlog\/halghe-progress\/"},"genre":"devlog","wordcount":492,"url":"https:\/\/hugokatzer.tech\/devlog\/halghe-progress\/","datePublished":"2026-04-04T00:00:00+00:00","dateModified":"2026-04-04T00:00:00+00:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Hugo Sokołowski-Katzer"},"description":""}</script><script src=/js/head/color-scheme.min.js></script></head><body data-instant-intensity=viewport data-header-desktop=fixed data-header-mobile=auto><div class=wrapper data-page-style=normal><header class="desktop animate__faster" id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Hugo Sokolowski-Katzer"><span class=header-title-text>Hugo Sokołowski-Katzer</span></a><span class=header-subtitle></span></div><nav><ul class=menu><li class=menu-item><a class=menu-link href=/>Home</a></li><li class=menu-item><a class=menu-link href=/devlog/>Devlog</a></li><li class=menu-item><a class=menu-link href=/projects/>Projects</a></li><li class=menu-item><a class=menu-link href=/about/>About me</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id=search-desktop><input type=text placeholder="Search titles or contents ..." id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fa-solid fa-search" aria-hidden=true></i>
-</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fa-solid fa-times-circle" aria-hidden=true></i>
-</a><span class="search-button search-loading" id=search-loading-desktop><i class="fa-solid fa-spinner fa-spin" aria-hidden=true></i></span></li><li class="menu-item theme-switch" role=button aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden=true></i></li></ul></nav></div></header><header class="mobile animate__faster" id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Hugo Sokolowski-Katzer"><span class=header-title-text>Hugo Sokołowski-Katzer</span></a><span class=header-subtitle></span></div><div class=theme-switch role=button aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden=true></i></div><div class=menu-toggle id=menu-toggle-mobile role=button aria-labelledby=menu-mobile><span></span><span></span><span></span></div></div><nav><ul class=menu id=menu-mobile><li class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents ..." id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fa-solid fa-search" aria-hidden=true></i>
-</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fa-solid fa-times-circle" aria-hidden=true></i>
-</a><span class="search-button search-loading" id=search-loading-mobile><i class="fa-solid fa-spinner fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></li><li class=menu-item><a class=menu-link href=/>Home</a></li><li class=menu-item><a class=menu-link href=/devlog/>Devlog</a></li><li class=menu-item><a class=menu-link href=/projects/>Projects</a></li><li class=menu-item><a class=menu-link href=/about/>About me</a></li><li class="menu-item menu-system"></li></ul></nav></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><nav aria-label=breadcrumb class=breadcrumb-container><ol class=breadcrumb><li class=breadcrumb-item data-separator=/><a href=/devlog/ title=Devlog>Devlog</a></li><li class="breadcrumb-item active" data-separator=/ aria-current=page>Halghe Progress</li></ol></nav><main class=fi-container><article class="page single special"><div class=header><h1 class="single-title animate__animated animate__pulse animate__faster">Halghe Progress</h1></div><div class=content id=content><p>It&rsquo;s been a while since I have posted here, but despite how busy it has been, I&rsquo;ve managed to scrape some hours together here and there to develop another project - Halghe.</p><p>The main idea was to produce something I can play myself, I remembered really liking Agar.io as a kid, but it was always crazy laggy. So with that in mind I set out to give it a try. Initially I found a repo which cloned exactly the agario look and functionality. It worked well, but was incredibly slow for Reinforcement Learning training. It was made of a lot of javascript, and all actions had to be POST or GET HTTP requests, which even after batching took horribly long. After trying for a while to fix it (to no avail). I deleted the repo, and tried from scratch.</p><p>In the meantime while this was happening I landed a new internship, which slightly changed my goals and priorities with these projects. Having so far focused on doing EVERYTHING manually, and when using AI - have total insight into every piece of generated code. But now knowing that I&rsquo;ll be working with my very own brain full time anyway, putting this much effort into side projects probably is not advisable, given I have a full time study as well. So considering all this I decided to dive into the deep end. I bought a claude code subscription and let it take the reins. No insight, no line by line checks, just full send.</p><p>Using Claude I was able to get an efficient and not-terrible looking agario clone working within the same day. With tweaks, fixes and the RL logic itself coming along with the week. It worked great, at the moment the agents train, and can play each other or even against me. They learned some basic strategies like: chase smaller blobs, run away from bigger ones, split to hunt, eat food. I&rsquo;m very happy, but I must say, letting an agent run for upwards of 30 minutes on its own is completely different to what I&rsquo;ve been doing so far. It is nice to give it a try, the results so far are promising, and it fits perfectly as an engine for me to keep making things on the side.</p><p>However from a engineering perspective it seems completely backwards, there is just no feasible way to keep up with it, when generating thousands of lines per day, it becomes impossible to vet each one yourself, you lose touch with the code and low-level decisions, bugfixing becomes more difficult.</p><p>Both approaches have their up and downsides, we will see which one prevails in the greater scheme of things.</p><p>I&rsquo;d expect rarer posts from my side for the coming months as employment looms. But I will definitely add Halghe&rsquo;s full description to the project list sooner or later. And who knows where agentic coding will take me next.</p><p>Happy Easter Everyone!
-Till next time.</p></div></article></main><footer class=footer><div class=footer-container><div class="footer-line copyright" itemscope itemtype=http://schema.org/CreativeWork><i class="fa-regular fa-copyright" aria-hidden=true></i>
-<span itemprop=copyrightYear>2026</span><span class=author itemprop=copyrightHolder>
-<a href=/>Hugo Sokołowski-Katzer</a></span></div></div></footer></div><div class=widgets><div class=fixed-buttons><div class="fixed-button back-to-top animate__faster d-none" role=button aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden=true></i></div></div><div id=mask></div><noscript><div class=noscript-warning>This website works best with JavaScript enabled.</div></noscript></div><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script src=/lib/autocomplete/autocomplete.min.js defer></script><script src=/lib/fuse/fuse.min.js defer></script><script src=/lib/cookieconsent/cookieconsent.min.js defer></script><script src=/js/config/bf892b93624b74cb8c52088477a5c25d.js defer></script><script src=/js/theme.min.js defer></script></body></html>
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Halghe Progress - Hugo Sokolowski-Katzer</title><meta name="author" content="Hugo Sokołowski-Katzer">
+<meta name="description" content="Some insight on my next project - an RL Agario clone">
+  <meta itemprop="name" content="Halghe Progress">
+  <meta itemprop="description" content="Some insight on my next project - an RL Agario clone">
+  <meta itemprop="datePublished" content="2026-04-04T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-04-04T00:00:00+00:00">
+  <meta itemprop="wordCount" content="492"><meta property="og:url" content="http://localhost:1313/devlog/halghe-progress/">
+  <meta property="og:site_name" content="Hugo Sokolowski-Katzer">
+  <meta property="og:title" content="Halghe Progress">
+  <meta property="og:description" content="Some insight on my next project - an RL Agario clone">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="devlog">
+    <meta property="article:published_time" content="2026-04-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-04T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Halghe Progress">
+  <meta name="twitter:description" content="Some insight on my next project - an RL Agario clone">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/stumlogoLookingLeft.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/devlog/halghe-progress/" title="Halghe Progress - Hugo Sokolowski-Katzer" /><link rel="prev" type="text/html" href="http://localhost:1313/devlog/simurgh-release/" title="Simurgh Released" /><link rel="next" type="text/html" href="http://localhost:1313/projects/goswin/" title="Goswin" /><link rel="alternate" type="text/markdown" href="http://localhost:1313/devlog/halghe-progress/index.md" title="Halghe Progress - Hugo Sokolowski-Katzer"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Halghe Progress",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/devlog\/halghe-progress\/"
+    },"genre": "devlog","wordcount":  492 ,
+    "url": "http:\/\/localhost:1313\/devlog\/halghe-progress\/","datePublished": "2026-04-04T00:00:00+00:00","dateModified": "2026-04-04T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Hugo Sokołowski-Katzer"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/">Home</a></li><li class="menu-item">
+              <a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item">
+              <a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/">About me</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Hugo Sokolowski-Katzer"><span class="header-title-text">Hugo Sokołowski-Katzer</span></a><span class="header-subtitle"></span></div>
+      <div class="theme-switch" role="button" aria-label="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></div>
+      <div class="menu-toggle" id="menu-toggle-mobile" role="button" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/">Home</a></li><li class="menu-item"><a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item"><a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item"><a class="menu-link" href="/about/">About me</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item" data-separator="/"><a href="/devlog/" title="Devlog">Devlog</a></li><li class="breadcrumb-item active" data-separator="/" aria-current="page">Halghe Progress</li>
+    </ol>
+  </nav><main class="fi-container"><article class="page single special">
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Halghe Progress</h1></div><div class="content" id="content"><p>It&rsquo;s been a while since I have posted here, but despite how busy it has been, I&rsquo;ve managed to scrape some hours together here and there to develop another project - Halghe.</p>
+<p>The main idea was to produce something I can play myself, I remembered really liking Agar.io as a kid, but it was always crazy laggy. So with that in mind I set out to give it a try. Initially I found a repo which cloned exactly the agario look and functionality. It worked well, but was incredibly slow for Reinforcement Learning training. It was made of a lot of javascript, and all actions had to be POST or GET HTTP requests, which even after batching took horribly long. After trying for a while to fix it (to no avail). I deleted the repo, and tried from scratch.</p>
+<p>In the meantime while this was happening I landed a new internship, which slightly changed my goals and priorities with these projects. Having so far focused on doing EVERYTHING manually, and when using AI - have total insight into every piece of generated code. But now knowing that I&rsquo;ll be working with my very own brain full time anyway, putting this much effort into side projects probably is not advisable, given I have a full time study as well. So considering all this I decided to dive into the deep end. I bought a claude code subscription and let it take the reins. No insight, no line by line checks, just full send.</p>
+<p>Using Claude I was able to get an efficient and not-terrible looking agario clone working within the same day. With tweaks, fixes and the RL logic itself coming along with the week. It worked great, at the moment the agents train, and can play each other or even against me. They learned some basic strategies like: chase smaller blobs, run away from bigger ones, split to hunt, eat food. I&rsquo;m very happy, but I must say, letting an agent run for upwards of 30 minutes on its own is completely different to what I&rsquo;ve been doing so far. It is nice to give it a try, the results so far are promising, and it fits perfectly as an engine for me to keep making things on the side.</p>
+<p>However from a engineering perspective it seems completely backwards, there is just no feasible way to keep up with it, when generating thousands of lines per day, it becomes impossible to vet each one yourself, you lose touch with the code and low-level decisions, bugfixing becomes more difficult.</p>
+<p>Both approaches have their up and downsides, we will see which one prevails in the greater scheme of things.</p>
+<p>I&rsquo;d expect rarer posts from my side for the coming months as employment looms. But I will definitely add Halghe&rsquo;s full description to the project list sooner or later. And who knows where agentic coding will take me next.</p>
+<p>Happy Easter Everyone!
+Till next time.</p>
+</div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2026</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Hugo Sokołowski-Katzer</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config/bf892b93624b74cb8c52088477a5c25d.js" defer></script><script src="/js/theme.min.js" defer></script></body>
+</html>
