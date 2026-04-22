@@ -20,6 +20,7 @@ enableEmoji = true
 
 [outputs]
   _merge = "shallow"
+  home = ["HTML", "RSS", "JSON"]
 
 [taxonomies]
   _merge = "shallow"
@@ -52,6 +53,9 @@ enableEmoji = true
   defaultTheme = 'auto'
   description = 'Personal Site'
   dateFormat = '2006-01-02'
+
+  [params.search]
+    enable = true
 
   [params.author]
     name = 'Hugo Sokołowski-Katzer'
