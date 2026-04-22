@@ -7,7 +7,7 @@ summary: "Chess impossibility recognition using ResNet"
 weight: 2
 tools: ["antigravity", "hand"]
 color: "#0369a1"
-visual_image: "/img/ply_perturbation_comparison.png"
+visual_image: "/img/confusion_matrix.png"
 status: "complete"
 ---
 
