@@ -1,0 +1,28 @@
+<style>
+.custom-widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
+    margin: 2rem auto 0 auto;
+    width: 100%;
+    /* Keep it nice and constrained on large screens */
+    max-width: 1000px;
+}
+.custom-widgets-container > div {
+    /* Side by side on desktop, stacked on mobile */
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+}
+</style>
+
+<div class="custom-widgets-container">
+    <div>
+        {{ partial "custom/currently-processing.html" . }}
+    </div>
+    <div>
+        {{ partial "custom/neural-network.html" . }}
+    </div>
+</div>
