@@ -82,7 +82,7 @@ enableEmoji = true
       enable = true
       avatarURL = '/img/stumlogoLookingLeft.png'
       title = 'Hugo Sokołowski-Katzer'
-      subtitle = ["MSc AI Student", "Builder of small things", "BJJ practitioner"]
+      subtitle = "MSc AI Student | Builder of small things | BJJ practitioner"
       typeit = true
       social = true
     [params.home.posts]
