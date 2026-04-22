@@ -51,6 +51,7 @@ enableEmoji = true
 [params]
   version = "0.3.X"
   defaultTheme = 'auto'
+  fingerprint = "sha256"
   description = 'Personal Site'
   dateFormat = '2006-01-02'
 

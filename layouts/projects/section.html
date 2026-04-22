@@ -38,7 +38,7 @@
                     {{- $tool := index $.Site.Data.tools $key -}}
                     {{- if $tool -}}
                     <span class="tool-badge"
-                          style="background:{{ $tool.bg }};color:{{ $tool.color }};border-color:{{ $tool.border }};">
+                          style="background:{{ $tool.bg | safeCSS }};color:{{ $tool.color }};border-color:{{ $tool.border | safeCSS }};">
                         {{- $tool.label -}}
                     </span>
                     {{- else -}}
