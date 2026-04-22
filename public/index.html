@@ -9,9 +9,7 @@
     <title>Hugo Sokolowski-Katzer</title><meta name="author" content="Hugo Sokołowski-Katzer">
 <meta name="description" content="Personal Site">
   <meta itemprop="name" content="Hugo Sokolowski-Katzer">
-  <meta itemprop="description" content="Personal Site">
-  <meta itemprop="datePublished" content="2026-04-05T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-04-05T00:00:00+00:00"><meta property="og:url" content="http://localhost:1313/">
+  <meta itemprop="description" content="Personal Site"><meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Hugo Sokolowski-Katzer">
   <meta property="og:title" content="Hugo Sokolowski-Katzer">
   <meta property="og:description" content="Personal Site">
@@ -64,23 +62,113 @@
 </header><main class="fi-container"><div class="page home"><div class="home-profile"><div class="home-avatar"><a href="/" title="Home"><img src='/img/stumlogoLookingLeft.png' alt="Home avatar" height="96" width="96"></a></div><h1 class="home-title">Hugo Sokołowski-Katzer</h1><p class="home-subtitle">MSc AI Student</p><div class="links"><a href="https://github.com/RAGNAROS-HS" title="GitHub" target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-brands fa-github-alt" aria-hidden="true"></i>
     </a><a href="https://linkedin.com/in/hugo-sokolowski-katzer-715577248/" title="LinkedIn" target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>
     </a><a href="mailto:hugo.s.katzer@gmail.com" title="Email" target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-regular fa-envelope" aria-hidden="true"></i>
-    </a></div><div class="github-calendar-container">
-    <div class="calendar">
-        Loading GitHub contributions...
+    </a></div><style>
+.currently-processing-wrapper {
+    margin: 2rem auto;
+    max-width: 450px;
+    background: var(--color-background-code, rgba(128, 128, 128, 0.05));
+    border: 1px solid var(--color-border, rgba(128, 128, 128, 0.15));
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.currently-processing-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.cp-header {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text);
+}
+
+.cp-header .blink-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #10b981;
+    border-radius: 50%;
+    display: inline-block;
+    animation: blinker 1.5s linear infinite;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+.cp-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.cp-item:last-child {
+    margin-bottom: 0;
+}
+
+.cp-icon {
+    font-size: 1.2rem;
+    min-width: 24px;
+    text-align: center;
+}
+
+.cp-content {
+    flex: 1;
+}
+
+.cp-label {
+    font-weight: 600;
+    color: var(--theme-color, #888);
+    margin-right: 0.3rem;
+}
+
+.cp-value {
+    opacity: 0.9;
+}
+
+ 
+.home-profile .currently-processing-wrapper {
+    margin-top: 1.5rem;
+}
+</style>
+
+<div class="currently-processing-wrapper">
+    <div class="cp-header">
+        <span class="blink-dot"></span> Currently Processing...
+    </div>
+    <div class="cp-item">
+        <div class="cp-icon">📄</div>
+        <div class="cp-content">
+            <span class="cp-label">Reading:</span>
+            <span class="cp-value"><em>Breaking Minds, Breaking Systems: Jailbreaking Large Language Models via Human-like Psychological Manipulation</em> (Liu & Lin)</span>
+        </div>
+    </div>
+    <div class="cp-item">
+        <div class="cp-icon">🎧</div>
+        <div class="cp-content">
+            <span class="cp-label">Listening:</span>
+            <span class="cp-value">Nebraska by Bruce Springsteen</span>
+        </div>
+    </div>
+    <div class="cp-item">
+        <div class="cp-icon">🥋</div>
+        <div class="cp-content">
+            <span class="cp-label">Training:</span>
+            <span class="cp-value">Butterfly guard at Dodo Jiujitsu</span>
+        </div>
     </div>
 </div>
-<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<script>
-    GitHubCalendar(".calendar", "RAGNAROS-HS", {
-        responsive: false,
-        global_stats: false,
-    }).then(function () {
-        document.querySelectorAll(".calendar a").forEach(function (el) {
-            if (el.textContent.indexOf("Skip to") !== -1) el.remove();
-        });
-    });
-</script></div>
+</div>
 </div></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2026</span><span class="author" itemprop="copyrightHolder">
