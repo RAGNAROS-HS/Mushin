@@ -1,15 +1,1 @@
-/* Hide chrome injected by the github-calendar library — keep only the SVG heatmap */
-.calendar h2,
-.calendar .sr-only,
-.calendar .float-left,
-.calendar .contrib-footer,
-.calendar .contrib-legend,
-.calendar .text-small,
-.calendar footer,
-.calendar > div > div:last-child {
-    display: none !important;
-}
-
-.calendar svg {
-    display: block !important;
-}
+/* Bespoke canvas calendar — no third-party library, no chrome to hide. */
