@@ -1,20 +1,4 @@
-/* GitHub Calendar Styles */
-.github-calendar-container {
-    max-width: 580px;
-    margin: 1.2rem auto 0;
-    padding: 0 1rem;
-}
-
-/* Remove all borders */
-.calendar,
-.calendar * {
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-/* Hide everything inside the calendar except the SVG heatmap */
-.calendar a,
+/* Hide chrome injected by the github-calendar library — keep only the SVG heatmap */
 .calendar h2,
 .calendar .sr-only,
 .calendar .float-left,
@@ -22,20 +6,10 @@
 .calendar .contrib-legend,
 .calendar .text-small,
 .calendar footer,
-.calendar>div>div:last-child {
+.calendar > div > div:last-child {
     display: none !important;
 }
 
-/* Make sure the SVG itself stays visible */
 .calendar svg {
     display: block !important;
-}
-
-/* Dark mode adjustments */
-[data-theme='dark'] .calendar .ContributionCalendar-label {
-    fill: #aaa !important;
-}
-
-[data-theme='dark'] .calendar .ContributionCalendar-day[data-level='0'] {
-    fill: #161b22 !important;
 }

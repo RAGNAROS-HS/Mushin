@@ -2,16 +2,18 @@
 .neural-net-wrapper {
     margin: 0;
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
     background: var(--color-background-code, rgba(128, 128, 128, 0.05));
     border: 1px solid var(--color-border, rgba(128, 128, 128, 0.15));
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-    text-align: center;
     position: relative;
     overflow: hidden;
-    height: 250px;
+    min-height: 260px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .neural-net-wrapper:hover {
@@ -20,18 +22,36 @@
 }
 
 .neural-net-wrapper canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
+    flex: 1;
     width: 100%;
-    height: 100%;
-    border-radius: 16px;
+    display: block;
     cursor: crosshair;
+}
+
+.nn-tooltip {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    padding: 0 1rem 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nn-tooltip.visible {
+    opacity: 1;
 }
 </style>
 
 <div class="neural-net-wrapper" id="nn-container">
     <canvas id="neural-canvas"></canvas>
+    <div class="nn-tooltip" id="nn-tooltip"></div>
 </div>
 
 <script>
@@ -40,168 +60,182 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     const container = document.getElementById('nn-container');
-    
-    let width, height;
+    const tooltip = document.getElementById('nn-tooltip');
+
+    let width = 0, height = 0;
+
     function resize() {
-        width = container.clientWidth;
-        height = container.clientHeight;
+        const rect = canvas.getBoundingClientRect();
+        width = rect.width || container.clientWidth;
+        height = rect.height || (container.clientHeight - 28);
         canvas.width = width;
         canvas.height = height;
     }
-    window.addEventListener('resize', resize);
-    // Initial resize with a tiny delay to ensure container has dimensions
+    window.addEventListener('resize', function() { resize(); initialized = false; });
     setTimeout(resize, 50);
 
-    // Network Architecture: [Input, Hidden 1, Hidden 2, Output]
-    const layerCounts = [4, 6, 5, 3];
-    const nodes = [];
-    
-    // Ordered node labels by layer (Inputs -> Hidden -> Outputs)
-    const layerLabels = [
-        ["CS Undergrad", "IT Intern", "Housekeeper", "Shop Assistant"],
-        ["Python", "InfoSec", "SOC 2 & Ops", "Atlassian", "Okta", "Automation"],
-        ["Deep Learning", "BJJ", "TensorFlow", "Data Pipelines", "Healthcare AI"],
-        ["MSc AI Student", "Talk360", "Futurist Law Lab"]
+    // Architecture: specific experiences → extracted skills → domains → current roles
+    const layers = [
+        {
+            name: "Inputs",
+            nodes: ["CS Undergrad", "IT Intern", "Housekeeper", "Shop Assistant"]
+        },
+        {
+            name: "Skills",
+            nodes: ["Python", "InfoSec", "Automation", "Linux & Ops", "Data Work"]
+        },
+        {
+            name: "Domains",
+            nodes: ["Machine Learning", "Cybersecurity", "Healthcare AI", "BJJ"]
+        },
+        {
+            name: "Output",
+            nodes: ["MSc AI Student", "Talk360", "Futurist Law Lab"]
+        }
     ];
-    
-    // Build Nodes
+
+    const nodes = [];
     let layerSpacing = 0;
-    
+    let initialized = false;
+
     function initNodes() {
         nodes.length = 0;
-        layerSpacing = width / (layerCounts.length + 1);
-        
-        for (let i = 0; i < layerCounts.length; i++) {
-            const count = layerCounts[i];
+        layerSpacing = width / (layers.length + 1);
+        layers.forEach(function(layer, i) {
+            const count = layer.nodes.length;
             const nodeSpacing = height / (count + 1);
-            for (let j = 0; j < count; j++) {
-                let text = layerLabels[i][j] || "";
+            layer.nodes.forEach(function(label, j) {
                 nodes.push({
                     x: layerSpacing * (i + 1),
                     y: nodeSpacing * (j + 1),
                     baseX: layerSpacing * (i + 1),
                     baseY: nodeSpacing * (j + 1),
                     layer: i,
-                    radius: 4,
-                    label: text,
-                    vx: 0,
-                    vy: 0
+                    label: label,
+                    vx: 0, vy: 0
                 });
-            }
-        }
+            });
+        });
     }
-    
-    // We will initialize them during first draw safely
-    let initialized = false;
 
-    let mouse = { x: -1000, y: -1000, hover: false };
-    
-    container.addEventListener('mousemove', (e) => {
+    let mouse = { x: -9999, y: -9999, active: false };
+
+    canvas.addEventListener('mousemove', function(e) {
         const rect = canvas.getBoundingClientRect();
         mouse.x = e.clientX - rect.left;
         mouse.y = e.clientY - rect.top;
-        mouse.hover = true;
-    });
-    
-    container.addEventListener('mouseleave', () => {
-        mouse.hover = false;
-        mouse.x = -1000;
-        mouse.y = -1000;
+        mouse.active = true;
     });
 
+    canvas.addEventListener('mouseleave', function() {
+        mouse.active = false;
+        mouse.x = -9999;
+        mouse.y = -9999;
+        tooltip.textContent = '';
+        tooltip.classList.remove('visible');
+    });
+
+    const RADIUS = 5;
+    const HOVER_RADIUS = 8;
+    const REPEL_DIST = 60;
+    const LABEL_DIST = 30;
+
     function draw() {
-        if (!initialized && width > 0) {
+        if (!initialized && width > 0 && height > 0) {
             initNodes();
             initialized = true;
         }
 
         ctx.clearRect(0, 0, width, height);
 
-        // Styling based on generic theme support
-        const style = getComputedStyle(document.body);
-        const colorText = style.getPropertyValue('--color-text').trim() || '#333';
-        const colorOutline = '#10b981'; // Greenish matching previous UI
-        const colorEdge = 'rgba(128, 128, 128, 0.15)';
-        const colorNodeBox = 'rgba(128, 128, 128, 0.5)';
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const accent = '#10b981';
+        const edgeIdle = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
+        const edgeHot  = accent;
+        const nodeIdle = isDark ? 'rgba(255,255,255,0.25)' : 'rgba(0,0,0,0.2)';
+        const layerLabelColor = isDark ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.3)';
 
-        // Physics Update
-        nodes.forEach(node => {
-            let dx = mouse.x - node.x;
-            let dy = mouse.y - node.y;
-            let dist = Math.sqrt(dx*dx + dy*dy);
-            
-            // Mouse repulsion
-            if (dist < 70 && mouse.hover) {
-                let angle = Math.atan2(dy, dx);
-                let force = (70 - dist) / 70;
-                node.vx -= Math.cos(angle) * force * 0.8;
-                node.vy -= Math.sin(angle) * force * 0.8;
-            }
-            
-            // Return to anchor
-            node.vx += (node.baseX - node.x) * 0.04;
-            node.vy += (node.baseY - node.y) * 0.04;
-            
-            // Friction
-            node.vx *= 0.85;
-            node.vy *= 0.85;
-            
-            node.x += node.vx;
-            node.y += node.vy;
+        // Draw layer name headers
+        ctx.font = '9px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        ctx.fillStyle = layerLabelColor;
+        layers.forEach(function(layer, i) {
+            ctx.fillText(layer.name.toUpperCase(), layerSpacing * (i + 1), 4);
         });
 
-        // Draw Edges
+        // Physics
+        let hoveredNode = null;
+        let closestDist = Infinity;
+
+        nodes.forEach(function(node) {
+            const dx = mouse.x - node.x;
+            const dy = mouse.y - node.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (mouse.active && dist < REPEL_DIST) {
+                const angle = Math.atan2(dy, dx);
+                const force = (REPEL_DIST - dist) / REPEL_DIST;
+                node.vx -= Math.cos(angle) * force * 0.6;
+                node.vy -= Math.sin(angle) * force * 0.6;
+            }
+
+            node.vx += (node.baseX - node.x) * 0.05;
+            node.vy += (node.baseY - node.y) * 0.05;
+            node.vx *= 0.82;
+            node.vy *= 0.82;
+            node.x += node.vx;
+            node.y += node.vy;
+
+            if (mouse.active && dist < closestDist) {
+                closestDist = dist;
+                hoveredNode = node;
+            }
+        });
+
+        // Update tooltip from closest node
+        if (mouse.active && hoveredNode && closestDist < LABEL_DIST) {
+            tooltip.textContent = hoveredNode.label;
+            tooltip.classList.add('visible');
+        } else if (!mouse.active) {
+            tooltip.classList.remove('visible');
+        } else {
+            tooltip.classList.remove('visible');
+        }
+
+        // Edges
         for (let i = 0; i < nodes.length; i++) {
             for (let j = i + 1; j < nodes.length; j++) {
-                if (nodes[j].layer === nodes[i].layer + 1) {
-                    let distI = Math.sqrt(Math.pow(mouse.x - nodes[i].x, 2) + Math.pow(mouse.y - nodes[i].y, 2));
-                    let distJ = Math.sqrt(Math.pow(mouse.x - nodes[j].x, 2) + Math.pow(mouse.y - nodes[j].y, 2));
-                    let isHovered = (distI < 50 || distJ < 50) && mouse.hover;
-                    
-                    ctx.beginPath();
-                    ctx.moveTo(nodes[i].x, nodes[i].y);
-                    ctx.lineTo(nodes[j].x, nodes[j].y);
-                    
-                    if (isHovered) {
-                        ctx.strokeStyle = colorOutline;
-                        ctx.lineWidth = 1.2;
-                    } else {
-                        ctx.strokeStyle = colorEdge;
-                        ctx.lineWidth = 0.5;
-                    }
-                    ctx.stroke();
-                }
+                if (nodes[j].layer !== nodes[i].layer + 1) continue;
+                const ni = nodes[i], nj = nodes[j];
+                const diI = Math.hypot(mouse.x - ni.x, mouse.y - ni.y);
+                const diJ = Math.hypot(mouse.x - nj.x, mouse.y - nj.y);
+                const hot = mouse.active && (diI < LABEL_DIST || diJ < LABEL_DIST);
+                ctx.beginPath();
+                ctx.moveTo(ni.x, ni.y);
+                ctx.lineTo(nj.x, nj.y);
+                ctx.strokeStyle = hot ? edgeHot : edgeIdle;
+                ctx.lineWidth = hot ? 1.0 : 0.5;
+                ctx.globalAlpha = hot ? 0.7 : 1;
+                ctx.stroke();
+                ctx.globalAlpha = 1;
             }
         }
 
-        // Draw Nodes
-        nodes.forEach(node => {
-            let distToMouse = Math.sqrt(Math.pow(mouse.x - node.x, 2) + Math.pow(mouse.y - node.y, 2));
-            let isHovered = distToMouse < 40 && mouse.hover;
-            let showHoverEffect = isHovered || (mouse.hover && distToMouse < 90);
-            
+        // Nodes
+        nodes.forEach(function(node) {
+            const dist = Math.hypot(mouse.x - node.x, mouse.y - node.y);
+            const isClose = mouse.active && dist < LABEL_DIST;
+            const r = isClose ? HOVER_RADIUS : RADIUS;
             ctx.beginPath();
-            ctx.arc(node.x, node.y, isHovered ? node.radius * 1.5 : node.radius, 0, Math.PI * 2);
-            ctx.fillStyle = showHoverEffect ? colorOutline : colorNodeBox;
+            ctx.arc(node.x, node.y, r, 0, Math.PI * 2);
+            ctx.fillStyle = isClose ? accent : nodeIdle;
             ctx.fill();
-            
-            // Draw Label
-            if (node.label && showHoverEffect) {
-                ctx.fillStyle = colorText;
-                ctx.font = "bold 13px system-ui, -apple-system, sans-serif";
-                ctx.textAlign = "center";
-                
-                // Shadow for legibility
-                ctx.shadowColor = 'rgba(128,128,128, 0.8)';
-                ctx.shadowBlur = 4;
-                ctx.fillText(node.label, node.x, node.y - 12);
-                ctx.shadowBlur = 0; // reset
-            }
         });
 
         requestAnimationFrame(draw);
     }
-    
+
     draw();
 });
 </script>
