@@ -1,14 +1,124 @@
+<style>
+.github-calendar-container {
+    background: var(--color-background-code, rgba(128, 128, 128, 0.05));
+    border: 1px solid var(--color-border, rgba(128, 128, 128, 0.15));
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.github-calendar-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+#gh-cal-canvas {
+    display: block;
+    margin-top: 0.75rem;
+}
+</style>
+
 <div class="github-calendar-container">
     <div class="cp-header">
         <i class="fa-solid fa-chart-simple"></i> Contribution Graph
     </div>
-    <div class="calendar"></div>
+    <canvas id="gh-cal-canvas"></canvas>
 </div>
-<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
 <script>
-    GitHubCalendar(".calendar", "RAGNAROS-HS", {
-        responsive: true,
-        global_stats: false,
-    });
+(function () {
+    var MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var GAP = 2;
+    var PAD_LEFT = 26;
+    var PAD_TOP  = 18;
+
+    function render(contributions) {
+        var canvas = document.getElementById('gh-cal-canvas');
+        if (!canvas) return;
+
+        var sorted = contributions.slice().sort(function (a, b) {
+            return a.date < b.date ? -1 : 1;
+        });
+        if (sorted.length === 0) return;
+
+        var startDate = new Date(sorted[0].date);
+        var startDow  = startDate.getDay();
+        var numWeeks  = Math.ceil((sorted.length + startDow) / 7);
+
+        // Cell size fills the container width
+        var container     = canvas.parentElement;
+        var logicalW      = container.clientWidth - 48; // subtract 1.5rem×2 card padding
+        var cellStep      = Math.max(10, Math.floor((logicalW - PAD_LEFT) / numWeeks));
+        var CELL          = cellStep - GAP;
+        var STEP          = CELL + GAP;
+        var logicalH      = PAD_TOP + 7 * STEP + GAP;
+
+        // HiDPI — draw at physical pixels, display at logical size
+        var dpr = window.devicePixelRatio || 1;
+        canvas.width  = Math.round(logicalW * dpr);
+        canvas.height = Math.round(logicalH * dpr);
+        canvas.style.width  = logicalW + 'px';
+        canvas.style.height = logicalH + 'px';
+
+        var ctx = canvas.getContext('2d');
+        ctx.scale(dpr, dpr);
+
+        var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+        var levelColors = isDark
+            ? ['rgba(255,255,255,0.07)', '#0e4429', '#006d32', '#26a641', '#39d353']
+            : ['rgba(0,0,0,0.07)', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+
+        var textColor = isDark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.35)';
+
+        ctx.font      = '9px system-ui, -apple-system, sans-serif';
+        ctx.fillStyle = textColor;
+
+        // Day labels at rows 1 (Mon), 3 (Wed), 5 (Fri)
+        var dayLabels = { 1: 'Mon', 3: 'Wed', 5: 'Fri' };
+        ctx.textAlign    = 'right';
+        ctx.textBaseline = 'middle';
+        Object.keys(dayLabels).forEach(function (dow) {
+            var y = PAD_TOP + parseInt(dow, 10) * STEP + CELL / 2;
+            ctx.fillText(dayLabels[dow], PAD_LEFT - 4, y);
+        });
+
+        // Cells and month labels
+        ctx.textBaseline = 'alphabetic';
+        var seen = {};
+
+        sorted.forEach(function (day) {
+            var date      = new Date(day.date);
+            var daysSince = Math.round((date - startDate) / 86400000);
+            var weekIdx   = Math.floor((daysSince + startDow) / 7);
+            var dow       = date.getDay();
+            var x         = PAD_LEFT + weekIdx * STEP;
+            var y         = PAD_TOP  + dow     * STEP;
+
+            // Month label on first cell of each calendar month
+            var mk = date.getFullYear() + '-' + date.getMonth();
+            if (!seen[mk]) {
+                seen[mk] = true;
+                ctx.fillStyle  = textColor;
+                ctx.textAlign  = 'left';
+                ctx.fillText(MONTH_NAMES[date.getMonth()], x, PAD_TOP - 4);
+            }
+
+            // Contribution cell
+            var level = Math.min(4, Math.max(0, day.level || 0));
+            ctx.fillStyle = levelColors[level];
+            if (ctx.roundRect) {
+                ctx.beginPath();
+                ctx.roundRect(x, y, CELL, CELL, 2);
+                ctx.fill();
+            } else {
+                ctx.fillRect(x, y, CELL, CELL);
+            }
+        });
+    }
+
+    fetch('https://github-contributions-api.jogruber.de/v4/RAGNAROS-HS?y=last')
+        .then(function (r) { return r.json(); })
+        .then(function (data) { render(data.contributions); })
+        .catch(function (err) { console.error('Contribution graph failed:', err); });
+})();
 </script>
