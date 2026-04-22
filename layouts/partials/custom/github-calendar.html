@@ -31,6 +31,13 @@
     var PAD_LEFT = 26;
     var PAD_TOP  = 18;
 
+    // Parse "YYYY-MM-DD" as a local date — new Date("YYYY-MM-DD") is UTC and
+    // getDay() returns the wrong weekday for viewers west of UTC.
+    function localDate(str) {
+        var p = str.split('-');
+        return new Date(+p[0], +p[1] - 1, +p[2]);
+    }
+
     function render(contributions) {
         var canvas = document.getElementById('gh-cal-canvas');
         if (!canvas) return;
@@ -40,7 +47,7 @@
         });
         if (sorted.length === 0) return;
 
-        var startDate = new Date(sorted[0].date);
+        var startDate = localDate(sorted[0].date);
         var startDow  = startDate.getDay();
         var numWeeks  = Math.ceil((sorted.length + startDow) / 7);
 
@@ -87,7 +94,7 @@
         var seen = {};
 
         sorted.forEach(function (day) {
-            var date      = new Date(day.date);
+            var date      = localDate(day.date);
             var daysSince = Math.round((date - startDate) / 86400000);
             var weekIdx   = Math.floor((daysSince + startDow) / 7);
             var dow       = date.getDay();
@@ -118,7 +125,7 @@
 
     fetch('https://github-contributions-api.jogruber.de/v4/RAGNAROS-HS?y=last')
         .then(function (r) { return r.json(); })
-        .then(function (data) { render(data.contributions); })
+        .then(function (data) { render(data.contributions || []); })
         .catch(function (err) { console.error('Contribution graph failed:', err); });
 })();
 </script>
