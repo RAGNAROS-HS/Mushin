@@ -97,7 +97,7 @@ enableEmoji = true
       maxShownLines = 50
 
   [params.customPartials]
-    profile = ['custom/currently-processing.html']
+    profile = ['custom/widgets.html']
 
   [params.social]
     GitHub = 'RAGNAROS-HS'

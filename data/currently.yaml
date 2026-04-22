@@ -1,0 +1,10 @@
+items:
+  - icon: "📄"
+    label: "Reading"
+    value: "Breaking Minds, Breaking Systems: Jailbreaking Large Language Models via Human-like Psychological Manipulation (Liu & Lin)"
+  - icon: "🎧"
+    label: "Listening"
+    value: "Nebraska by Bruce Springsteen"
+  - icon: "🥋"
+    label: "Training"
+    value: "Butterfly guard at Dodo Jiujitsu"

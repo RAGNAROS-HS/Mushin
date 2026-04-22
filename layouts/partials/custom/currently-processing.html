@@ -1,7 +1,9 @@
 <style>
 .currently-processing-wrapper {
-    margin: 2rem auto;
-    max-width: 450px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     background: var(--color-background-code, rgba(128, 128, 128, 0.05));
     border: 1px solid var(--color-border, rgba(128, 128, 128, 0.15));
     border-radius: 16px;
@@ -24,20 +26,6 @@
     align-items: center;
     gap: 0.5rem;
     color: var(--color-text);
-}
-
-.cp-header .blink-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #10b981;
-    border-radius: 50%;
-    display: inline-block;
-    animation: blinker 1.5s linear infinite;
-    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
-}
-
-@keyframes blinker {
-    50% { opacity: 0; }
 }
 
 .cp-item {
@@ -72,35 +60,19 @@
     opacity: 0.9;
 }
 
-/* FixIt theme specific overrides to ensure it plays nicely with the profile card */
-.home-profile .currently-processing-wrapper {
-    margin-top: 1.5rem;
-}
 </style>
 
 <div class="currently-processing-wrapper">
     <div class="cp-header">
-        <span class="blink-dot"></span> Currently Processing...
+        <i class="fa-solid fa-microchip"></i> Currently Processing...
     </div>
+    {{ range $.Site.Data.currently.items }}
     <div class="cp-item">
-        <div class="cp-icon">📄</div>
+        <div class="cp-icon">{{ .icon }}</div>
         <div class="cp-content">
-            <span class="cp-label">Reading:</span>
-            <span class="cp-value"><em>Breaking Minds, Breaking Systems: Jailbreaking Large Language Models via Human-like Psychological Manipulation</em> (Liu & Lin)</span>
+            <span class="cp-label">{{ .label }}:</span>
+            <span class="cp-value">{{ .value }}</span>
         </div>
     </div>
-    <div class="cp-item">
-        <div class="cp-icon">🎧</div>
-        <div class="cp-content">
-            <span class="cp-label">Listening:</span>
-            <span class="cp-value">Nebraska by Bruce Springsteen</span>
-        </div>
-    </div>
-    <div class="cp-item">
-        <div class="cp-icon">🥋</div>
-        <div class="cp-content">
-            <span class="cp-label">Training:</span>
-            <span class="cp-value">Butterfly guard at Dodo Jiujitsu</span>
-        </div>
-    </div>
+    {{ end }}
 </div>
