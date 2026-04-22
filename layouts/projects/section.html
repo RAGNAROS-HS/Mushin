@@ -3,57 +3,76 @@
 {{- end -}}
 
 {{- define "content" -}}
-<div class="page archive">
-    <div class="header">
-        {{- /* Title */ -}}
+<div class="page archive projects-page">
+    <div class="projects-page-header">
         <h1 class="single-title animate__animated animate__pulse animate__faster">
             {{- .Title -}}
         </h1>
+        {{- if .Content }}
+        <div class="content">{{ .Content }}</div>
+        {{- end }}
     </div>
 
-    {{- if .Content }}
-    <div class="content" style="margin-bottom: 1.5rem;">
-        {{ .Content }}
-    </div>
-    {{- end }}
-
-    {{- /* Projects Grid */ -}}
     {{- $pages := union .RegularPages .Sections -}}
     {{- if $pages -}}
-    <div class="projects-grid">
-        {{- range $pages -}}
-        <article class="archive-item project-card">
-            <a href="{{ .RelPermalink }}" class="project-card-link">
-                <h3 class="project-card-title">{{ .Title }}</h3>
-                {{- if .Params.summary }}
-                <p class="project-card-summary">{{ .Params.summary }}</p>
-                {{- else if .Summary }}
-                <p class="project-card-summary">{{ .Summary | plainify | htmlUnescape | truncate 150 }}</p>
+    <div class="projects-list">
+        {{- range $i, $p := $pages -}}
+        {{- $flip := eq (mod $i 2) 1 -}}
+        <section class="project-row{{ if $flip }} row-flip{{ end }} project-row-scroll"
+                 style="--project-color: {{ $p.Params.color | default "#6366f1" }};">
+            <div class="project-content">
+                <div class="project-index">{{ printf "%02d" (add $i 1) }}</div>
+                <h2 class="project-name">{{ $p.Title }}</h2>
+                {{- if $p.Params.summary }}
+                <p class="project-tagline">{{ $p.Params.summary }}</p>
                 {{- end }}
-                {{- if .Params.tags }}
-                <div class="project-card-tags">
-                    {{- range .Params.tags }}
-                    <span class="project-tag">{{ . }}</span>
+                {{- with $p.Params.tags }}
+                <div class="project-tech-tags">
+                    {{- range . }}<span class="project-tag">{{ . }}</span>{{- end }}
+                </div>
+                {{- end }}
+                {{- with $p.Params.tools }}
+                <div class="project-tools">
+                    {{- range . -}}
+                    {{- $key := . -}}
+                    {{- $tool := index $.Site.Data.tools $key -}}
+                    {{- if $tool -}}
+                    <span class="tool-badge"
+                          style="background:{{ $tool.bg }};color:{{ $tool.color }};border-color:{{ $tool.border }};">
+                        {{- $tool.label -}}
+                    </span>
+                    {{- else -}}
+                    <span class="tool-badge tool-badge-unknown">{{ . }}</span>
+                    {{- end -}}
                     {{- end }}
                 </div>
                 {{- end }}
-            </a>
-        </article>
+                <a href="{{ $p.RelPermalink }}" class="project-cta">Read more →</a>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+                {{- if $p.Params.visual_video }}
+                <video class="project-visual-media" src="{{ $p.Params.visual_video }}"
+                       autoplay muted loop playsinline></video>
+                {{- else if $p.Params.visual_image }}
+                <img class="project-visual-media" src="{{ $p.Params.visual_image }}"
+                     alt="" loading="lazy">
+                {{- else }}
+                <span class="project-visual-name">{{ $p.Title | upper }}</span>
+                {{- end }}
+            </div>
+        </section>
         {{- end -}}
     </div>
     {{- end -}}
 </div>
 <script>
 (function () {
-    var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry, i) {
-            if (entry.isIntersecting) {
-                setTimeout(function () { entry.target.classList.add('revealed'); }, i * 60);
-                observer.unobserve(entry.target);
-            }
+    var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); }
         });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.project-card, .devlog-post-card').forEach(function (el) { observer.observe(el); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.project-row-scroll').forEach(function (el) { obs.observe(el); });
 }());
 </script>
 {{- end -}}

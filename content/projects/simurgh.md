@@ -5,6 +5,10 @@ draft: false
 tags: ["NN", "Chess"]
 summary: "Chess impossibility recognition using ResNet"
 weight: 2
+tools: ["antigravity", "hand"]
+color: "#0369a1"
+visual_image: "/img/ply_perturbation_comparison.png"
+status: "complete"
 ---
 
 

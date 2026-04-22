@@ -4,6 +4,9 @@ date: 2026-01-22
 draft: false
 tags: ["CNN", "GAN", "PyTorch"]
 summary: "Pokemon Classifier and Generator"
+tools: ["hand"]
+color: "#db2777"
+status: "abandoned"
 ---
 
 

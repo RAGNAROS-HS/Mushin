@@ -5,6 +5,9 @@ draft: false
 tags: ["ML", "Python", "AI"]
 summary: "Text recognition using CRNN"
 weight: 10
+tools: ["hand"]
+color: "#d97706"
+status: "limbo"
 ---
 
 

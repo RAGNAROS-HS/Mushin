@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git submodule *)",
+      "Bash(gh issue *)",
+      "Bash(gh label *)",
+      "Bash(gh pr *)",
+      "Bash(git checkout *)",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(!canvas)",
+      "Bash(return)",
+      "Bash(DOMContentLoaded)",
+      "Bash(requestAnimationFrame)",
+      "Bash(.custom-widgets-full-row)",
+      "Bash(max-width: 1000px)",
+      "Bash(.custom-widgets-container)",
+      "Bash(margin: 1.5rem auto 0)",
+      "Bash(margin: 0)",
+      "Bash(gh run *)",
+      "Bash(grep -E '\\\\.\\(html|scss|css\\)$')",
+      "Bash(hugo --minify)"
+    ]
+  }
+}

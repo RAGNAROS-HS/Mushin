@@ -4,6 +4,9 @@ date: 2025-06-01
 draft: false
 tags: ["CNN", "Pytorch", "VertexAI"]
 summary: "Detecting collapsed buildings using UNET++"
+tools: ["hand"]
+color: "#475569"
+status: "complete"
 ---
 
 

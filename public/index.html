@@ -9,7 +9,9 @@
     <title>Hugo Sokolowski-Katzer</title><meta name="author" content="Hugo Sokołowski-Katzer">
 <meta name="description" content="Personal Site">
   <meta itemprop="name" content="Hugo Sokolowski-Katzer">
-  <meta itemprop="description" content="Personal Site"><meta property="og:url" content="http://localhost:1313/">
+  <meta itemprop="description" content="Personal Site">
+  <meta itemprop="datePublished" content="2026-04-05T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-04-05T00:00:00+00:00"><meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Hugo Sokolowski-Katzer">
   <meta property="og:title" content="Hugo Sokolowski-Katzer">
   <meta property="og:description" content="Personal Site">
@@ -20,7 +22,7 @@
   <meta name="twitter:title" content="Hugo Sokolowski-Katzer">
   <meta name="twitter:description" content="Personal Site">
 <meta name="application-name" content="FixIt">
-<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/stumlogoLookingLeft.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/" title="Hugo Sokolowski-Katzer" /><link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Hugo Sokolowski-Katzer"><link rel="search" type="application/json" href="http://localhost:1313/search.json" title="Hugo Sokolowski-Katzer"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/stumlogoLookingLeft.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/" title="Hugo Sokolowski-Katzer" /><link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Hugo Sokolowski-Katzer"><link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="Hugo Sokolowski-Katzer"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -41,7 +43,18 @@
               <a class="menu-link" href="/">Home</a></li><li class="menu-item">
               <a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item">
               <a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item">
-              <a class="menu-link" href="/about/">About me</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></li></ul>
+              <a class="menu-link" href="/about/">About me</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust" aria-hidden="true"></i></li></ul>
     </nav>
   </div>
 </header><header class="mobile animate__faster" id="header-mobile">
@@ -55,17 +68,67 @@
       </div>
     </div>
     <nav>
-      <ul class="menu" id="menu-mobile"><li class="menu-item active"><a class="menu-link" href="/">Home</a></li><li class="menu-item"><a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item"><a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item"><a class="menu-link" href="/about/">About me</a></li><li class="menu-item menu-system"></li>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item active"><a class="menu-link" href="/">Home</a></li><li class="menu-item"><a class="menu-link" href="/devlog/">Devlog</a></li><li class="menu-item"><a class="menu-link" href="/projects/">Projects</a></li><li class="menu-item"><a class="menu-link" href="/about/">About me</a></li><li class="menu-item menu-system"></li>
       </ul>
     </nav>
   </div>
-</header><main class="fi-container"><div class="page home"><div class="home-profile"><div class="home-avatar"><a href="/" title="Home"><img src='/img/stumlogoLookingLeft.png' alt="Home avatar" height="96" width="96"></a></div><h1 class="home-title">Hugo Sokołowski-Katzer</h1><p class="home-subtitle">MSc AI Student</p><div class="links"><a href="https://github.com/RAGNAROS-HS" title="GitHub" target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-brands fa-github-alt" aria-hidden="true"></i>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><div class="page home"><div class="home-profile"><div class="home-avatar"><a href="/" title="Home"><img src='/img/stumlogoLookingLeft.png' alt="Home avatar" height="96" width="96"></a></div><h1 class="home-title">Hugo Sokołowski-Katzer</h1><p class="home-subtitle"><span class="d-none">MSc AI Student | Builder of small things | BJJ practitioner</span><span class="typeit"><template>MSc AI Student | Builder of small things | BJJ practitioner</template></span></p><div class="links"><a href="https://github.com/RAGNAROS-HS" title="GitHub" target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-brands fa-github-alt" aria-hidden="true"></i>
     </a><a href="https://linkedin.com/in/hugo-sokolowski-katzer-715577248/" title="LinkedIn" target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>
     </a><a href="mailto:hugo.s.katzer@gmail.com" title="Email" target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-regular fa-envelope" aria-hidden="true"></i>
     </a></div><style>
+.custom-widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
+    margin: 2rem auto 0 auto;
+    width: 100%;
+     
+    max-width: 1000px;
+}
+.custom-widgets-container > div {
+     
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+}
+.custom-widgets-full-row {
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.5rem auto 0 auto;
+}
+</style>
+
+<div class="custom-widgets-container">
+    <div>
+        <style>
 .currently-processing-wrapper {
-    margin: 2rem auto;
-    max-width: 450px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     background: var(--color-background-code, rgba(128, 128, 128, 0.05));
     border: 1px solid var(--color-border, rgba(128, 128, 128, 0.15));
     border-radius: 16px;
@@ -88,20 +151,6 @@
     align-items: center;
     gap: 0.5rem;
     color: var(--color-text);
-}
-
-.cp-header .blink-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #10b981;
-    border-radius: 50%;
-    display: inline-block;
-    animation: blinker 1.5s linear infinite;
-    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
-}
-
-@keyframes blinker {
-    50% { opacity: 0; }
 }
 
 .cp-item {
@@ -136,23 +185,21 @@
     opacity: 0.9;
 }
 
- 
-.home-profile .currently-processing-wrapper {
-    margin-top: 1.5rem;
-}
 </style>
 
 <div class="currently-processing-wrapper">
     <div class="cp-header">
-        <span class="blink-dot"></span> Currently Processing...
+        <i class="fa-solid fa-microchip"></i> Currently Processing...
     </div>
+    
     <div class="cp-item">
         <div class="cp-icon">📄</div>
         <div class="cp-content">
             <span class="cp-label">Reading:</span>
-            <span class="cp-value"><em>Breaking Minds, Breaking Systems: Jailbreaking Large Language Models via Human-like Psychological Manipulation</em> (Liu & Lin)</span>
+            <span class="cp-value">Breaking Minds, Breaking Systems: Jailbreaking Large Language Models via Human-like Psychological Manipulation (Liu &amp; Lin)</span>
         </div>
     </div>
+    
     <div class="cp-item">
         <div class="cp-icon">🎧</div>
         <div class="cp-content">
@@ -160,6 +207,7 @@
             <span class="cp-value">Nebraska by Bruce Springsteen</span>
         </div>
     </div>
+    
     <div class="cp-item">
         <div class="cp-icon">🥋</div>
         <div class="cp-content">
@@ -167,6 +215,405 @@
             <span class="cp-value">Butterfly guard at Dodo Jiujitsu</span>
         </div>
     </div>
+    
+</div>
+
+    </div>
+    <div>
+        <style>
+.neural-net-wrapper {
+    margin: 0;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    background: var(--color-background-code, rgba(128, 128, 128, 0.05));
+    border: 1px solid var(--color-border, rgba(128, 128, 128, 0.15));
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    position: relative;
+    overflow: hidden;
+    min-height: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neural-net-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+ 
+.neural-net-wrapper canvas {
+    position: absolute;
+    inset: 0;
+    display: block;
+    cursor: crosshair;
+}
+
+.nn-tooltip {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    pointer-events: none;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    padding: 0 1rem 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nn-tooltip.visible {
+    opacity: 1;
+}
+</style>
+
+<div class="neural-net-wrapper" id="nn-container">
+    <canvas id="neural-canvas"></canvas>
+    <div class="nn-tooltip" id="nn-tooltip"></div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const canvas = document.getElementById('neural-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const container = document.getElementById('nn-container');
+    const tooltip = document.getElementById('nn-tooltip');
+
+    let width = 0, height = 0;
+
+    
+    
+    
+    function resize() {
+        width  = container.clientWidth;
+        height = container.clientHeight;
+        canvas.width  = width;
+        canvas.height = height;
+    }
+
+    
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            resize();
+        });
+    });
+
+    window.addEventListener('resize', function() { resize(); initialized = false; });
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(function() { resize(); initialized = false; }).observe(container);
+    }
+
+    
+    const layers = [
+        {
+            name: "Inputs",
+            nodes: ["CS Undergrad", "IT Intern", "Housekeeper", "Shop Assistant"]
+        },
+        {
+            name: "Skills",
+            nodes: ["Python", "InfoSec", "Automation", "Linux & Ops", "Data Work"]
+        },
+        {
+            name: "Domains",
+            nodes: ["Machine Learning", "Cybersecurity", "Healthcare AI", "BJJ"]
+        },
+        {
+            name: "Output",
+            nodes: ["MSc AI Student", "Talk360", "Futurist Law Lab"]
+        }
+    ];
+
+    const nodes = [];
+    let layerSpacing = 0;
+    let initialized = false;
+
+    function initNodes() {
+        nodes.length = 0;
+        layerSpacing = width / (layers.length + 1);
+        layers.forEach(function(layer, i) {
+            const count = layer.nodes.length;
+            const nodeSpacing = height / (count + 1);
+            layer.nodes.forEach(function(label, j) {
+                nodes.push({
+                    x: layerSpacing * (i + 1),
+                    y: nodeSpacing * (j + 1),
+                    baseX: layerSpacing * (i + 1),
+                    baseY: nodeSpacing * (j + 1),
+                    layer: i,
+                    label: label,
+                    vx: 0, vy: 0
+                });
+            });
+        });
+    }
+
+    let mouse = { x: -9999, y: -9999, active: false };
+
+    canvas.addEventListener('mousemove', function(e) {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+        mouse.active = true;
+    });
+
+    canvas.addEventListener('mouseleave', function() {
+        mouse.active = false;
+        mouse.x = -9999;
+        mouse.y = -9999;
+        tooltip.textContent = '';
+        tooltip.classList.remove('visible');
+    });
+
+    const RADIUS = 5;
+    const HOVER_RADIUS = 8;
+    const REPEL_DIST = 60;
+    const LABEL_DIST = 30;
+
+    function draw() {
+        if (!initialized && width > 0 && height > 0) {
+            initNodes();
+            initialized = true;
+        }
+
+        ctx.clearRect(0, 0, width, height);
+
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const accent = '#10b981';
+        const edgeIdle = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
+        const edgeHot  = accent;
+        const nodeIdle = isDark ? 'rgba(255,255,255,0.25)' : 'rgba(0,0,0,0.2)';
+        const layerLabelColor = isDark ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.3)';
+
+        
+        ctx.font = '9px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        ctx.fillStyle = layerLabelColor;
+        layers.forEach(function(layer, i) {
+            ctx.fillText(layer.name.toUpperCase(), layerSpacing * (i + 1), 4);
+        });
+
+        
+        let hoveredNode = null;
+        let closestDist = Infinity;
+
+        nodes.forEach(function(node) {
+            const dx = mouse.x - node.x;
+            const dy = mouse.y - node.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (mouse.active && dist < REPEL_DIST) {
+                const angle = Math.atan2(dy, dx);
+                const force = (REPEL_DIST - dist) / REPEL_DIST;
+                node.vx -= Math.cos(angle) * force * 0.6;
+                node.vy -= Math.sin(angle) * force * 0.6;
+            }
+
+            node.vx += (node.baseX - node.x) * 0.05;
+            node.vy += (node.baseY - node.y) * 0.05;
+            node.vx *= 0.82;
+            node.vy *= 0.82;
+            node.x += node.vx;
+            node.y += node.vy;
+
+            if (mouse.active && dist < closestDist) {
+                closestDist = dist;
+                hoveredNode = node;
+            }
+        });
+
+        
+        if (mouse.active && hoveredNode && closestDist < LABEL_DIST) {
+            tooltip.textContent = hoveredNode.label;
+            tooltip.classList.add('visible');
+        } else if (!mouse.active) {
+            tooltip.classList.remove('visible');
+        } else {
+            tooltip.classList.remove('visible');
+        }
+
+        
+        for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+                if (nodes[j].layer !== nodes[i].layer + 1) continue;
+                const ni = nodes[i], nj = nodes[j];
+                const diI = Math.hypot(mouse.x - ni.x, mouse.y - ni.y);
+                const diJ = Math.hypot(mouse.x - nj.x, mouse.y - nj.y);
+                const hot = mouse.active && (diI < LABEL_DIST || diJ < LABEL_DIST);
+                ctx.beginPath();
+                ctx.moveTo(ni.x, ni.y);
+                ctx.lineTo(nj.x, nj.y);
+                ctx.strokeStyle = hot ? edgeHot : edgeIdle;
+                ctx.lineWidth = hot ? 1.0 : 0.5;
+                ctx.globalAlpha = hot ? 0.7 : 1;
+                ctx.stroke();
+                ctx.globalAlpha = 1;
+            }
+        }
+
+        
+        nodes.forEach(function(node) {
+            const dist = Math.hypot(mouse.x - node.x, mouse.y - node.y);
+            const isClose = mouse.active && dist < LABEL_DIST;
+            const r = isClose ? HOVER_RADIUS : RADIUS;
+            ctx.beginPath();
+            ctx.arc(node.x, node.y, r, 0, Math.PI * 2);
+            ctx.fillStyle = isClose ? accent : nodeIdle;
+            ctx.fill();
+        });
+
+        requestAnimationFrame(draw);
+    }
+
+    draw();
+});
+</script>
+
+    </div>
+</div>
+<div class="custom-widgets-full-row">
+    <style>
+.github-calendar-container {
+    background: var(--color-background-code, rgba(128, 128, 128, 0.05));
+    border: 1px solid var(--color-border, rgba(128, 128, 128, 0.15));
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.github-calendar-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+#gh-cal-canvas {
+    display: block;
+    margin-top: 0.75rem;
+}
+</style>
+
+<div class="github-calendar-container">
+    <div class="cp-header">
+        <i class="fa-solid fa-chart-simple"></i> Contribution Graph
+    </div>
+    <canvas id="gh-cal-canvas"></canvas>
+</div>
+
+<script>
+(function () {
+    var MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var GAP = 2;
+    var PAD_LEFT = 26;
+    var PAD_TOP  = 18;
+
+    
+    
+    function localDate(str) {
+        var p = str.split('-');
+        return new Date(+p[0], +p[1] - 1, +p[2]);
+    }
+
+    function render(contributions) {
+        var canvas = document.getElementById('gh-cal-canvas');
+        if (!canvas) return;
+
+        var sorted = contributions.slice().sort(function (a, b) {
+            return a.date < b.date ? -1 : 1;
+        });
+        if (sorted.length === 0) return;
+
+        var startDate = localDate(sorted[0].date);
+        var startDow  = startDate.getDay();
+        var numWeeks  = Math.ceil((sorted.length + startDow) / 7);
+
+        
+        var container     = canvas.parentElement;
+        var logicalW      = container.clientWidth - 48; 
+        var cellStep      = Math.max(10, Math.floor((logicalW - PAD_LEFT) / numWeeks));
+        var CELL          = cellStep - GAP;
+        var STEP          = CELL + GAP;
+        var logicalH      = PAD_TOP + 7 * STEP + GAP;
+
+        
+        var dpr = window.devicePixelRatio || 1;
+        canvas.width  = Math.round(logicalW * dpr);
+        canvas.height = Math.round(logicalH * dpr);
+        canvas.style.width  = logicalW + 'px';
+        canvas.style.height = logicalH + 'px';
+
+        var ctx = canvas.getContext('2d');
+        ctx.scale(dpr, dpr);
+
+        var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+        var levelColors = isDark
+            ? ['rgba(255,255,255,0.07)', '#0e4429', '#006d32', '#26a641', '#39d353']
+            : ['rgba(0,0,0,0.07)', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+
+        var textColor = isDark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.35)';
+
+        ctx.font      = '9px system-ui, -apple-system, sans-serif';
+        ctx.fillStyle = textColor;
+
+        
+        var dayLabels = { 1: 'Mon', 3: 'Wed', 5: 'Fri' };
+        ctx.textAlign    = 'right';
+        ctx.textBaseline = 'middle';
+        Object.keys(dayLabels).forEach(function (dow) {
+            var y = PAD_TOP + parseInt(dow, 10) * STEP + CELL / 2;
+            ctx.fillText(dayLabels[dow], PAD_LEFT - 4, y);
+        });
+
+        
+        ctx.textBaseline = 'alphabetic';
+        var seen = {};
+
+        sorted.forEach(function (day) {
+            var date      = localDate(day.date);
+            var daysSince = Math.round((date - startDate) / 86400000);
+            var weekIdx   = Math.floor((daysSince + startDow) / 7);
+            var dow       = date.getDay();
+            var x         = PAD_LEFT + weekIdx * STEP;
+            var y         = PAD_TOP  + dow     * STEP;
+
+            
+            var mk = date.getFullYear() + '-' + date.getMonth();
+            if (!seen[mk]) {
+                seen[mk] = true;
+                ctx.fillStyle  = textColor;
+                ctx.textAlign  = 'left';
+                ctx.fillText(MONTH_NAMES[date.getMonth()], x, PAD_TOP - 4);
+            }
+
+            
+            var level = Math.min(4, Math.max(0, day.level || 0));
+            ctx.fillStyle = levelColors[level];
+            if (ctx.roundRect) {
+                ctx.beginPath();
+                ctx.roundRect(x, y, CELL, CELL, 2);
+                ctx.fill();
+            } else {
+                ctx.fillRect(x, y, CELL, CELL);
+            }
+        });
+    }
+
+    fetch('https://github-contributions-api.jogruber.de/v4/RAGNAROS-HS?y=last')
+        .then(function (r) { return r.json(); })
+        .then(function (data) { render(data.contributions || []); })
+        .catch(function (err) { console.error('Contribution graph failed:', err); });
+})();
+</script>
+
 </div>
 </div>
 </div></main><footer class="footer">
@@ -176,5 +623,5 @@
   </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
     <div class="noscript-warning">This website works best with JavaScript enabled.</div>
   </noscript>
-</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"version":"v0.4.3-20260130042349-e23a50d7"};console.log('Page config:', window.config);</script><script src="/js/theme.min.js" defer></script></body>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"search":{"distance":100,"findAllMatches":false,"highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"useExtendedSearch":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"duration":-1,"loop":false,"speed":100},"version":"v0.4.3-20260130042349-e23a50d7"};console.log('Page config:', window.config);</script><script src="/js/theme.min.js" defer></script></body>
 </html>

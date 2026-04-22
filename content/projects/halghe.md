@@ -5,6 +5,10 @@ draft: false
 tags: ["RL", "Python", "PyTorch", "Game Engine"]
 summary: "Teaching AI agents to dominate an agar.io clone"
 weight: 4
+tools: ["claude-code"]
+color: "#7c3aed"
+visual_image: "/img/first1500.gif"
+status: "active"
 ---
 
 # Jadid Halghe

@@ -5,6 +5,9 @@ draft: false
 tags: ["ML", "Python", "AI"]
 summary: "Personal AI Agent"
 weight: 1
+tools: ["hand"]
+color: "#6366f1"
+status: "discontinued"
 ---
 
 

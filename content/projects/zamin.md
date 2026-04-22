@@ -6,6 +6,10 @@ draft: false
 tags: ["NN", "Python", "Linear Regression"]
 summary: "Back to basics ML algorithms from scratch"
 weight: 3
+tools: ["hand"]
+color: "#059669"
+visual_image: "/img/corr_clustermap.png"
+status: "active"
 ---
 
 ## Overview
