@@ -43,4 +43,17 @@
     </div>
     {{- end -}}
 </div>
+<script>
+(function () {
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry, i) {
+            if (entry.isIntersecting) {
+                setTimeout(function () { entry.target.classList.add('revealed'); }, i * 60);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.project-card, .devlog-post-card').forEach(function (el) { observer.observe(el); });
+}());
+</script>
 {{- end -}}
